@@ -61,3 +61,20 @@ The following are NOT user-approved visual decisions. The evidence is in `docs/K
 | DP-119 | Three event-audience routes: corporate, birthdays/celebrations, weddings/private; offer show formats within those routes. | Proposed | More faithful to source site and marketplace evidence than corporate-only assumptions. |
 
 **Still not tested:** Keith's true mobile rendering, actual performance metrics, CTA reliability, social engagement and site conversions.
+
+## 2026-11-13 — Direction A focused exploration (not final approval)
+**User confirmed:** Explore **Direction A: The Velvet Reveal** in greater visual/interactive depth, compare alternatives, and do **not start implementation**. This approves a *planning focus*, not a final visual specification.
+
+| ID | Specific item | Status | Reason |
+|---|---|---|---|
+| DP-120 | Explore The Velvet Reveal (Direction A); implementation remains off-limits. | **User confirmed — exploration only** | Direct user request, 2026-11-13 |
+| DP-121 | A2 Living Spotlight as primary; use restrained A1 curtains and one A3 opt-in invitation moment below hero. | **Proposed**, not approved | Strongest balance of theatrical impression, clear booking, accessibility, mobile and personality |
+| DP-122 | Compare three variants: A1 Grand Entrance, A2 Living Spotlight, A3 Close-Up Encounter. | **Proposed design comparison** | Each brings different spectacle / booking tradeoffs |
+| DP-123 | Compare V1 Classic Velvet (#121218/#592332/#C3A16B/#F8F3E9), V2 Midnight Illusion, V3 Warm Cabaret; V1 leads. | **Proposed** | More specific art-direction choice within A; contrast/font still untested |
+| DP-124 | Keep copy + inquiry CTA visible at first paint; no curtain-loading gate or required card trick. | **Proposed usability guardrail** | Ready-to-hire visitors must be able to take action without participation |
+| DP-125 | Direct motion into bounded stage-right light: subtle pointer glow, keyboard focus cue, touch activation, reduced-motion still. | **Proposed** | Preserve theatricality while avoiding pointer chasing across essential text |
+| DP-126 | Proposal for 'Choose your occasion' invitations: Corporate, Birthdays & Celebrations, Weddings & Private; formats as subcontent. | **Proposed** | Educational interaction rather than decorative game, but labels must be verified |
+| DP-127 | No sound, full-screen video autoplay, heavy particle/WebGL effect or unlicensed client assets in first concept. | **Proposed** | Performance, accessibility, rights and distinctiveness |
+| DP-128 | Prepare 1440×900 desktop and 390×844 mobile original still comps plus 6-frame motion storyboard for comparison before any Codex task. | **Proposed** | Gives concrete visual review without implementing an app |
+
+**Detailed reasoning and open choices:** `docs/VELVET_REVEAL_DESIGN_EXPLORATION_2026-11-13.md`. Distinguish static inspirational imagery from original visual comps. Do not claim Keith approved or commissioned anything.
