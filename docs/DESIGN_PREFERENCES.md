@@ -43,3 +43,21 @@
 
 ## Change log
 - **2026-11-13:** Created initial preference register separating user-established intentions from design ideas. No visual comps or build approved.
+
+## 2026-11-13 — Planning-session provisional findings and guidance
+The following are NOT user-approved visual decisions. The evidence is in `docs/KEITH_SITE_MARKET_AUDIT_2026-11-13.md`; full creative concepts in `docs/CREATIVE_DIRECTIONS_2026-11-13.md`.
+
+| ID | Guidance / discovery | Status | Rationale |
+|---|---|---|---|
+| DP-110 | Compare The Velvet Reveal (A), Impossible Invitation (B), Two Sides of Wonder (C); explore A first. | Proposed | A best balances lighting spectacle, existing Gentleman identity, mobile clarity and asset burden. |
+| DP-111 | Preserve warm, funny, all-ages appeal alongside corporate professionalism; avoid luxury-only assumptions. | Proposed | Site offerings and marketplace review themes encompass family and adult occasions as well as business events. |
+| DP-112 | Use pointer-reactive lighting as subtle decor, with an equivalent keyboard/tap cue and static fallback. | Proposed | More memorable than static hero without hiding important information. |
+| DP-113 | Hero headline and request CTA always visible; optional one-touch invitation/event-format reveal, not a mandatory game. | Proposed | Keeps conversion path usable independent of animations. |
+| DP-114 | A palette: ink/oxblood/brass/ivory; B: paper/plum/copper; C: charcoal/ruby/blush/mint. | Proposed | Concept starting points only; no typography/color finalized and contrast testing still required. |
+| DP-115 | No sound for initial prototype; opt-in audio only if later requested. | Proposed | Limits distraction, complexity and visitor consent burden. |
+| DP-116 | Use original/rights-cleared silhouette or generic illustrative stand-ins for visuals; do not publish Keith portraits or photographer images without permission. | Proposed / rights guardrail | 2026 professional photos are a powerful reference, not a license. |
+| DP-117 | Inquiry CTA should say 'Check your date' or 'Request availability' but must explicitly be an inquiry, never false live bookability. | Proposed | Current site primarily uses email/phone; no authenticated live calendar verified. |
+| DP-118 | First approval artifact should be original desktop/mobile still compositions + short interaction storyboard before any functional implementation. | Proposed | Lets user evaluate creative impact before committing Codex time. |
+| DP-119 | Three event-audience routes: corporate, birthdays/celebrations, weddings/private; offer show formats within those routes. | Proposed | More faithful to source site and marketplace evidence than corporate-only assumptions. |
+
+**Still not tested:** Keith's true mobile rendering, actual performance metrics, CTA reliability, social engagement and site conversions.
