@@ -78,3 +78,22 @@ The following are NOT user-approved visual decisions. The evidence is in `docs/K
 | DP-128 | Prepare 1440×900 desktop and 390×844 mobile original still comps plus 6-frame motion storyboard for comparison before any Codex task. | **Proposed** | Gives concrete visual review without implementing an app |
 
 **Detailed reasoning and open choices:** `docs/VELVET_REVEAL_DESIGN_EXPLORATION_2026-11-13.md`. Distinguish static inspirational imagery from original visual comps. Do not claim Keith approved or commissioned anything.
+
+## 2026-11-13 — User correction: desktop-only Herc-inspired layered slider (OVERRIDES earlier proposed A direction)
+**User-confirmed**:
+| ID | Decision | Status | Rationale / scope |
+|---|---|---|---|
+| DP-129 | Work **100% on desktop** in the current design phase; no mobile mocks, interactions or planning. | **User confirmed** | Explicit correction, Nov 13 |
+| DP-130 | Mobile is always to be **specifically designed as a separate experience** when addressed, not just a responsive shrinking of desktop. | **User confirmed** | Do not work on mobile now |
+| DP-131 | Prior Velvet Reveal A1/A2/A3 designs **not liked**; no more traditional velvet/cabaret/spotlight-only proposals as current direction. | **User confirmed — rejected proposals** | User explicitly rejected all previous visuals |
+| DP-132 | Make desktop hero **much closer in interactive structure to https://hercmagnus.com/**: person image cut out and floating layered over scene; slider changes how person looks (not merely background color). | **User confirmed — design target** | Preserve unique interactive mechanics with original non-infringing visuals |
+| DP-133 | Use **colors already on Keith's existing site** rather than new theatrical burgundy/gold palettes. | **User confirmed** | Need exact colors sampled; desktop inspection currently describes purple/charcoal/white/green, not verified hex values |
+
+**Interpretations awaiting choice, NOT approved**:
+| ID | Idea | Status | Rationale |
+|---|---|---|---|
+| DP-134 | Two possible Keith slider states: Gentleman ↔ Showman, or Close-Up ↔ Stage; swap cutout portrait, scene, lighting and supporting text. | **Proposed** | Needs Keith-appropriate imagery/rights and meaningful labels |
+| DP-135 | Large transparent foreground portrait + ambient stage layers + slider, optionally responsive lighting; readable CTA always accessible. | **Proposed extrapolation** | Emulates principle, not Herc visual assets/code; exact mechanics unverified |
+| DP-136 | Explicitly supersede prior DP-114, DP-121–DP-128 aesthetic and mobile-comparison proposals when they conflict with DP-129–DP-133. | **Governance clarification** | Earlier unapproved drafts remain in history but are NOT active design brief |
+
+**Evidence:** `docs/HERC_DESKTOP_HERO_REFERENCE_AND_DESIGN_RESET_2026-11-13.md`, read-only site inspection Nov 13. No developer implementation or visual comps approved. **Do not restart mobile planning until separately requested.**

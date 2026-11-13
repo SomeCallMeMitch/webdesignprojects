@@ -35,3 +35,11 @@ Source: https://hercmagnus.com/blog/twelve-apps-no-code/
 - https://hercmagnus.com/
 - https://hercmagnus.com/blog/twelve-apps-no-code/
 - Research gathered from public fetch and live browser inspection Nov 12/13, 2026. Reinspect before relying on exact behaviors or technical implementation.
+
+## 2026-11-13 — Focused desktop hero revisitation (see new authoritative correction)
+**Primary URL:** https://hercmagnus.com/ ; **read-only session:** https://agent.tinyfish.ai/runs/6980a73d-2052-43a2-90bc-0c3491ce60a2
+- The full desktop hero is a **layered stage scene** with amp/truss/haze/light background, **independent alpha-backed foreground Herc cutout**, text/UI layer and a prominent horizontal 'From Rock Stage' ↔ 'To Speaking Stage' slider.
+- Rock state: Herc in lively guitar performance pose (`herc-rock.webp`), vivid concert lighting and amps. Speaking state: different clean grayscale arms-crossed portrait (observed filename `herc-clean-720.png`), softer professional atmosphere and different CTA.
+- Slider movement visibly changes **person's appearance + scene + lighting + contextual purpose**, rather than only coloring a background. Partial middle appearance was seen, but implementation of continuous crossfade and the exact source technique remains **unverified**. Do not claim definitive CSS/canvas mechanics.
+- This corrects the previous creative interpretation: the important fidelity is the cutout portrait and stateful slider, not generic red velvet curtain/backdrop.
+- **User revised priority:** Desktop only now; future mobile must be designed specifically in a separate phase; use Keith's existing palette rather than new black/oxblood/brass schemes. Full handoff: `docs/HERC_DESKTOP_HERO_REFERENCE_AND_DESIGN_RESET_2026-11-13.md`.

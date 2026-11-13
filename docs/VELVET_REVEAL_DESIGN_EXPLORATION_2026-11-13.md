@@ -113,3 +113,6 @@ Do not write code, publish, deploy, contact Keith, generate a misleading likenes
 3. Choose interactive centerpiece: **spotlight + event invitation** (recommended), **spotlight alone**, or a **more elaborate optional mini trick**.
 4. Palette starting point: Classic Velvet V1 (recommended), Midnight V2, or Warm Cabaret V3. No need to decide exact fonts yet.
 5. Scope of first review: original static desktop/mobile comps and short storyboard (recommended) before a clickable demo.
+
+## 2026-11-13 — Superseded by user correction
+**Historical exploration only:** The A1/A2/A3 variations, recommended A2+restrained curtains+optional invitation, the proposed V1/V2/V3 palettes, 390px mobile designs and the planned original desktop/mobile comparison package were **not accepted**. User explicitly wants closer fidelity to Herc Magnus's **floating foreground portrait, layered atmospheric stage and appearance-changing slider**, while retaining **Keith's existing website palette**. **Desktop-only** now; mobile is a future **separate custom design**, not a responsive shrink of desktop. Do not reuse this document as the active concept brief. See `docs/HERC_DESKTOP_HERO_REFERENCE_AND_DESIGN_RESET_2026-11-13.md`. No implementation authorized.
