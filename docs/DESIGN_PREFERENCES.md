@@ -109,3 +109,20 @@ The following are NOT user-approved visual decisions. The evidence is in `docs/K
 | DP-140 | Exact two-state story, pose asset selection, curtains design, slider placement and visual art remain **open**. | **Needs validation** | Next design chat should compare magician-appropriate options instead of coding |
 
 **Active design source of truth:** `docs/CURRENT_DESIGN_DIRECTION.md`. **Next conversation handoff:** `docs/NEXT_CHAT_DESKTOP_HERO_PROMPT_2026-11-13.md`. Existing DP-129–DP-133 (desktop-only, original Herc-inspired layering, Keith palette) remain authoritative. Do NOT revive mobile comps or the prior A1/A2/A3 drafts.
+
+
+## 2026-11-13 — Desktop dual-state hero concepts (planning session; no design lock)
+
+The user-confirmed requirements DP-129–DP-140 remain the design authority. The following are all **PROPOSED** creative explorations or research qualifications. Full analysis: `docs/KEITH_DESKTOP_TWO_STATE_HERO_CONCEPTS_2026-11-13.md`.
+
+| ID | New research / option | Status | Reason and boundary |
+|---|---|---|---|
+| DP-141 | **A: The Impossible Moment** — pre-illusion poised Keith cutout versus post-illusion expanded reveal pose; one magician-specific event, with coordinated magic object, curtains, purple spotlights and stage depth. | **Proposed — recommended for discussion, NOT approved** | Slider produces cause-and-effect magic, not only persona/style; specific magic effect and imagery require validation. |
+| DP-142 | **B: The Gentleman & The Wild Card** — formal tuxedo versus a playful alter-ego performance look, with changed poses/lighting. | **Proposed alternative, NOT approved** | March 2026 professional portrait story shows the two looks; red jacket risks implying musician or unsupported new persona. Photographs are not licensed for project reuse. |
+| DP-143 | **C: Close Enough to Amaze / The Whole Room Gasps** — intimate close-up performance versus larger theatrical stage performance. | **Proposed alternative, NOT approved** | Maps to public service formats, but can be less magical and creates difficult camera/portrait matching. |
+| DP-144 | Prefer a reversible scrub whose intermediate frame **masks the Keith pose change with motivated light/shimmer**, avoiding ghosted overlapping faces/hands. Keep full portrait/scene change and always-visible inquiry CTA. | **Proposed interaction treatment** | Two separately photographed poses cannot convincingly continuously morph facial anatomy; exact reference site's compositing mechanism remains unverified. |
+| DP-145 | For desktop composition, compare 1440x900 and 1600x900 review canvases with a visually dominant isolated figure, stage floor/shadow, multi-depth curtains and coordinated portrait illumination; no conventional centered red-velvet layout. | **Proposed art direction, NOT approved** | Implements the currently approved *principles* without copying Herc composition or the rejected A1/A2/A3. |
+| DP-146 | Brand research refinement: live site CSS gradient contains `rgb(128,121,255)` / `#8079FF`; visual header-purple estimate `#C169E1`, charcoal approximately `#202020–#2A2A2A`, white `#FFFFFF`. No verified green **interface** token. | **Observed partial evidence; exact master palette NEEDS VALIDATION** | Current live read-only Nov 13 review at https://agent.tinyfish.ai/runs/34b776f5-aaab-4a86-b1e2-5e88253f3400 ; gradient is exact CSS sample, header/charcoal only visual approximations. Green in photo backdrops should not automatically become a brand UI color. |
+| DP-147 | First visual decision artifact should be **desktop-only paired start/end original artboards plus a 0/25/50/75/100 slider storyboard**, created only after user selects a narrative. | **Proposed next review, NOT approved** | Prior desktop/mobile A1/A2/A3 mock package is superseded; no mobile work now. |
+
+**Rights and scope:** All photographs on Keith's site or Sarah Eichstedt's article remain reference-only; no assets downloaded to repo, licensed, or approved for re-use. No coding, public launch, contact, or final design choice.
