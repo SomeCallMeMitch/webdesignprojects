@@ -97,3 +97,15 @@ The following are NOT user-approved visual decisions. The evidence is in `docs/K
 | DP-136 | Explicitly supersede prior DP-114, DP-121–DP-128 aesthetic and mobile-comparison proposals when they conflict with DP-129–DP-133. | **Governance clarification** | Earlier unapproved drafts remain in history but are NOT active design brief |
 
 **Evidence:** `docs/HERC_DESKTOP_HERO_REFERENCE_AND_DESIGN_RESET_2026-11-13.md`, read-only site inspection Nov 13. No developer implementation or visual comps approved. **Do not restart mobile planning until separately requested.**
+
+## 2026-11-13 — Final handoff refinement: magic poses plus curtains and lighting
+**User-confirmed on Nov 13:** The original-site-like portrait-changing slider is still central. **Curtains and theatrical lighting are welcome** as part of the layered scene; their presence is not inherently rejected. Keith is a MAGICIAN; do not transfer Herc's rock-musician/speaker roles literally. The user wants to explore **two versions of Keith with distinct pre-/post-illusion or other meaningful performance poses**. They also want a new chat to continue, with all history in the repo.
+
+| ID | Preference / restriction | Status | Detail |
+|---|---|---|---|
+| DP-137 | Theatrical curtains and lighting may be composed into the original layered desktop scene rather than deleted outright. | **User confirmed** | Clarifies DP-131: rejected old standalone designs, not curtains/lights themselves |
+| DP-138 | The slider must depict two Keith-specific MAGICIAN appearances/poses, potentially before vs after an effect; neither state should portray him as Herc-style musician or speaker. | **User confirmed creative requirement; exact poses exploratory** | User said 'maybe' before/after poses; do NOT promote specific before/after poses to final approval |
+| DP-139 | Keep lighting as an important part of hero atmosphere alongside floating cutout, scene depth and slider. | **User confirmed** | Lighting fits the reference and Keith's magic theme |
+| DP-140 | Exact two-state story, pose asset selection, curtains design, slider placement and visual art remain **open**. | **Needs validation** | Next design chat should compare magician-appropriate options instead of coding |
+
+**Active design source of truth:** `docs/CURRENT_DESIGN_DIRECTION.md`. **Next conversation handoff:** `docs/NEXT_CHAT_DESKTOP_HERO_PROMPT_2026-11-13.md`. Existing DP-129–DP-133 (desktop-only, original Herc-inspired layering, Keith palette) remain authoritative. Do NOT revive mobile comps or the prior A1/A2/A3 drafts.

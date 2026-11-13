@@ -53,3 +53,6 @@ Design a **single high-impact, desktop-first hero as a dimensional interactive s
 
 ## Supersession and next step
 `docs/VELVET_REVEAL_DESIGN_EXPLORATION_2026-11-13.md` remains historical, but all suggested palette variants, A1/A2/A3 hero options, mobile comps and A2 recommendation are **superseded** by this user's correction. No new visuals are authorized/required in this turn. Next: confirm conceptual match, then develop a desktop-only proposal anchored in foreground cutout + transforming slider + existing brand colors. Codex implementation remains gated.
+
+## 2026-11-13 — Clarification for future design handoffs
+The user confirmed that curtains and theatrical lighting **should remain available design elements** when integrated into the layered scene; rejecting previous generic "Velvet Reveal" art directions did not reject stage effects. Slider on Keith concept should change **the magician's portrait/pose**, potentially before/after an illusion, and must not map Herc's musician/speaker roles literally. For active instructions and latest status, read `docs/CURRENT_DESIGN_DIRECTION.md`. No new technical proof of exact slider implementation was established in this clarification.

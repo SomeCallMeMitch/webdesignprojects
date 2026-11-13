@@ -37,3 +37,6 @@ Create a persuasive proof of concept for a custom web-design business. Avoid bui
 - No technical stack chosen yet; consider plain HTML/CSS/JS, Astro, React/Vite or Next based on requirements, not fashion.
 - No claim of confirmed paid conversions or booking revenue from public signals.
 - Tracking and decisions live in AGENTS, PROGRESS, DESIGN_PREFERENCES and companion research docs.
+
+## Latest design decision — 2026-11-13
+This brief is a historical starting point. **Current authoritative design focus** is `docs/CURRENT_DESIGN_DIRECTION.md`, read with `docs/DESIGN_PREFERENCES.md` and `docs/PROGRESS.md`. The user rejected the earlier generic burgundy/gold Velvet Reveal variants. Current desktop hero target: Herc-inspired **large floating transparent human cutout**, multilayer environmental depth, a **slider changing Keith's pose/appearance**, curtains and theatrical lighting integrated meaningfully, while retaining Keith's existing site colors. Two magician-specific *pre-/post-reveal* poses are a possible concept, not a final approved story. No mobile planning until a later separate custom-design phase; no implementation.
