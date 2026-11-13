@@ -126,3 +126,11 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 | DP-147 | First visual decision artifact should be **desktop-only paired start/end original artboards plus a 0/25/50/75/100 slider storyboard**, created only after user selects a narrative. | **Proposed next review, NOT approved** | Prior desktop/mobile A1/A2/A3 mock package is superseded; no mobile work now. |
 
 **Rights and scope:** All photographs on Keith's site or Sarah Eichstedt's article remain reference-only; no assets downloaded to repo, licensed, or approved for re-use. No coding, public launch, contact, or final design choice.
+
+
+## 2026-11-13 — First desktop homepage visual requested
+
+| ID | Preference / visual-review fact | Status | Rationale |
+|---|---|---|---|
+| DP-148 | After the initial pose/slider comparison, **create an original visual mockup of the desktop homepage now** rather than continuing with only abstract design discussion. | **User confirmed — request for a mockup, NOT visual approval** | Explicit request on Nov 13. The first in-chat image has been generated, and an assessment is in `docs/KEITH_DESKTOP_HOMEPAGE_MOCKUP_REVIEW_2026-11-13.md`. |
+| DP-149 | The initial render illustrates a **two-persona, split-portrait design** with a visible slider and purple theatrical set. It is neither an approved direction nor a verified demonstration of a working slider. | **Proposed first visual / needs user review** | The rendered image visually drifted toward concept B even though concept A was the leading recommendation. Do not treat the mockup as consent to revive rejected props, lock a red jacket look, or to implement. |
