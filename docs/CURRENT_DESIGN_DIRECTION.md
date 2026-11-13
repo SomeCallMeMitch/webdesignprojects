@@ -46,3 +46,16 @@ Create a visually remarkable, high-end, highly interactive **desktop** concept f
 - No final desktop design, hero art, licensed portraits, slider copy, color hex values or working interaction has been approved.
 - **Next chat:** Read mandated files, summarize and confirm this current direction; discuss 2–3 meaningfully different **desktop** magician-specific slider transformations, curtain/light integration, proposed hero layout and actual brand colors, and recommend one. Then collaborate with user to select visual story and photo approach **before creating any coded mockup**. Original noncoded desktop comps may be discussed/created upon user request, respecting asset rights.
 - At end of EVERY prompt/session add dated progress entry to `docs/PROGRESS.md`, including files, evidence, decisions, branch/commit, outstanding questions and no contact/deployment status. Update `docs/DESIGN_PREFERENCES.md` for new visual decisions.
+
+
+## 2026-11-13 — AUTHORITATIVE LATEST VISUAL SELECTION AND NEXT PHASE
+
+**OVERRIDES earlier 'poses TBD / no mockup approved' status paragraphs above, which remain for historical context.**
+
+The user selected an **exact desktop homepage image** as the master reference. The uploaded filename is `ChatGPT Image Nov 13, 2026, 02_02_12 PM.png` (1672x941 RGBA; SHA-256 `d5246f115c381a75756a59b54d00a3fdb365d202830f2062ef9407a7940b0e21`). It includes **foreground theater seats** at the bottom, purple curtains, top truss, **three principal downward overhead spotlights**, smaller center-right magician figure, split gentleman/playful magician styling, left headline/button/props, right haze and floating cards, and a horizontal scene slider. This exact visual reference, and no prior no-seats or floor-up-lit mockup, is the user-confirmed image.
+
+**Confirmed intended behavior:** standalone interactive **DESKTOP ONLY** homepage prototype with a slider that changes two actual full magician portraits/poses and realistic pointer-reactive overhead spotlights. Every moving beam must be visibly tied to the physical fixture from which it originates. No uplights at the floor or impossible beams. Neither Herc's underlying implementation nor license to his source/assets has been established; compose an original functional approximation.
+
+**CURRENT NEXT TASK (image work, not code):** User will upload this chosen PNG in a separate ChatGPT chat and request a **complete separated image asset kit**. The assignment is stored at `docs/NEXT_CHAT_KEITH_HOMEPAGE_IMAGE_ASSETS_PROMPT_2026-11-13.md`, with layers/registration and QA rules in `docs/KEITH_SELECTED_DESKTOP_HOMEPAGE_BUILD_SPEC_2026-11-13.md` and technical evidence in `docs/HERC_SLIDER_LIGHTS_TECHNICAL_EVIDENCE_2026-11-13.md`. REA research is handled in a **different** conversation; defer coding integration to later Codex phase. Do not start mobile work, public deployment, real booking, or outreach.
+
+**Asset caveat:** user-approved PNG exists in conversation and its checksum has been recorded, but its **binary has not been confirmed uploaded to GitHub**. Next chat should verify user's re-upload and then save actual layer files or a ZIP with a clear upload handoff.
