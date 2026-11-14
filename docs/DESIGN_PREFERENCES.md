@@ -151,3 +151,9 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 | DP-156 | Intermediate visual split is inspiration only; underlying slider assets need **two actual full coherent magician pose/appearance images**, matching camera/perspective, not two halves of a single baked cutout. | **PROPOSED asset-engineering inference** | Needed for genuine portrait-changing slider; exact end-state pose specifications remain open to fidelity checks. |
 
 **Asset preservation constraint:** Selected visual is an uploaded conversation PNG; it is not yet verified as a binary GitHub asset. User will upload the image to next chat. Filename/dimensions/SHA-256 are recorded in master image specification. `docs/PROGRESS.md` remains append-only.
+
+## 2026-11-13 — Desktop prototype milestones
+
+- **Confirmed:** Approve the static desktop composition first. Add the independently layered pose slider and cursor-following stage beams after review.
+- **Confirmed:** Anchor the violet, white and violet beams to the three visible overhead lenses. Head rotation is optional if the artwork supports a clean result. This supersedes the fixture-rotation acceptance item in the selected desktop build spec.
+- **Confirmed:** Use the existing Herc evidence and validate the Keith composition at 1672 × 941, 1440 × 900 and 1920 × 1080 CSS pixels.

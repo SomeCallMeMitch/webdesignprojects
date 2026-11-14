@@ -62,7 +62,7 @@ REA captured three same-origin scripts, all attributed to `/`, and 18 same-origi
 
 ## Capture provenance
 
-Evidence files are retained locally with the originating Codex investigation chat. The filenames below identify those artifacts. All full screenshots are 929 × 965 PNGs. Times below are PST, 2026-11-13. The JSON measurements contain exact timestamps, state samples and PNG hashes. These are research captures outside the project.
+The [pointer contact sheet](evidence/herc-desktop/herc-verified-pointer-sheet.png), [slider contact sheet](evidence/herc-desktop/herc-verified-slider-sheet.png), and [timing and drag measurements](evidence/herc-desktop/herc-timing-and-drag.json) are preserved here. The individual frames listed below remain with the originating Codex investigation. The source viewport was 929 × 965 CSS px. Times below are PST, 2026-11-13. These files are reference research only.
 
 | Capture(s) | Time | State / retained file |
 |---|---|---|

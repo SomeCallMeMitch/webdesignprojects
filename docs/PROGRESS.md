@@ -219,3 +219,12 @@
 - **Files and branch:** Added `docs/HERC_REA_CODEX_INTERACTION_INVESTIGATION_2026-11-13.md` and appended this log in the same documentation-only commit on `concept/keith-tyran-magician-experience`. The pre-save head was `ecb54d334412c153a14d72bfe4ea419fb2a7bc3d`. Existing approved preferences remain the design authority.
 - **Decision and next action:** Propose native range, separately registered complete poses, CSS/SVG and one damped angle per visible fixture. Confirm the independent layer kit, asset rights and lens/hinge alignment against the approved master before any build. The image chat should finish the layer kit. Codex can build and test the private desktop prototype after the artwork is reviewed and the user authorizes implementation.
 - **Homepage/app code, image/audio creation, mobile work, publishing, deployment, real bookings and prospect contact:** None.
+
+### 2026-11-13 — Static desktop hero ready for review
+
+- **Request:** Preserve the Herc evidence and build the private static Keith desktop hero for composition review before animation.
+- **Branch and starting point:** `concept/keith-tyran-magician-experience` at `b389deb17dc3907d4985df5cbf91f8eca1d2395f`.
+- **Files:** `index.html`, `styles.css`, and eight optimized artwork layers under `assets/hero/` in the local checkout. The verified contact sheets and timing JSON are in `docs/evidence/herc-desktop/` and linked from the investigation report. `docs/DESIGN_PREFERENCES.md` records the approved milestones.
+- **Verification:** Captured and visually reviewed Edge screenshots at 1672 × 941, 1440 × 900 and 1920 × 1080. The approved master was compared against the chat attachment, and its local file hash was unavailable. At 1440 × 900 the next section begins below the proportionally scaled stage.
+- **Decision:** Reuse the existing Herc research. After static approval, build the reversible dual-pose slider and three pointer-directed beams, with fixture-head rotation optional. The preview uses one pose and a decorative midpoint marker for composition review.
+- **Next:** Review the static hero, then check pose registration and beam anchors during the animation milestone. The standalone preview is local. No deployment, bookings, mobile work or prospect contact.
