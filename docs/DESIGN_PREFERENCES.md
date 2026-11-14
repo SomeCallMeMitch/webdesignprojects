@@ -168,3 +168,11 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 
 - **User requested for this test:** Retain the original preview and create a second demo with three extra cards scattered at different angles. Place a red card near the audience and a smaller red one left of the Ace. Make the audio buttons about half their current size.
 - **Prototype choices:** Add a tilted purple-backed card farther right in the haze. Keep the new cards tied to the reversible slider. Reduce each sound button's visual area by about half and retain its 44 px click height.
+
+
+## 2026-11-14 — Below-the-fold image separation and performance preferences
+| ID | Preference / decision | Status | Evidence |
+|---|---|---|---|
+| DP-157 | Build desktop below-the-fold art one section at a time, with images and decorative frames as **separate assets**, enabling independent layout and effects. | **User confirmed** | User requested frames without photos and the photos separately, then authorized moving to the next section after completion. |
+| DP-158 | Keep the image-heavy website fast; cursor-responsive lights below the hero are desirable **only if lightweight**. No performance acceptance is implied by static mockups. | **User confirmed conditional preference** | User explicitly prioritized image weight and reasonable page loading. |
+| DP-159 | In Section 03 use six reusable display cards with a single CSS border style and lightweight CSS hover effects, instead of six unique heavy frame images. | **Proposed implementation/detail, not independently approved** | Derived from design plan and performance constraint; user has not yet approved the individual art. |
