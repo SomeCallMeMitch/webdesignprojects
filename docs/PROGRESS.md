@@ -236,3 +236,11 @@
 - **Local files:** `index.html`, `styles.css`, and `hero.js` implement the two complete poses, reversible range, live scene haze, and three beams rotating around their lens positions. The fixture bodies stay fixed. A masked face treatment keeps the exact midpoint readable.
 - **Verification:** Edge at 1672 × 941 confirmed pointer drag and reversal, endpoint buttons, keyboard arrows, changing aim on all three beams, and immediate slider response with stationary beams under reduced motion. Checked desktop geometry at 1440 × 900 and 1920 × 1080.
 - **Next:** Review the motion in the private local preview. No publishing, deployment, bookings, mobile work or outreach.
+
+### 2026-11-13 — Playful Magician card reveal
+
+- **Request:** Try the slider-controlled card fan using the supplied transparent smoke, Ace of Spades, and purple card back.
+- **Branch and starting point:** `concept/keith-tyran-magician-experience` at `eeaad6e`.
+- **Local files:** `index.html`, `styles.css`, and `hero.js` use three independent card sprites with staggered paths tied to the existing slider. The Ace turns face-up and the two other cards settle back-out. Optimized WebP copies of the three supplied assets live in `assets/hero/`.
+- **Verification:** Edge at 1672 × 941 verified the Ace turn, card fan, exact reverse path at the same slider value, return to hidden, pointer drag, keyboard control, and the existing cursor-following lights. Reduced motion switches card visibility at fixed positions. Layout and image decoding also passed at 1440 × 900 and 1920 × 1080.
+- **Next:** Review the effect in the private preview. No publishing, deployment, bookings, mobile work or outreach.
