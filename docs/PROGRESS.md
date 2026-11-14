@@ -244,3 +244,26 @@
 - **Local files:** `index.html`, `styles.css`, and `hero.js` use three independent card sprites with staggered paths tied to the existing slider. The Ace turns face-up and the two other cards settle back-out. Optimized WebP copies of the three supplied assets live in `assets/hero/`.
 - **Verification:** Edge at 1672 × 941 verified the Ace turn, card fan, exact reverse path at the same slider value, return to hidden, pointer drag, keyboard control, and the existing cursor-following lights. Reduced motion switches card visibility at fixed positions. Layout and image decoding also passed at 1440 × 900 and 1920 × 1080.
 - **Next:** Review the effect in the private preview. No publishing, deployment, bookings, mobile work or outreach.
+
+### 2026-11-13 — Portrait alignment at the slider seam
+
+- **Request:** Reduce the vertical jump between the two heads while preserving the approved hero.
+- **Local files:** `hero.js` and `styles.css` apply a smooth vertical correction to the Playful portrait near the center of the slider, peaking at about 11 pixels at 1672 px wide and tapering to zero before either endpoint.
+- **Review:** Compared the earlier midpoint with refreshed Edge captures at 40%, 50%, and 60%. Both endpoint placements use the original geometry. The card fan and lights use the existing behavior.
+- **Status:** Local preview only. Branch `concept/keith-tyran-magician-experience`, starting at `013e05a`. No deployment or outreach.
+
+### 2026-11-14 — Desktop slider audio trial
+
+- **Request:** Add three magic cues, looping circus music for the Playful side, a sound switcher and an obvious mute button to the desktop test.
+- **Implementation:** Added original Magic Chimes, Spell Whoosh, Mystery Bell and Circus Magic tracks in `assets/audio/`. Updated `index.html`, `styles.css` and `hero.js` with keyboard-accessible Next sound and Enable/Mute sound buttons. Sound starts off. A drag plays one cue regardless of its length. Circus Magic starts when crossing the midpoint toward The Playful Magician and stops on the return crossing. The trial behavior is recorded in `docs/DESIGN_PREFERENCES.md`.
+- **Verification:** Local Edge 1672 × 941 screenshot reviewed. Controls were checked for overlap and a 44 px mute target at 1440 × 900, 1672 × 941 and 1920 × 1080. Edge playback checks passed for initial silence, all four files, one-shot drag/keyboard/endpoint interaction, sound selection wraparound, midpoint start and stop, loop wrap and mute. Playback was checked through browser media state. Listening-level review remains open.
+- **Next:** Open `index.html`, use Enable sound and Next sound, and audition the four options with the slider.
+- **Status:** Local working-tree changes on `concept/keith-tyran-magician-experience`, HEAD `013e05a7a3d9b78454e97598198c0ec9a3460ff5`. No deployment or outreach.
+
+### 2026-11-14 — Separate six-card reveal demo
+
+- **Request:** Add three cards in a loose, irregular spread and halve the visual footprint of the audio buttons in a second demo, retaining the existing three-card preview.
+- **Files:** `card-reveal-demo.html`, `card-reveal-demo.css` and `card-reveal-demo.js`. The new entry page reuses the original hero and audio assets. It adds a large red-backed card over the audience, a small red-backed card to the left of the Ace, and a distant purple-backed card to the upper right. The audio buttons retain 44 px hit targets.
+- **Verification:** The in-app browser bridge was unavailable, so checked locally in Edge. All six cards reveal, reverse and hide with the slider. Verified reduced motion, sound selection, playback and mute. Checked placement at 1440 × 900, 1672 × 941 and 1920 × 1080 and reviewed the 1672 × 941 capture. The new buttons have 55% and 54% of their original visual areas. SHA-256 checks confirm `index.html`, `styles.css` and `hero.js` are unchanged.
+- **Next:** Compare `card-reveal-demo.html` with `index.html` locally and review the proposed spread and smaller controls.
+- **Status:** Local working-tree changes on `concept/keith-tyran-magician-experience`, HEAD `013e05a7a3d9b78454e97598198c0ec9a3460ff5`. No deployment or outreach.

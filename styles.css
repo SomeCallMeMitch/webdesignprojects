@@ -1,0 +1,405 @@
+:root {
+  color-scheme: dark;
+  font-family: "DM Sans", Arial, sans-serif;
+  color: #fcf6fc;
+  background: #100717;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+:is(a, button):focus-visible { outline: 2px solid #f5bbff; outline-offset: 6px; }
+
+.hero {
+  --persona: 50%;
+  --reveal: 53.05%;
+  --seam: 1;
+  --mood: .72;
+  --face: 1;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1672 / 941;
+  overflow: hidden;
+  isolation: isolate;
+  container-type: inline-size;
+}
+
+.stage, .plate, .foreground, .shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.stage { pointer-events: none; }
+.stage img { display: block; }
+.shade {
+  background:
+    linear-gradient(#09040eb3, transparent 17%),
+    radial-gradient(ellipse at 20% 48%, #10071791, transparent 35%),
+    linear-gradient(0deg, #0c0514a8, transparent 15%);
+}
+
+.beam, .haze, .portrait { position: absolute; width: 100%; }
+.beam { mix-blend-mode: screen; opacity: .75; }
+.beam-left { top: 5%; left: 5.9%; width: 92%; height: 67%; transform-origin: 30.1% 12.9%; }
+.beam-right { top: 4.7%; left: 2.3%; width: 97%; height: 69%; transform-origin: 71.2% 14.3%; }
+.beam, .beam-center { transform: rotate(var(--aim, 0deg)); }
+.beam-center {
+  position: absolute;
+  top: 13.4%;
+  left: 35.2%;
+  width: 34.2%;
+  height: 53%;
+  transform-origin: 50% 0;
+  filter: blur(.65cqw);
+  mix-blend-mode: screen;
+}
+.beam-center::before,
+.beam-center::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(47% 0, 53% 0, 100% 98%, 0 98%);
+}
+.beam-center::before {
+  background: radial-gradient(ellipse at 50% 0%, #fff6fff0, #dfc0ff8a 16%, #d39dff34 42%, transparent 73%);
+}
+.beam-center::after {
+  background: conic-gradient(from 144deg at 50% 0%, transparent, #ebd3ff25 16deg, transparent 21deg, #f1dbff57 33deg, transparent 40deg, #e1baff29 49deg, transparent 68deg);
+  mask-image: linear-gradient(#fff, transparent 77%);
+}
+.lens {
+  position: absolute;
+  width: 1.5cqw;
+  height: 1cqw;
+  border-radius: 50%;
+  background: #fef2ff;
+  box-shadow: 0 0 1.2cqw .3cqw #da85f7;
+}
+.lens-left { top: 13.8%; left: 33.2%; transform: rotate(-29deg); }
+.lens-center { top: 12.4%; left: 51.15%; width: 2.3cqw; }
+.lens-right { top: 13.8%; left: 70.4%; transform: rotate(29deg); }
+.haze { top: 9.5%; left: 12%; width: 82%; height: 77%; opacity: var(--mood); mix-blend-mode: screen; }
+.stage-cards { position: absolute; inset: 0; }
+.stage-card {
+  position: absolute;
+  left: 64%;
+  top: 36%;
+  width: 5.2cqw;
+  aspect-ratio: 256 / 360;
+  opacity: 0;
+  transform: translate(-50%, -50%) translate(var(--card-x, 0px), var(--card-y, 0px))
+    rotate(var(--card-roll, 0deg)) scale(var(--card-scale, 1));
+}
+.stage-card-high { width: 4.2cqw; }
+.stage-card-low { width: 4.6cqw; }
+.stage-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.stage-card-high img { transform: perspective(16cqw) rotateX(46deg) rotateY(-18deg); }
+.stage-card-low img { transform: perspective(16cqw) rotateX(50deg) rotateY(12deg); }
+.stage-card-ace { perspective: 16cqw; }
+.stage-card-turn {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(18deg) rotateY(var(--card-flip, 154deg));
+}
+.stage-card-turn img { backface-visibility: hidden; }
+.stage-card-turn .stage-card-back { transform: rotateY(180deg); }
+.persona { position: absolute; inset: 0; }
+.persona-gentleman { clip-path: inset(0 0 0 var(--reveal)); }
+.persona-playful { clip-path: inset(0 calc(100% - var(--reveal)) 0 0); }
+.portrait {
+  left: 23.5%;
+  top: 26%;
+  width: 57.8%;
+  mask-image: linear-gradient(#fff 97%, transparent);
+}
+.persona-playful .portrait {
+  left: 23%;
+  top: 20.8%;
+  width: 61.6%;
+  height: 63%;
+  translate: 0 var(--face-lift, 0px);
+}
+.midpoint-face {
+  mask-image: radial-gradient(ellipse 5.3% 10.8% at 51.6% 35.6%, black 78%, transparent 100%);
+  opacity: var(--face);
+}
+.reveal {
+  position: absolute;
+  top: 27%;
+  left: var(--reveal);
+  width: .11cqw;
+  height: 59%;
+  background: linear-gradient(transparent, #db65ff 15%, #f9c1ff 70%, transparent);
+  box-shadow: 0 0 .8cqw .12cqw #ae28f5;
+  opacity: var(--seam);
+}
+
+.masthead {
+  position: absolute;
+  top: 2.45%;
+  left: 4.55%;
+  right: 3.35%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2cqw;
+}
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: .85cqw;
+  font: 2.35cqw/.98 "Baskervville", Georgia, serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.wordmark small {
+  display: block;
+  margin-top: .45cqw;
+  font: .82cqw/1.15 "DM Sans", Arial, sans-serif;
+  letter-spacing: .235cqw;
+}
+.orbit {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 5.1cqw;
+  height: 3.1cqw;
+  color: #eaa2ff;
+  font-size: 2.1cqw;
+  text-shadow: 0 0 .7cqw #bd3bfb;
+}
+.orbit::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 38%;
+  border: .17cqw solid #bc42ff;
+  border-left-width: .48cqw;
+  border-radius: 50%;
+  transform: rotate(-28deg);
+}
+.masthead nav {
+  display: flex;
+  align-items: center;
+  gap: 3cqw;
+  min-height: 2.55cqw;
+  margin-left: auto;
+  font-size: .91cqw;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.masthead nav a:hover { color: #edb2ff; }
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: .105cqw solid #ec9aff;
+  border-radius: .38cqw;
+  background: #230e32de;
+  box-shadow: inset 0 0 .55cqw #9b33d5a0, 0 0 .5cqw #b83effb0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cta:hover { background: #391451; }
+.header-cta {
+  gap: 1cqw;
+  margin-left: 2.2cqw;
+  min-height: 2.6cqw;
+  padding: 0 1.2cqw;
+  font-size: .92cqw;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.calendar { width: 1.15cqw; height: 1.05cqw; border: .12cqw solid; border-top-width: .32cqw; border-radius: .12cqw; }
+
+.intro { position: absolute; top: 22.5%; left: 10.2%; width: 26.5%; }
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: .66cqw;
+  margin: 0 0 1.35cqw -1.45cqw;
+  width: max-content;
+  text-transform: uppercase;
+  letter-spacing: .15cqw;
+  font-size: .82cqw;
+}
+.eyebrow span { color: #d457ff; }
+.eyebrow::before, .eyebrow::after {
+  content: "";
+  width: 2.2cqw;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e9adee);
+}
+.eyebrow::after { rotate: 180deg; }
+h1 {
+  margin: 0;
+  font: 3.05cqw/1.02 "Baskervville", Georgia, serif;
+  letter-spacing: -.055cqw;
+  text-indent: 1.4cqw;
+}
+h1 em { display: block; font-size: 4.15cqw; text-indent: 0; white-space: nowrap; }
+.flourish {
+  width: 68%;
+  height: 1.65cqw;
+  margin: .7cqw 0 .75cqw 2.9cqw;
+  border-radius: 50%;
+  border-top: .28cqw solid #bf42fa;
+  transform: rotate(-1.8deg);
+}
+.description { width: 70%; margin: 0 0 1.42cqw; font-size: 1.06cqw; line-height: 1.36; }
+.hero-cta {
+  position: relative;
+  min-width: 16.65cqw;
+  padding: .43cqw 2.8cqw .45cqw 1.9cqw;
+  font-size: .98cqw;
+  line-height: 1.35;
+  letter-spacing: .1cqw;
+  font-weight: 600;
+}
+.chevron {
+  display: block;
+  width: .61cqw;
+  height: .61cqw;
+  border-top: .115cqw solid;
+  border-right: .115cqw solid;
+  transform: rotate(45deg);
+}
+.hero-cta .chevron { position: absolute; right: 1.65cqw; }
+
+.persona-preview {
+  position: absolute;
+  top: 68%;
+  left: 27.25%;
+  width: 52.1%;
+  display: grid;
+  grid-template-columns: 9.2cqw 1fr 8.7cqw;
+  align-items: center;
+  gap: 1.15cqw;
+}
+.plaque {
+  display: grid;
+  place-content: center;
+  height: 4.1cqw;
+  border: 1px solid #c78853;
+  outline: 1px solid #8b533b;
+  outline-offset: -4px;
+  background: radial-gradient(ellipse, #2d1738, #160c20);
+  text-align: center;
+  text-transform: uppercase;
+  font: 1cqw/1 "Baskervville", Georgia, serif;
+  letter-spacing: .025cqw;
+  border-radius: .75cqw .18cqw;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+}
+.plaque:hover { border-color: #ffd2a3; }
+.track {
+  position: relative;
+  height: .21cqw;
+  background: #f8b9ff;
+  box-shadow: 0 0 .43cqw .12cqw #c02bff;
+}
+.persona-range {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: max(44px, 2.6cqw);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-50%);
+  cursor: ew-resize;
+  touch-action: none;
+  appearance: none;
+}
+.persona-range::-webkit-slider-thumb { appearance: none; width: 1px; height: 100%; }
+.persona-range::-moz-range-thumb { width: 1px; height: 100%; border: 0; }
+.persona-range:focus-visible + .knob { outline: 2px solid #f5bbff; outline-offset: 5px; }
+.track::before, .track::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: .42cqw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fff1ff;
+  transform: translate(-50%, -50%);
+}
+.track::after { left: 100%; }
+.knob {
+  position: absolute;
+  top: 50%;
+  left: var(--persona);
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  width: 2.6cqw;
+  aspect-ratio: 1;
+  border: .15cqw solid #fff0ff;
+  border-radius: 50%;
+  background: #15091e;
+  box-shadow: 0 0 .65cqw .12cqw #e376ff;
+  transform: translate(-50%, -50%);
+  font: 1.55cqw/1 Arial, sans-serif;
+}
+.hero-audio {
+  position: absolute;
+  top: 77.5%;
+  left: 53.3%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(-50%);
+}
+.hero-audio button {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid #aa7bc2;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.hero-audio .sound-choice {
+  display: grid;
+  grid-template-columns: auto 7.4em auto;
+  align-items: center;
+  gap: 10px;
+  background: #21112c;
+  color: #f9eaff;
+  text-align: left;
+}
+.sound-choice span { color: #e3bcec; }
+.sound-cycle { font-size: 19px; }
+.hero-audio .sound-toggle {
+  min-width: 116px;
+  border-color: #e9c5f8;
+  background: #ecccf8;
+  color: #281233;
+}
+.hero-audio .sound-choice:hover { background: #3a1b48; }
+.hero-audio .sound-toggle:hover { background: #f5e0fc; }
+.scroll {
+  position: absolute;
+  bottom: 4.9%;
+  left: 50%;
+  display: grid;
+  justify-items: center;
+  gap: .8cqw;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  letter-spacing: .28cqw;
+  font-size: .82cqw;
+}
+.scroll .chevron { width: 1cqw; height: 1cqw; transform: rotate(135deg); }
+.preview { max-width: 64rem; margin: 0 auto; padding: 3rem 2rem 4rem; line-height: 1.5; }
+.preview h2, .preview h3 { font-family: "Baskervville", Georgia, serif; }

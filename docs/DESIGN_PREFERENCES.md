@@ -157,3 +157,14 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **Confirmed:** Approve the static desktop composition first. Add the independently layered pose slider and cursor-following stage beams after review.
 - **Confirmed:** Anchor the violet, white and violet beams to the three visible overhead lenses. Head rotation is optional if the artwork supports a clean result. This supersedes the fixture-rotation acceptance item in the selected desktop build spec.
 - **Confirmed:** Use the existing Herc evidence and validate the Keith composition at 1672 × 941, 1440 × 900 and 1920 × 1080 CSS pixels.
+
+## 2026-11-14 — Desktop prototype transition audio trial
+
+- **User requested for this test:** Three one-shot magic cues, one looping circus-magic option, an easy way to switch sounds, and a prominent mute button.
+- **Prototype choices:** Start muted. Place the sound selector and enable/mute button directly below the slider. Play one cue per drag or discrete keyboard/endpoint action. Start the original circus waltz when the slider crosses 50% toward The Playful Magician, and stop it on the return crossing. Changing sounds or muting stops the current clip. Enabling sound waits for a slider action.
+- **Open for review:** Preferred cue and playback level. The four clips are original trial audio.
+
+## 2026-11-14 — Six-card demo variant
+
+- **User requested for this test:** Retain the original preview and create a second demo with three extra cards scattered at different angles. Place a red card near the audience and a smaller red one left of the Ace. Make the audio buttons about half their current size.
+- **Prototype choices:** Add a tilted purple-backed card farther right in the haze. Keep the new cards tied to the reversible slider. Reduce each sound button's visual area by about half and retain its 44 px click height.

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Keith Tyran | Desktop homepage concept</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="hero.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="hero" id="experience" aria-labelledby="hero-title">
+      <div class="stage" aria-hidden="true">
+        <img class="plate" src="assets/hero/stage.webp" alt="" fetchpriority="high">
+        <img class="foreground" src="assets/hero/foreground.webp" alt="">
+        <img class="beam beam-left" src="assets/hero/beam-left.webp" alt="">
+        <div class="beam-center"></div>
+        <img class="beam beam-right" src="assets/hero/beam-right.webp" alt="">
+        <span class="lens lens-left"></span>
+        <span class="lens lens-center"></span>
+        <span class="lens lens-right"></span>
+        <img class="haze" src="assets/hero/smoke.webp" alt="">
+        <div class="stage-cards">
+          <div class="stage-card stage-card-high" data-flight="high">
+            <img src="assets/hero/card-back.webp" alt="">
+          </div>
+          <div class="stage-card stage-card-low" data-flight="low">
+            <img src="assets/hero/card-back.webp" alt="">
+          </div>
+          <div class="stage-card stage-card-ace" data-flight="ace">
+            <div class="stage-card-turn">
+              <img class="stage-card-front" src="assets/hero/card-ace.webp" alt="">
+              <img class="stage-card-back" src="assets/hero/card-back.webp" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="shade"></div>
+        <div class="persona persona-gentleman"><img class="portrait" src="assets/hero/gentleman.webp" alt=""></div>
+        <div class="persona persona-playful"><img class="portrait" src="assets/hero/playful.webp" alt=""></div>
+        <div class="persona midpoint-face"><img class="portrait" src="assets/hero/gentleman.webp" alt=""></div>
+        <div class="reveal"></div>
+      </div>
+
+      <header class="masthead">
+        <a class="wordmark" href="#experience">
+          <span class="orbit" aria-hidden="true">✦</span>
+          <span>Keith Tyran<small>The Gentleman Magician</small></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#experience">The Experience</a>
+          <a href="#preview">Shows</a>
+          <a href="#preview">About Keith</a>
+          <a href="#preview">Gallery</a>
+          <a href="#preview">Contact</a>
+        </nav>
+        <a class="cta header-cta" href="#availability"><span class="calendar" aria-hidden="true"></span>Request availability</a>
+      </header>
+
+      <div class="intro">
+        <p class="eyebrow">Magic <span>•</span> Mystery <span>•</span> Entertainment</p>
+        <h1 id="hero-title">Two Sides of <em>The Magician</em></h1>
+        <div class="flourish" aria-hidden="true"></div>
+        <p class="description">Experience the refined artistry and playful mischief of Keith Tyran, where elegance and illusion meet in two unforgettable styles.</p>
+        <a class="cta hero-cta" href="#availability">Bring Keith to<br> your next event<span class="chevron" aria-hidden="true"></span></a>
+      </div>
+
+      <div class="persona-preview">
+        <button class="plaque" type="button" data-persona="0">The<br> Gentleman</button>
+        <div class="track">
+          <input class="persona-range" type="range" min="0" max="100" value="50" aria-label="Reveal the two sides of the magician" aria-valuetext="50% toward The Playful Magician">
+          <span class="knob" aria-hidden="true">‹ ›</span>
+        </div>
+        <button class="plaque" type="button" data-persona="100">The Playful<br> Magician</button>
+      </div>
+      <div class="hero-audio" role="group" aria-label="Transition audio">
+        <button class="sound-choice" type="button">
+          <span>Next sound</span>
+          <strong id="sound-name" aria-live="polite">Magic Chimes</strong>
+          <span class="sound-cycle" aria-hidden="true">↻</span>
+        </button>
+        <button class="sound-toggle" type="button">Enable sound</button>
+        <audio class="transition-audio" src="assets/audio/magic-chimes.wav" preload="none"></audio>
+      </div>
+      <a class="scroll" href="#preview">Scroll to explore<span class="chevron" aria-hidden="true"></span></a>
+    </section>
+
+    <section class="preview" id="preview" aria-labelledby="preview-title">
+      <h2 id="preview-title">Desktop concept preview</h2>
+      <p>Shows, biography, gallery and contact are placeholders for this homepage review.</p>
+      <div id="availability">
+        <h3>Request availability</h3>
+        <p>This unofficial concept preview has no booking form.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

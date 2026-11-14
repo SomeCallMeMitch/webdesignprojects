@@ -1,0 +1,45 @@
+.stage-card-small-red { width: 3.5cqw; }
+.stage-card-far { width: 3.8cqw; }
+.stage-card-near { width: 11cqw; }
+
+.stage-card-small-red img,
+.stage-card-near img {
+  filter: hue-rotate(59deg) saturate(1.35) brightness(.93);
+}
+
+.stage-card-small-red img { transform: perspective(16cqw) rotateX(-22deg) rotateY(17deg); }
+.stage-card-far img { transform: perspective(16cqw) rotateX(-49deg) rotateY(26deg); }
+.stage-card-near img { transform: perspective(24cqw) rotateX(23deg) rotateY(-20deg); }
+
+.hero-audio button {
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  border-radius: 0;
+  padding-inline: 9px;
+  font-size: 12px;
+}
+
+.hero-audio .sound-choice,
+.hero-audio .sound-toggle { background: transparent; }
+
+.hero-audio button::before {
+  position: absolute;
+  z-index: -1;
+  inset: 7px 0;
+  border: 1px solid #aa7bc2;
+  border-radius: 5px;
+  background: #21112c;
+  content: "";
+}
+
+.hero-audio .sound-choice {
+  grid-template-columns: auto 7.65em auto;
+  gap: 6px;
+}
+
+.hero-audio .sound-cycle { font-size: 14px; }
+.hero-audio .sound-toggle { min-width: 94px; }
+.hero-audio .sound-toggle::before { border-color: #e9c5f8; background: #ecccf8; }
+.hero-audio .sound-choice:hover::before { background: #3a1b48; }
+.hero-audio .sound-toggle:hover::before { background: #f5e0fc; }
