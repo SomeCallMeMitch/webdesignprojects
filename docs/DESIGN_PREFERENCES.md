@@ -176,3 +176,11 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 | DP-157 | Build desktop below-the-fold art one section at a time, with images and decorative frames as **separate assets**, enabling independent layout and effects. | **User confirmed** | User requested frames without photos and the photos separately, then authorized moving to the next section after completion. |
 | DP-158 | Keep the image-heavy website fast; cursor-responsive lights below the hero are desirable **only if lightweight**. No performance acceptance is implied by static mockups. | **User confirmed conditional preference** | User explicitly prioritized image weight and reasonable page loading. |
 | DP-159 | In Section 03 use six reusable display cards with a single CSS border style and lightweight CSS hover effects, instead of six unique heavy frame images. | **Proposed implementation/detail, not independently approved** | Derived from design plan and performance constraint; user has not yet approved the individual art. |
+
+
+## 2026-11-14 — Complete 02–06 mockup asset handoff
+| ID | Preference / direction | Status | Detail |
+|---|---|---|---|
+| DP-160 | Bundle prior separate asset packs into a **single ZIP** and supply an HTML preview spanning every completed desktop section; omit the hero if the separate interactive version cannot be represented faithfully. | **User confirmed workflow** | User explicitly requested a single ZIP and HTML demo; hero screenshot was intentionally not substituted for interactive hero. |
+| DP-161 | Prepare the **next three sections** (04 Choose Your Event, 05 Behind the Curtain, 06 Trusted by Audiences) as part of this continuous desktop preview. | **User confirmed workflow and scope** | Approval to make a review artifact, not approval of specific final visuals or production publication. |
+| DP-162 | 04 uses individually editable event photos plus one lightweight reusable transparent gold playbill frame; 05 uses a separately layered concept portrait and atmospheric background; 06 uses CSS name plaques instead of downloaded logos. | **Provisional design implementation; awaits user review** | Keeps image transfer small and editing granular; details in `docs/KEITH_DESKTOP_SECTIONS_02_06_PREVIEW_AND_ASSET_HANDOFF_2026-11-14.md`. |
