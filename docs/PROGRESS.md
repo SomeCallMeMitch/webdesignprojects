@@ -228,3 +228,11 @@
 - **Verification:** Captured and visually reviewed Edge screenshots at 1672 × 941, 1440 × 900 and 1920 × 1080. The approved master was compared against the chat attachment, and its local file hash was unavailable. At 1440 × 900 the next section begins below the proportionally scaled stage.
 - **Decision:** Reuse the existing Herc research. After static approval, build the reversible dual-pose slider and three pointer-directed beams, with fixture-head rotation optional. The preview uses one pose and a decorative midpoint marker for composition review.
 - **Next:** Review the static hero, then check pose registration and beam anchors during the animation milestone. The standalone preview is local. No deployment, bookings, mobile work or prospect contact.
+
+### 2026-11-13 — Desktop pose slider and cursor-following lighting
+
+- **Request:** The user approved the static composition, completing the review gate for the previously agreed motion milestone.
+- **Branch and starting point:** `concept/keith-tyran-magician-experience` at `54eeb0cfa86064e8b08025783a43a5eb713cca04`.
+- **Local files:** `index.html`, `styles.css`, and `hero.js` implement the two complete poses, reversible range, live scene haze, and three beams rotating around their lens positions. The fixture bodies stay fixed. A masked face treatment keeps the exact midpoint readable.
+- **Verification:** Edge at 1672 × 941 confirmed pointer drag and reversal, endpoint buttons, keyboard arrows, changing aim on all three beams, and immediate slider response with stationary beams under reduced motion. Checked desktop geometry at 1440 × 900 and 1920 × 1080.
+- **Next:** Review the motion in the private local preview. No publishing, deployment, bookings, mobile work or outreach.
