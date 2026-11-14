@@ -7,49 +7,59 @@
   <title>Keith Tyran | Six-card reveal demo</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="card-reveal-demo.css">
+  <link rel="stylesheet" href="experience-section.css">
   <script src="hero.js" defer></script>
   <script src="card-reveal-demo.js" defer></script>
+  <script src="experience-section.js" defer></script>
 </head>
 <body>
   <main>
-    <section class="hero" id="experience" aria-labelledby="hero-title">
+    <section class="hero" id="experience" aria-labelledby="hero-title" data-card-reveal-demo>
       <div class="stage" aria-hidden="true">
         <img class="plate" src="assets/hero/stage.webp" alt="" fetchpriority="high">
         <img class="foreground" src="assets/hero/foreground.webp" alt="">
-        <img class="beam beam-left" src="assets/hero/beam-left.webp" alt="">
+        <div class="stage-lantern">
+          <img class="lantern-dim" src="assets/hero/reveal/lantern-dim.webp" alt="">
+          <img class="lantern-unlit" src="assets/hero/reveal/lantern-unlit.webp" alt="">
+        </div>
+        <div class="stage-orb">
+          <img class="orb-shadow" src="assets/hero/reveal/orb-shadow.webp" alt="">
+          <img class="orb-seer" src="assets/hero/reveal/orb-seer.webp" alt="">
+        </div>
+        <img class="beam beam-left" data-src="assets/hero/reveal/beam-left.webp" alt="">
         <div class="beam-center"></div>
-        <img class="beam beam-right" src="assets/hero/beam-right.webp" alt="">
+        <img class="beam beam-right" data-src="assets/hero/reveal/beam-right.webp" alt="">
         <span class="lens lens-left"></span>
         <span class="lens lens-center"></span>
         <span class="lens lens-right"></span>
-        <img class="haze" src="assets/hero/smoke.webp" alt="">
+        <img class="haze" data-src="assets/hero/reveal/smoke.webp" alt="">
         <div class="stage-cards">
           <div class="stage-card stage-card-high" data-flight="high">
-            <img src="assets/hero/card-back.webp" alt="">
+            <img data-src="assets/hero/card-back.webp" alt="">
           </div>
           <div class="stage-card stage-card-low" data-flight="low">
-            <img src="assets/hero/card-back.webp" alt="">
+            <img data-src="assets/hero/card-back.webp" alt="">
           </div>
           <div class="stage-card stage-card-small-red" data-flight="small-red">
-            <img src="assets/hero/card-back.webp" alt="">
+            <img data-src="assets/hero/card-back.webp" alt="">
           </div>
           <div class="stage-card stage-card-far" data-flight="far">
-            <img src="assets/hero/card-back.webp" alt="">
+            <img data-src="assets/hero/card-back.webp" alt="">
           </div>
           <div class="stage-card stage-card-ace" data-flight="ace">
             <div class="stage-card-turn">
-              <img class="stage-card-front" src="assets/hero/card-ace.webp" alt="">
-              <img class="stage-card-back" src="assets/hero/card-back.webp" alt="">
+              <img class="stage-card-front" data-src="assets/hero/card-ace.webp" alt="">
+              <img class="stage-card-back" data-src="assets/hero/card-back.webp" alt="">
             </div>
           </div>
         </div>
         <div class="shade"></div>
-        <div class="persona persona-gentleman"><img class="portrait" src="assets/hero/gentleman.webp" alt=""></div>
-        <div class="persona persona-playful"><img class="portrait" src="assets/hero/playful.webp" alt=""></div>
+        <div class="persona persona-gentleman"><img class="portrait" src="assets/hero/gentleman.webp" alt="" fetchpriority="high"></div>
+        <div class="persona persona-playful"><img class="portrait" src="assets/hero/playful.webp" alt="" fetchpriority="high"></div>
         <div class="persona midpoint-face"><img class="portrait" src="assets/hero/gentleman.webp" alt=""></div>
         <div class="reveal"></div>
         <div class="stage-card stage-card-near" data-flight="near">
-          <img src="assets/hero/card-back.webp" alt="">
+          <img data-src="assets/hero/reveal/king-of-hearts.webp" alt="">
         </div>
       </div>
 
@@ -91,9 +101,53 @@
           <span class="sound-cycle" aria-hidden="true">↻</span>
         </button>
         <button class="sound-toggle" type="button">Enable sound</button>
-        <audio class="transition-audio" src="assets/audio/magic-chimes.wav" preload="none"></audio>
+        <audio class="transition-audio" src="assets/audio/remix/magic-chimes.wav" preload="none"></audio>
       </div>
-      <a class="scroll" href="#preview">Scroll to explore<span class="chevron" aria-hidden="true"></span></a>
+      <a class="scroll" href="#experience-the-magic">Scroll to explore<span class="chevron" aria-hidden="true"></span></a>
+    </section>
+
+    <section class="magic-experience" id="experience-the-magic" aria-labelledby="experience-section-title">
+      <img class="magic-experience__backdrop" data-src="assets/section02_experience/experience_stage_background.webp" width="1672" height="941" alt="" decoding="async" fetchpriority="low">
+      <noscript>
+        <img class="magic-experience__backdrop" src="assets/section02_experience/experience_stage_background.webp" width="1672" height="941" alt="" loading="lazy">
+      </noscript>
+
+      <div class="magic-experience__layout">
+        <div class="magic-experience__copy">
+          <h2 id="experience-section-title">Experience <em>the Magic</em></h2>
+          <span class="magic-experience__ornament" aria-hidden="true">✦</span>
+          <p class="magic-experience__intro">Step into an evening of mystery, laughter and the unexpected. Keith brings refined artistry and a playful spirit to live magic.</p>
+          <details class="magic-experience__watch">
+            <summary>
+              <span class="magic-experience__play" aria-hidden="true"></span>
+              Watch a performance
+              <span class="magic-experience__chevron" aria-hidden="true"></span>
+            </summary>
+            <p class="magic-experience__notice">Performance video is unavailable in this concept preview.</p>
+          </details>
+          <p class="magic-experience__credit">Concept illustrations</p>
+        </div>
+
+        <div class="magic-experience__art">
+          <div class="magic-experience__picture magic-experience__picture--main">
+            <img class="magic-experience__photo" data-src="assets/section02_experience/experience_performance_photo.webp" width="1448" height="1086" alt="Illustration of a stage magician sending playing cards into the air" decoding="async" fetchpriority="low">
+            <img class="magic-experience__frame" data-src="assets/section02_experience/experience_main_frame.webp" width="1536" height="1024" alt="" decoding="async" fetchpriority="low">
+            <noscript>
+              <img class="magic-experience__photo" src="assets/section02_experience/experience_performance_photo.webp" width="1448" height="1086" alt="Illustration of a stage magician sending playing cards into the air" loading="lazy">
+              <img class="magic-experience__frame" src="assets/section02_experience/experience_main_frame.webp" width="1536" height="1024" alt="" loading="lazy">
+            </noscript>
+          </div>
+          <div class="magic-experience__picture magic-experience__picture--small">
+            <img class="magic-experience__photo" data-src="assets/section02_experience/experience_audience_photo.webp" width="1536" height="1024" alt="Illustration of guests laughing and applauding during a magic show" decoding="async" fetchpriority="low">
+            <img class="magic-experience__frame" data-src="assets/section02_experience/experience_secondary_frame.webp" width="1448" height="1086" alt="" decoding="async" fetchpriority="low">
+            <noscript>
+              <img class="magic-experience__photo" src="assets/section02_experience/experience_audience_photo.webp" width="1536" height="1024" alt="Illustration of guests laughing and applauding during a magic show" loading="lazy">
+              <img class="magic-experience__frame" src="assets/section02_experience/experience_secondary_frame.webp" width="1448" height="1086" alt="" loading="lazy">
+            </noscript>
+          </div>
+          <div class="magic-experience__glow" aria-hidden="true"></div>
+        </div>
+      </div>
     </section>
 
     <section class="preview" id="preview" aria-labelledby="preview-title">

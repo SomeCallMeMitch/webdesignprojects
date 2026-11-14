@@ -351,3 +351,51 @@
 - **Files changed in GitHub:** Added `docs/KEITH_DESKTOP_SECTIONS_10_12_BUILD_HANDOFF_2026-11-14.md` (initial commit `ae9e3f2d0eb6ffb7a9a252f733fbacc24f1c1c28`); appended this `docs/PROGRESS.md` record. No source website or hero code modified. No `docs/DESIGN_PREFERENCES.md` amendment: 10–12 are still review proposals; no user-approved permanent design preference was newly stated.
 - **Open:** Review new section layout/copy and continuity; independently integrate actual interactive hero after explicit direction; source and license genuine Keith/audience photographs; confirm authentic testimonials, verified inquiry destination/consent/privacy; complete local extracted ZIP and slow-network accessibility/performance checks before any approved launch.
 - **No contact / publication / mobile / deploy:** None. Offline unofficial concept only. Branch stayed `concept/keith-tyran-magician-experience`, never `main`; this progress entry is a final following commit.
+
+### 2026-11-14 — Below-the-fold handoff and responsive six-card slider
+
+- **Request:** Provide a copy/paste handoff for a separate chat to research the official Keith site and work below the hero. Then fix the six-card demo's slider lag and audio timing, show an Ace of Hearts in the foreground, and improve the test audio.
+- **Handoff:** Pushed the prior desktop prototypes and assets as `f303c75` on `concept/keith-tyran-magician-experience`. The new chat can use that checkpoint, `card-reveal-demo.html`, the latest design notes, and the user's screenshot as its starting point.
+- **Files:** Updated `hero.js`, `card-reveal-demo.html`, and `card-reveal-demo.css`. In the six-card demo, the thumb tracks fractional pointer positions directly, the scene follows on the next animation frame without easing, and the lights hold their aim during the drag. Magic cues play on entry to the opposite side. Circus Magic starts on the Playful side and stops on the return crossing. The near card is a face-up Ace of Hearts. The four remixed clips live under `assets/audio/remix/`. The three-card fallback retains its original cue timing and audio.
+- **Verification:** Edge checked pointer and keyboard crossings, same-side silence, circus playback and stop, mute, reduced motion, near-card placement at three desktop sizes, and original fallback playback. Reviewed a capture at 1672 × 941. Playback was verified through media state. Listening levels and smoothness on the user's machine remain for review.
+- **Next:** Reload the six-card demo and try a slow drag from each side. Optionally supply a WAV or MP3 and specify the cue it should replace or whether it should be an extra option.
+- **Status:** The baseline is on GitHub at `f303c75`. The follow-up refinement is saved locally on the same branch. No deployment or outreach.
+
+### 2026-11-14 — King of Hearts, lantern flicker and staged hero loading
+
+- **Request:** Use the supplied King of Hearts and prop images, flicker the lantern on a rightward reveal, and move audio to the hat reveal. Estimate hero load times across connection speeds.
+- **Files:** Updated `card-reveal-demo.html`, `card-reveal-demo.css`, `card-reveal-demo.js` and the demo-specific path in `hero.js`. The new `assets/hero/reveal/` WebPs contain the supplied card, the two seer images, dim and unlit glass derived from the four supplied lantern references, and smaller versions of the existing beam and haze layers.
+- **Decisions:** The left lantern briefly flickers on entry past 50% and uses a steady dim state with reduced motion. The crystal ball reveals the seer as the slider moves right. Outbound audio starts at 64%, where the hat appears. The return cue and circus stop follow the reverse midpoint crossing. Stage and poses load before the beams, haze and cards. Audio loads on opt-in.
+- **Verification:** Checked Edge screenshots and tested the rightward crossing, orb progression, delayed audio, circus stop, mute, card placement across the three desktop sizes and reduced motion. Three cold-cache local HTTP runs per speed transferred 1,171,453 bytes before audio. Median stage and portrait download / all hero downloads in seconds: 1.5 Mbps 4.62 / 6.84, 5 Mbps 1.50 / 2.28, 10 Mbps 0.83 / 1.31, 25 Mbps 0.40 / 0.74, 100 Mbps 0.17 / 0.42. Edge simulated 150, 80, 55, 35 and 20 ms latency respectively. These are desktop prototype measurements, without real hosting overhead or future page content.
+- **Next:** Review the six-card demo, then repeat the cold-load measurement once hosting and the below-the-fold assets are available.
+- **Status:** Local working-tree changes on `concept/keith-tyran-magician-experience` at `f303c75`. No deployment or outreach.
+
+### 2026-11-14 — Handoff for the modular Experience the Magic section
+
+- **Request:** Prepare a complete prompt for a separate chat to build only the next section beneath the working hero, using the supplied Google Drive kit and leaving a reusable pattern for future magician spec sites.
+- **Evidence:** Verified the Drive folder, the 02–09 preview and handoff, and the five Section 02 WebPs totaling 683,354 bytes. Verified the newer GitHub documentation at `5b6cd815612f43f999ffc0c2544f888df3109cca`. The local hero checkout still starts at `f303c75` with newer working-tree refinements.
+- **Deliverables:** `docs/NEXT_CHAT_KEITH_BUILD_SECTION_02_2026-11-14.md` plus a checked 31-file `keith-desktop-hero-snapshot.zip` in the chat output folder and the current desktop screenshot. The prompt names the exact section, files, module boundaries, optional lighting, size priorities and browser checks.
+- **Next:** Attach the ZIP and screenshot in the new chat, paste the prompt, then build and verify Section 02 under the live hero. This turn prepared the handoff. No website implementation, deployment or outreach.
+
+### 2026-11-14 — Section 02 pre-build review
+
+- **Request:** Confirm understanding, feasibility, asset needs and the desktop build plan before starting implementation.
+- **Evidence:** The local checkout matches all 31 files in the supplied hero snapshot byte-for-byte. Verified the three design handoff files at GitHub commit `5b6cd815612f43f999ffc0c2544f888df3109cca`. The connected Drive returned the Sections 02–09 preview and download references for all five Section 02 WebPs (683,354 bytes).
+- **Proposed approach:** Insert a scoped Experience the Magic section below the live hero, with separate photo and frame layers, a short stage-edge transition, a demo playback state and a subtle optional pointer glow. Keep the existing hero loading priority and measure both sets of transfers on a cold throttled connection.
+- **Next:** After build authorization, integrate locally, review all three specified desktop sizes, verify navigation, focus, reduced motion and hero controls, then capture screenshots and document module reuse. The supplied visuals cover the demo. Approved performance footage is optional.
+- **Status:** Planning only on `concept/keith-tyran-magician-experience`, HEAD `f303c75d18dcf4c8e2e623d232e2839ece7cdbb6`. Only this progress entry was added. No implementation, deployment or outreach.
+
+### 2026-11-14 — Built and verified Experience the Magic
+
+- **Request:** Build only Section 02 as a reusable desktop module below the current live hero, using the supplied Drive mockup and WebP layers.
+- **Files:** Added the section and scroll destination in `card-reveal-demo.html`, scoped `experience-section.css` and `experience-section.js`, the five WebPs under `assets/section02_experience/`, and reuse instructions in `docs/EXPERIENCE_SECTION.md`. Recorded implementation choices in `docs/DESIGN_PREFERENCES.md`. Checked the other 30 files from the hero ZIP against the working tree byte-for-byte, including the three-card fallback.
+- **Verification:** Local Edge checked and captured 1440 × 900, 1672 × 941 and 1920 × 1080. Verified frame crops, the transition below the seats, scroll and availability links, keyboard focus, native demo disclosure, mouse glow, glow offscreen and with reduced motion, touch and JavaScript-off fallbacks, and hero pointer and keyboard slider behavior, opt-in sound, cue threshold, return and mute. No page exceptions in the checks. The app's in-app browser bridge was unavailable, so verification ran in local Edge.
+- **Network:** Six cold-cache 5 Mbps / 80 ms Edge runs at 1672 × 941, half scrolling immediately and half after the hero loaded. From navigation, median completion was 1.60 s for the stage and portraits (648,018 transfer bytes) and 2.38 s for all hero images (1,145,016 transfer bytes). Section 02 took a median 1.26 s from its first request to its final response (684,854 transfer bytes, including 683,354 bytes of image bodies). All six runs loaded the section after the last hero image response. Initial stationary viewport checks at all three sizes made zero new section image requests. Audio was excluded and remained off during the load tests.
+- **Evidence and next:** Desktop captures and the network log are in the Codex visualization folder for this chat. Open `card-reveal-demo.html` and use Scroll to explore to review the section. The CTA opens a demo message pending optional approved footage.
+- **Status:** Local working-tree changes on `concept/keith-tyran-magician-experience` at `f303c75d18dcf4c8e2e623d232e2839ece7cdbb6`. No commit, deployment or outreach.
+
+### 2026-11-14 — Hero and Section 02 Git checkpoint
+
+- **Request:** Document and push the integrated hero and Experience the Magic before continuing with Section 03.
+- **Checkpoint:** The six-card hero, remixed opt-in audio, King of Hearts, lantern and seer, and the standalone Experience the Magic module are included. See the preceding build entry for three-size Edge QA and throttled transfers, and `docs/EXPERIENCE_SECTION.md` for reuse.
+- **Branch:** Integrate the newer documentation from the remote concept branch. Section 03 will be a separate change. No deployment or outreach.

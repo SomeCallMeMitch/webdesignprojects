@@ -1,6 +1,11 @@
 const hero = document.querySelector('.hero');
 const range = hero.querySelector('.persona-range');
 const track = hero.querySelector('.track');
+const thumb = track.querySelector('.knob');
+const directSlider = hero.hasAttribute('data-card-reveal-demo');
+const audioPath = directSlider ? 'assets/audio/remix/' : 'assets/audio/';
+const hatReveal = 64;
+const personaRender = new Event('persona-render');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const soundChoice = hero.querySelector('.sound-choice');
 const soundName = hero.querySelector('#sound-name');
@@ -25,6 +30,9 @@ const lights = [
 
 let shown = Number(range.value);
 let selectedPersona = shown;
+let soundSide = shown > 50 ? 1 : -1;
+let scene;
+let rail;
 let frame = 0;
 let lastTime = 0;
 let soundIndex = 0;
@@ -40,6 +48,16 @@ function playTransitionSound() {
 }
 
 function updateTransitionAudio(previous, value, playCue) {
+  if (directSlider) {
+    const side = value >= hatReveal ? 1 : value < 50 ? -1 : soundSide;
+    if (side === soundSide) return;
+    soundSide = side;
+    if (!soundEnabled) return;
+    if (sounds[soundIndex].loop && side < 0) transitionAudio.pause();
+    else playTransitionSound();
+    return;
+  }
+
   if (!soundEnabled || previous === value) return;
 
   if (!sounds[soundIndex].loop) {
@@ -57,7 +75,7 @@ soundChoice.addEventListener('click', () => {
   const sound = sounds[soundIndex];
   soundName.textContent = sound.name;
   transitionAudio.loop = Boolean(sound.loop);
-  transitionAudio.src = `assets/audio/${sound.file}`;
+  transitionAudio.src = audioPath + sound.file;
 });
 
 soundToggle.addEventListener('click', () => {
@@ -65,15 +83,29 @@ soundToggle.addEventListener('click', () => {
   soundToggle.textContent = soundEnabled ? 'Mute sound' : 'Enable sound';
   transitionAudio.preload = soundEnabled ? 'auto' : 'none';
   if (!soundEnabled) transitionAudio.pause();
+  else if (directSlider) transitionAudio.load();
 });
 
+function measureSlider() {
+  scene = hero.getBoundingClientRect();
+  rail = track.getBoundingClientRect();
+}
+
+function renderThumb(value) {
+  thumb.style.setProperty('--thumb-x', `${rail.width * value / 100}px`);
+}
+
 function renderCards(value) {
+  const reduce = reducedMotion.matches;
   for (const card of cards) {
     const progress = Math.max(0, Math.min(1, (value - card.start) / (card.end - card.start)));
-    const travel = reducedMotion.matches ? 1 : 1 - (1 - progress) ** 2;
+    if (progress === card.progress && reduce === card.reduced) continue;
+    card.progress = progress;
+    card.reduced = reduce;
+    const travel = reduce ? 1 : 1 - (1 - progress) ** 2;
     const lift = Math.sin(Math.PI * travel) * card.arc;
     const style = card.element.style;
-    style.opacity = card.opacity * (reducedMotion.matches ? Number(progress >= .5) : Math.min(1, progress * 3));
+    style.opacity = card.opacity * (reduce ? Number(progress >= .5) : Math.min(1, progress * 3));
     style.setProperty('--card-x', `${card.x * travel}cqw`);
     style.setProperty('--card-y', `${card.y * travel - lift}cqw`);
     style.setProperty('--card-roll', `${card.roll - 34 * (1 - travel)}deg`);
@@ -84,12 +116,15 @@ function renderCards(value) {
 
 function renderPersona(value) {
   const amount = value / 100;
-  const scene = hero.getBoundingClientRect();
-  const rail = track.getBoundingClientRect();
   const position = 100 * (rail.left - scene.left + rail.width * amount) / scene.width;
   const reveal = position + 8 * (2 * amount - 1) ** 3;
+  const revealPercent = Math.max(0, Math.min(100, reveal));
+  if (directSlider) {
+    // Keep the thumb on its own layer and move the glowing seam with a transform.
+    hero.style.setProperty('--reveal-x', `${scene.width * revealPercent / 100}px`);
+  }
   hero.style.setProperty('--persona', `${value}%`);
-  hero.style.setProperty('--reveal', `${Math.max(0, Math.min(100, reveal))}%`);
+  hero.style.setProperty('--reveal', `${revealPercent}%`);
   hero.style.setProperty('--seam', Math.min(.87, Math.min(value, 100 - value) / 10));
   hero.style.setProperty('--mood', .52 + .4 * amount);
   hero.style.setProperty('--face', Math.max(0, 1 - Math.abs(value - 50) / 17));
@@ -97,16 +132,17 @@ function renderPersona(value) {
   const faceOverlap = Math.max(0, 1 - ((value - 50) / 32) ** 2) ** 2;
   hero.style.setProperty('--face-lift', `${-.65 * faceOverlap}cqw`);
   renderCards(value);
+  if (directSlider) hero.dispatchEvent(personaRender);
 }
 
 function renderFrame(time) {
   const elapsed = lastTime ? Math.min(time - lastTime, 50) : 16.7;
   lastTime = time;
-  const next = Number(range.value);
+  const next = selectedPersona;
   let moving = false;
 
   if (shown !== next) {
-    shown += (next - shown) * (1 - Math.exp(-elapsed / 65));
+    shown = directSlider ? next : shown + (next - shown) * (1 - Math.exp(-elapsed / 65));
     if (Math.abs(next - shown) < .12) shown = next;
     renderPersona(shown);
     moving = shown !== next;
@@ -128,12 +164,13 @@ function wake() {
   if (!frame && !document.hidden) frame = requestAnimationFrame(renderFrame);
 }
 
-function selectPersona(playCue = false) {
-  const value = Number(range.value);
-  const label = value === 0 ? 'The Gentleman' : value === 100 ? 'The Playful Magician' : `${value}% toward The Playful Magician`;
+function selectPersona(playCue = false, value = Number(range.value)) {
+  const percent = Number(range.value);
+  const label = percent === 0 ? 'The Gentleman' : percent === 100 ? 'The Playful Magician' : `${percent}% toward The Playful Magician`;
   range.setAttribute('aria-valuetext', label);
   updateTransitionAudio(selectedPersona, value, playCue);
   selectedPersona = value;
+  if (directSlider) renderThumb(value);
   if (reducedMotion.matches) {
     shown = value;
     renderPersona(shown);
@@ -155,16 +192,18 @@ range.addEventListener('keyup', () => { repeatingKey = false; });
 range.addEventListener('blur', () => { repeatingKey = false; });
 
 function seekFromPointer(event) {
-  const rail = track.getBoundingClientRect();
-  range.value = Math.round(100 * (event.clientX - rail.left) / rail.width);
-  if (Number(range.value) === selectedPersona) return;
-  selectPersona(!playedDuringDrag);
+  const position = 100 * (event.clientX - rail.left) / rail.width;
+  range.value = Math.round(position);
+  const value = directSlider ? Math.max(0, Math.min(100, position)) : Number(range.value);
+  if (value === selectedPersona) return;
+  selectPersona(!playedDuringDrag, value);
   playedDuringDrag = true;
 }
 
 range.addEventListener('pointerdown', event => {
   if (event.button !== 0 || !event.isPrimary) return;
   event.preventDefault();
+  measureSlider();
   range.focus({ preventScroll: true });
   range.setPointerCapture(event.pointerId);
   playedDuringDrag = false;
@@ -183,12 +222,14 @@ for (const button of hero.querySelectorAll('[data-persona]')) {
 
 hero.addEventListener('pointermove', event => {
   if (event.pointerType === 'touch' || reducedMotion.matches) return;
-  const scene = hero.getBoundingClientRect();
-  const x = event.clientX - scene.left;
-  const y = event.clientY - scene.top;
+  // During a drag the slider and cards already supply the movement.
+  if (directSlider && range.hasPointerCapture(event.pointerId)) return;
+  const bounds = hero.getBoundingClientRect();
+  const x = event.clientX - bounds.left;
+  const y = event.clientY - bounds.top;
   for (const light of lights) {
-    const dx = x - scene.width * light.x;
-    const dy = Math.max(y - scene.height * light.y, scene.height * .23);
+    const dx = x - bounds.width * light.x;
+    const dy = Math.max(y - bounds.height * light.y, bounds.height * .23);
     const aim = Math.atan2(dx, dy) * 180 / Math.PI;
     light.target = Math.max(-15, Math.min(15, (light.home - aim) * .46));
   }
@@ -208,7 +249,7 @@ reducedMotion.addEventListener('change', () => {
     light.angle = light.target = 0;
     light.element.style.removeProperty('--aim');
   }
-  selectPersona();
+  selectPersona(false, selectedPersona);
 });
 
 document.addEventListener('visibilitychange', () => {
@@ -222,5 +263,11 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
-new ResizeObserver(() => renderPersona(shown)).observe(hero);
-renderPersona(shown);
+function resizeScene() {
+  measureSlider();
+  if (directSlider) renderThumb(selectedPersona);
+  renderPersona(shown);
+}
+
+new ResizeObserver(resizeScene).observe(hero);
+resizeScene();

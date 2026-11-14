@@ -1,0 +1,218 @@
+.magic-experience {
+  --magic-surface: #180c22;
+  --magic-edge: #110717;
+  --magic-text: #fcf2ee;
+  --magic-muted: #e6d8e6;
+  --magic-gold: #dfae65;
+  --magic-accent: #d17ff0;
+  --magic-shade: linear-gradient(90deg, #13081aeb, #190b23c7 30%, #190b2324 67%, #190b2352);
+  --magic-button: #2b1237;
+  --magic-button-glow: #bd63dd50;
+  --magic-gutter: clamp(3rem, 10vw, 12rem);
+  --magic-padding: clamp(5rem, 7vw, 8.5rem);
+  --magic-main-size: 89%;
+  --magic-small-size: 44%;
+  --magic-glow-size: 17rem;
+  --magic-glow-color: #ffd3fe1f;
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--magic-surface);
+  color: var(--magic-text);
+}
+
+.magic-experience img[data-src]:not([src]) { display: none; }
+
+.magic-experience__backdrop,
+.magic-experience::before,
+.magic-experience::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.magic-experience__backdrop {
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magic-experience::before {
+  content: "";
+  z-index: -2;
+  background: var(--magic-shade);
+}
+
+.magic-experience::after {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(to bottom, var(--magic-edge), transparent 5.25rem);
+}
+
+.magic-experience__layout {
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: 120rem;
+  padding: var(--magic-padding) var(--magic-gutter);
+  display: grid;
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.66fr);
+  align-items: center;
+  gap: clamp(2rem, 4vw, 5rem);
+}
+
+.magic-experience__copy h2 {
+  margin: 0;
+  font: 400 clamp(2.5rem, 4.5vw, 5.4rem)/0.99 Baskervville, Georgia, serif;
+  letter-spacing: -0.035em;
+}
+
+.magic-experience__copy h2 em {
+  display: block;
+  font-weight: inherit;
+}
+
+.magic-experience__ornament {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-block: 1.6rem 1.25rem;
+  color: var(--magic-gold);
+}
+
+.magic-experience__ornament::after {
+  content: "";
+  width: 6rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--magic-gold), transparent);
+}
+
+.magic-experience__intro {
+  max-width: 35ch;
+  margin: 0 0 1.5rem;
+  font-size: clamp(1rem, 1.2vw, 1.23rem);
+  line-height: 1.55;
+  color: var(--magic-muted);
+}
+
+.magic-experience__watch summary {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  gap: .7rem;
+  padding: .7rem 1.1rem;
+  border: 1px solid var(--magic-accent);
+  border-radius: .4rem;
+  background: var(--magic-button);
+  box-shadow: inset 0 0 12px var(--magic-button-glow), 0 0 15px var(--magic-button-glow);
+  cursor: pointer;
+  list-style: none;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.magic-experience__watch summary::-webkit-details-marker { display: none; }
+.magic-experience__watch summary:hover { box-shadow: inset 0 0 14px var(--magic-button-glow), 0 0 22px var(--magic-accent); }
+.magic-experience__watch summary:focus-visible {
+  outline: 2px solid var(--magic-gold);
+  outline-offset: 5px;
+}
+
+.magic-experience__play {
+  border: .34rem solid transparent;
+  border-right: 0;
+  border-left: .53rem solid var(--magic-text);
+}
+
+.magic-experience__chevron {
+  width: .36rem;
+  height: .36rem;
+  border: solid currentColor;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+}
+
+.magic-experience__watch[open] .magic-experience__chevron { transform: rotate(135deg); }
+
+.magic-experience__notice,
+.magic-experience__credit {
+  margin: .8rem 0 0;
+  color: var(--magic-muted);
+  font-size: .88rem;
+  line-height: 1.45;
+}
+
+.magic-experience__credit { font-size: .76rem; }
+
+.magic-experience__art {
+  position: relative;
+  aspect-ratio: 1.59;
+}
+
+.magic-experience__picture { position: absolute; }
+
+.magic-experience__picture--main {
+  top: -2%;
+  left: -2%;
+  width: var(--magic-main-size);
+  aspect-ratio: 3 / 2;
+}
+
+.magic-experience__picture--small {
+  right: -4%;
+  bottom: -4%;
+  width: var(--magic-small-size);
+  aspect-ratio: 4 / 3;
+  transform: rotate(3deg);
+}
+
+.magic-experience__photo,
+.magic-experience__frame {
+  position: absolute;
+  display: block;
+}
+
+.magic-experience__frame {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* These masks reach under the opaque gold rims of the supplied frames. */
+.magic-experience__picture--main .magic-experience__photo {
+  inset: 13% 6% 14% 4%;
+  width: 90%;
+  height: 73%;
+  clip-path: polygon(2% 95%, 0 91%, 3.5% 23%, 5% 15%, 9% 12%, 94% 0, 97% 1%, 100% 6%, 95% 94%, 93% 99%, 4% 99%);
+  object-position: center 28%;
+  object-fit: cover;
+}
+
+.magic-experience__picture--small .magic-experience__photo {
+  inset: 16.8% 7.2% 15.2% 7.2%;
+  width: 85.6%;
+  height: 68%;
+  border-radius: 8% / 12%;
+  object-position: center 39%;
+  object-fit: cover;
+}
+
+.magic-experience__glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--magic-glow-size);
+  aspect-ratio: 1;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--magic-glow-color), transparent 70%);
+  opacity: 0;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .magic-experience__glow { transition: opacity .18s ease-out; }
+  .magic-experience__glow[data-lit] { opacity: 1; }
+}

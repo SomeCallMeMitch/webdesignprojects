@@ -193,3 +193,24 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 | DP-164 | Prefer **actual Keith performance and audience photographs** over AI-generated audience imagery where credible original sources and reproduction rights are available. | **User confirmed** | User explicitly requested real imagery instead of AI audiences; authorization for reuse is still unverified. |
 | DP-165 | Consolidate sections 02–09 into one downloadable ZIP and an HTML preview; store a copy in the specified Drive folder, maintain handoff in GitHub, and make a new-chat continuation prompt. | **User confirmed workflow** | New Drive folder: https://drive.google.com/drive/folders/1jLMAO7aEGDxedeusAlLnbKLY5Zn2VCGc |
 | DP-166 | For 07 use individual photo files plus separate transparent frame overlays; 08 one reusable blank review letter with real HTML copy; 09 one reusable ticket plate and real HTML booking steps. | **Implemented as reviewable concept, not independently finalized** | Weight/performance and editability; no fake testimonials or permanent image licensing assumption. |
+
+## 2026-11-14 — Six-card slider and audio refinements
+
+- **User requested:** Make the thumb track smoothly, sound the cue when entering the opposite side across the midpoint, and use an Ace of Hearts for the near card. Audition a richer sound mix and support a supplied audio file if the user chooses one.
+- **Prototype choices:** Use direct pointer tracking and render the scene on the next animation frame. The exact midpoint preserves the last side. Circus Magic remains a right-side loop. Give the original cues stereo reflections and a gentler tail in the remix, with slightly different accents per cue. WAV or MP3 can be used for a supplied track. The original audio and three-card fallback are available for comparison.
+
+## 2026-11-14 — Supplied card and stage props
+
+- **User requested:** Use the supplied King of Hearts for the near card, try a lantern flicker on the rightward reveal, and cue audio when the Playful Magician's hat starts to show.
+- **Prototype choices:** Flicker only the left sconce glass so its fixture stays in place. Dissolve from the original crystal ball into the two supplied seer images. Trigger the outbound cue at 64% and use the midpoint to reset on return. Give first-load bandwidth to the stage and portraits, then load the decorative layers.
+
+## 2026-11-14 — Modular below-the-fold build
+
+- **User confirmed:** Build new sections as reusable modules for future magician spec sites. The next implementation is limited to Section 02 below the existing live desktop hero. Use the supplied Drive mockup and component images, with attention to payload and further image optimization deferred.
+- **Proposed for implementation review:** Keep the five art layers independent, place section copy and media in easily replaceable inputs, and try a scoped, inexpensive pointer glow. Keep the hero's existing interaction independent of the section.
+
+## 2026-11-14 — Experience the Magic desktop implementation
+
+- **User authorized:** Build Section 02 locally beneath the existing six-card hero with the supplied mockup and five WebP layers.
+- **Choices for review:** Continue the theater palette with a shadow below the seats. Keep performance and audience art in independent, overlapping gold frames, with descriptive alt text and a visible concept illustration label. Keep the painted light fixed. Add one soft pointer glow over the artwork for mouse users who allow motion.
+- **Navigation and loading:** Scroll to explore links to the new section. Watch a performance opens an inline preview message. A viewport check defers the five WebPs until the visitor approaches the artwork. For this hero, section requests also wait for the hero image layers to finish. Native disclosure and lazy image fallbacks support a static view with JavaScript disabled.

@@ -2,14 +2,62 @@
 .stage-card-far { width: 3.8cqw; }
 .stage-card-near { width: 11cqw; }
 
-.stage-card-small-red img,
-.stage-card-near img {
+.stage-card-small-red img {
   filter: hue-rotate(59deg) saturate(1.35) brightness(.93);
 }
 
 .stage-card-small-red img { transform: perspective(16cqw) rotateX(-22deg) rotateY(17deg); }
 .stage-card-far img { transform: perspective(16cqw) rotateX(-49deg) rotateY(26deg); }
 .stage-card-near img { transform: perspective(24cqw) rotateX(23deg) rotateY(-20deg); }
+
+.stage-lantern,
+.stage-orb {
+  position: absolute;
+}
+
+.stage-lantern {
+  left: 2.99%;
+  top: 30.39%;
+  width: 3.68%;
+  height: 5.84%;
+  clip-path: polygon(0 4%, 29% 0, 64% 0, 100% 10%, 85% 94%, 50% 100%, 20% 92%);
+}
+
+.stage-lantern img,
+.stage-orb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.stage-orb {
+  left: 2.22%;
+  top: 65.66%;
+  width: 4.63%;
+  height: 7.44%;
+  mask-image: radial-gradient(ellipse, #170a1d 58%, transparent 73%);
+}
+
+.stage-orb .orb-shadow { opacity: var(--orb-shadow, 0); }
+.stage-orb .orb-seer { opacity: var(--orb-seer, 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero[data-playful] .lantern-dim { opacity: .48; }
+}
+
+.knob {
+  left: 0;
+  transform: translate3d(calc(var(--thumb-x, 0px) - 50%), -50%, 0);
+  will-change: transform;
+}
+
+.reveal {
+  left: 0;
+  transform: translateX(var(--reveal-x, 0px));
+  will-change: transform;
+}
 
 .hero-audio button {
   position: relative;
