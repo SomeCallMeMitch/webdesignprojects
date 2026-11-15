@@ -274,3 +274,9 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **User-approved workflow:** Save a detailed continuation prompt in the original project repository, then give the user one copyable line containing its direct link. Prefer storing required ZIPs/images in the project Google Drive folder and include exact file links/IDs and retrieval instructions in the prompt. The next chat should retrieve/extract inputs itself when its connected tools permit; explain genuine access limits and request manual attachment only as needed.
 - **User-approved protection:** The main hero is untouchable unless the user directly requests a change, with needed navigation updates as the standing exception. Read-only reuse/copying of hero beam/smoke textures below it does not authorize altering hero assets or behavior.
 - **Scope distinction:** Stage A image briefs describe requested inputs for review, not completed motion or final visual approval. No new aesthetic decision, code integration or publication occurred in this documentation task.
+
+
+## 2026-11-15 — Stage A image candidates, awaiting review
+
+- **User-authorized scope:** Three separate static Stage A assets only; existing hero and website remain untouched. No artwork approval or implementation approval inferred.
+- **Provisional outputs:** Cleaned Experience backdrop and two lavender/ivory smoke candidates, recorded in `image-handoffs/2026-11-15/STAGE_A_REVIEW_RESULTS.md`. Major background geometry visually close with fine generative drift. Both smoke files have true partial alpha but strict fully transparent margins remain unresolved. These are review candidates, not a new approved visual standard.
