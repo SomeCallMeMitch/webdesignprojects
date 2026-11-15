@@ -524,3 +524,12 @@
 - **Repo:** Added `docs/image-handoffs/2026-11-15/STAGE_A_REVIEW_RESULTS.md` at `25811679dbee104b921f95a280316c685cd95256`; this append-only progress entry and a preference/status note follow on `concept/keith-tyran-magician-experience`. Resulting SHA reported in completion reply, not embedded self-referentially.
 - **Next:** User reviews static candidates. Resolve strict alpha margins and assess background fit before separate authorized integration. No new user approval of artwork assumed. Current original/new comparison page does not yet include these images.
 - **Protected / untouched:** Hero, reusable beam files, original input ZIP, site source, module library, baseline/v1, user's Windows files and separate Sites source. No code integration, preview rebuild, runtime/interaction checks, deployment, publication, live inquiry, contact or sharing changes.
+
+
+### 2026-11-15 — Inline Stage A image review
+
+- **Request:** Show the three existing Stage A candidates directly in the conversation.
+- **Completed:** Created an inline preview with three asset tabs, original/clean backdrop toggle, and dark-purple/white smoke backgrounds. Embedded reduced-size WebP preview copies only; full-resolution deliverables and alpha remain unchanged in the existing review ZIP. Fragment is conversation response content, not site source.
+- **Validation:** All four preview image payloads embedded, fragment 377,977 bytes; controls target present elements. No live-browser runtime test claimed.
+- **Decisions / limits:** No new artwork approval. Previously reported edge-alpha margin and background fine-detail drift limits still apply.
+- **Files / branch:** Only this repository progress entry changed on `concept/keith-tyran-magician-experience`; no site, comparison page, hero, source assets, deployment or contact changes. Next: user reviews existing candidates.
