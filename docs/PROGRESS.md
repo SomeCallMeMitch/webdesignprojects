@@ -586,3 +586,22 @@
 - **Files / next:** New detailed prompt plus AGENTS pointer, this PROGRESS append and durable task direction in DESIGN_PREFERENCES. User receives one copyable line linking to the saved prompt. No manual upload needed if next chat can retrieve linked binaries.
 - **Scope / actual state:** Handoff preparation only. No site/module, hero/original/shared/v1/hash, sprite pixel, live comparison, deployment, Windows/download, sharing, endpoint or outreach changes. Implementation and playback QA remain for next chat.
 - **Branch / commit:** `concept/keith-tyran-magician-experience`, documentation commit following `2b615e793c4cb6b54df5e9e8147256d2777d09e8`; resulting SHA reported in completion/Git history. Separate current Sites source still `main` at observed `da155aab380c6e043958e15aa9393fe7d5f9541b`.
+
+
+### 2026-11-15 — Revision04 smoke and About curtain implementation
+- Request: execute the smoke/curtain handoff, retrieve linked assets, rebuild all six Show effects and About reveal, update same private Original & Latest destination.
+- Opened verified existing Sites source at `da155aab380c6e043958e15aa9393fe7d5f9541b`, provider branch `main`; owner-only audience confirmed. Original GitHub concept branch remains separate.
+- Retrieved/checksummed ZIP A. Forked Show v3→v4, About v1→v2; new recipe `keith-smoke-curtain-review`, new sprite pack and reproducible preparation script. Same hub updated to Revision04. Original/hero/old recipes and Experience lights preserved.
+- QA: preserved117 and independent197-file snapshot pass; eight recipes assemble; three exact iframe desktop sizes; six keyboard descriptions/Escape/focus return; curtain states/reversal; no-JS native/static fallback; deliberately failed sprites fallback; zero-send inquiry click/Enter; Gallery and hero regression. Fixed first-rAF negative timestamp, portrait spill and no-JS crop.
+- Evidence/report: `docs/KEITH_REVISION_04_QA_2026-11-15.md`, `docs/qa/revision04/`. Runtime sprite weight478,048 bytes. Real OS preference/tab-hide/slow-network/performance/cross-browser checks remain unverified as detailed in report.
+- Next: publish exact source to the same existing private destination; save versioned complete export to the project Drive folder; record native receipt and source/export identities. No new Site, sharing change, real inquiry, outreach, domain or mobile work. Final deployment/commit receipt follows separately.
+
+### 2026-11-15 — Revision04 native publication succeeded
+- Same private comparison deployed successfully: https://keith-tyran-subtle-review.chiccaper1.chatgpt.site . Native receipt in `KEITH_REVISION_04_DELIVERY_2026-11-15.json`; deployed source `415aa68711e9c151e200a336593fbe401ed9dc70` on separate Sites `main`.
+- Managed preview hub rendered Revision04. Live browser reached the expected private sign-in wall; authenticated post-publication runtime was not independently inspected. Native deployment confirms success. No audience changes.
+- Corrected the generated repository preview to match final source; runtime/portable export already contain that correction. Saved screenshot evidence. Complete source export/Drive receipt follows. User review is the only intended next design action.
+
+### 2026-11-15 — Revision04 complete source export saved
+- Complete source and self-contained runtime exported without Git history: `keith-smoke-curtain-review-v1-2026-11-15.zip`,64,105,839 bytes,692 entries,CRC pass,SHA256 `795f901deb497b6651643f48319627c22128db2acf2b5ce72b117f3447901027`. Drive ID `1yfbxnUfCXS_E4eQH6dE2itVEhuieVE9e`; project parent verified. Exact URL and identities in delivery JSON.
+- Source checkpoint `901b4c388844f0c64c6d04268df8a6f2eaea34de` includes post-publication docs; deployed runtime remains `415aa68711e9c151e200a336593fbe401ed9dc70`. This later receipt is documentation-only. Original GitHub concept-branch docs receive report/receipt/pointers, not replacement runtime.
+- Hero, originals, prior variants and accepted moving lights protected. No outreach or sharing changes. Exact next action: user reviews the six Show cards and About opening at the existing private comparison; follow QA limits before any further tuning.

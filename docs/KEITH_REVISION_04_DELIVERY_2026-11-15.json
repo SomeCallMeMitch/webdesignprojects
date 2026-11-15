@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-15",
+  "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+  "deployed_commit": "415aa68711e9c151e200a336593fbe401ed9dc70",
+  "deployment_id": "appgdep_6afa2f59f74c8191b0061d56821707ca",
+  "version_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6~appgver_e10ba5bd21ec81918e1fcce63b0b036c",
+  "status": "succeeded",
+  "url": "https://keith-tyran-subtle-review.chiccaper1.chatgpt.site",
+  "audience": "owner-only, unchanged",
+  "recipe": "compositions/keith-smoke-curtain-review.json",
+  "runtime_sprite_bytes": 478048,
+  "source_export": {
+    "id": "1yfbxnUfCXS_E4eQH6dE2itVEhuieVE9e",
+    "url": "https://drive.google.com/file/d/1yfbxnUfCXS_E4eQH6dE2itVEhuieVE9e/view?usp=drivesdk",
+    "filename": "keith-smoke-curtain-review-v1-2026-11-15.zip",
+    "bytes": 64105839,
+    "entries": 692,
+    "sha256": "795f901deb497b6651643f48319627c22128db2acf2b5ce72b117f3447901027",
+    "source_commit": "901b4c388844f0c64c6d04268df8a6f2eaea34de",
+    "parent": "1jLMAO7aEGDxedeusAlLnbKLY5Zn2VCGc",
+    "crc": "passed",
+    "remote_metadata": "name/size/parent verified; no remote binary rehash claimed"
+  }
+}

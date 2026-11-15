@@ -302,3 +302,8 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **Interaction recommendation, not separately finalized timing:** Curtains start drawn; clear click/keyboard reveal stays open, with close/replay control. Optional hover/focus hint is acceptable to explore; dependable click remains primary. No intrusive hover cycling or biography/form hiding.
 - **Smoke acceptance:** Full intended card coverage, actual staged growth/billowing and dense-phase concealment before clearing; the previous small appearance/disappearance puff remains rejected. Atlas readiness/smoothness must be tested, not inferred from alpha validity.
 - **Delivery:** Continue version-copy workflow and same private comparison destination. No additional lower-page Easter eggs selected. Detailed task: `NEXT_CHAT_KEITH_REBUILD_SMOKE_AND_ABOUT_CURTAINS_2026-11-15.md`.
+
+
+## 2026-11-15 — Smoke and About curtain batch
+
+User direction: full-card billowing smoke on all six Show cards; replace About CSS arch with supplied purple/gold curtain, initially drawn, click/keyboard reveal and close/replay. Preserve locked hero, Original, older variants and accepted Experience lights. Implementation choice for review:16-frame proportional-cover smoke with shared hover/click timeline; fixed curtain rod/valance/rails and eight-frame reversible cloth; no full auto-hover opening. Source atlas limitations and actual QA in `KEITH_REVISION_04_QA_2026-11-15.md`; this is implementation for review, not final taste approval.

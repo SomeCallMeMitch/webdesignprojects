@@ -59,3 +59,8 @@ The user selected an **exact desktop homepage image** as the master reference. T
 **CURRENT NEXT TASK (image work, not code):** User will upload this chosen PNG in a separate ChatGPT chat and request a **complete separated image asset kit**. The assignment is stored at `docs/NEXT_CHAT_KEITH_HOMEPAGE_IMAGE_ASSETS_PROMPT_2026-11-13.md`, with layers/registration and QA rules in `docs/KEITH_SELECTED_DESKTOP_HOMEPAGE_BUILD_SPEC_2026-11-13.md` and technical evidence in `docs/HERC_SLIDER_LIGHTS_TECHNICAL_EVIDENCE_2026-11-13.md`. REA research is handled in a **different** conversation; defer coding integration to later Codex phase. Do not start mobile work, public deployment, real booking, or outreach.
 
 **Asset caveat:** user-approved PNG exists in conversation and its checksum has been recorded, but its **binary has not been confirmed uploaded to GitHub**. Next chat should verify user's re-upload and then save actual layer files or a ZIP with a clear upload handoff.
+
+
+## 2026-11-15 — Revision04 implementation pointer
+
+The current copied-module runtime is `compositions/keith-smoke-curtain-review.json` in the existing private Sites source, not the older original GitHub runtime. Show v4 and About v2 replace the rejected smoke and CSS About arch. Hero remains locked. See `KEITH_REVISION_04_QA_2026-11-15.md`.
