@@ -294,3 +294,11 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **User-rejected current effect:** Smoke dissolve is too small for the box and reads as a puff appearing/disappearing. Technical asset readiness is not visual approval. No removal/replacement performed in this ideas-only task.
 - **User-requested exploration:** Discoverable magical hover changes lower on the page, such as a light or another feature. New list: `KEITH_LOWER_PAGE_EASTER_EGG_IDEAS_2026-11-15.md`.
 - **Proposals only:** Enchanted seal, footer ghostlight/hat shadow, prediction in gallery crystal, invisible ink, runaway frame shadow, escaping ace, ticket corner, unfolding letter, reversing pocket watch, miniature final bow. Assistant recommends testing at most two; no individual concept or asset commission approved yet.
+
+## 2026-11-15 — Requested next-chat smoke rebuild and About curtain replacement
+
+- **User-requested next implementation:** Rebuild smoke across all six Show cards using supplied new sequence; replace the arched About portrait frame with purple curtains revealing the magician, and update the existing Original & Latest comparison. Current turn prepares the handoff/assets only.
+- **Target / protection:** Section05 Behind the Curtain (`#about`), not hero or Gallery. Replace copied CSS arch treatment around existing concept portrait; preserve original version, hero lock and successful Experience moving lights.
+- **Interaction recommendation, not separately finalized timing:** Curtains start drawn; clear click/keyboard reveal stays open, with close/replay control. Optional hover/focus hint is acceptable to explore; dependable click remains primary. No intrusive hover cycling or biography/form hiding.
+- **Smoke acceptance:** Full intended card coverage, actual staged growth/billowing and dense-phase concealment before clearing; the previous small appearance/disappearance puff remains rejected. Atlas readiness/smoothness must be tested, not inferred from alpha validity.
+- **Delivery:** Continue version-copy workflow and same private comparison destination. No additional lower-page Easter eggs selected. Detailed task: `NEXT_CHAT_KEITH_REBUILD_SMOKE_AND_ABOUT_CURTAINS_2026-11-15.md`.
