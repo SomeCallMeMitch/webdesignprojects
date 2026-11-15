@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-15",
+  "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+  "deployed_commit": "f4ad88462dbac09cc79c0d1dd9c5877928352259",
+  "deployment_id": "appgdep_6afa3c75802881919f8001bc9e2685e5",
+  "saved_version_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6~appgver_11768468f140819194e392ae9773b384",
+  "status": "succeeded",
+  "url": "https://keith-tyran-subtle-review.chiccaper1.chatgpt.site",
+  "audience": "owner-only unchanged",
+  "recipe": "compositions/keith-card-backs-curtain-review.json",
+  "source_export": {
+    "filename": "keith-card-backs-curtain-review-v1-2026-11-15.zip",
+    "id": "193t_7B06o5BwgaG1b54r0zYY4dOGyWhA",
+    "url": "https://drive.google.com/file/d/193t_7B06o5BwgaG1b54r0zYY4dOGyWhA/view?usp=drivesdk",
+    "parent": "1jLMAO7aEGDxedeusAlLnbKLY5Zn2VCGc",
+    "bytes": 75729037,
+    "entries": 821,
+    "sha256": "c494c5d505afbb570b83c49138391e8eff500e00b2ec41045a6aca17a63e01f3",
+    "crc": "passed",
+    "source_commit": "f4ad88462dbac09cc79c0d1dd9c5877928352259",
+    "remote_check": "metadata name/size/parent verified; no remote binary rehash claimed"
+  },
+  "original_github_branch": "concept/keith-tyran-magician-experience",
+  "hero_originals_prior_variants_unchanged": true
+}

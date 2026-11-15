@@ -64,3 +64,8 @@ The user selected an **exact desktop homepage image** as the master reference. T
 ## 2026-11-15 — Revision04 implementation pointer
 
 The current copied-module runtime is `compositions/keith-smoke-curtain-review.json` in the existing private Sites source, not the older original GitHub runtime. Show v4 and About v2 replace the rejected smoke and CSS About arch. Hero remains locked. See `KEITH_REVISION_04_QA_2026-11-15.md`.
+
+
+## 2026-11-15 — Revision05 current runtime pointer
+
+Latest recipe in separate Sites main is `compositions/keith-card-backs-curtain-review.json`: Show v5 hover/click smoke reveals detailed HTML on the same card, no modal; About v3 uses selected new transparent curtain option4. Previous recipe and all original/hero sources remain. Read Revision05 QA and delivery receipt for exact current source/export. Original GitHub tracked application remains older.

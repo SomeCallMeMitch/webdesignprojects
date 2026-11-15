@@ -307,3 +307,8 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 ## 2026-11-15 — Smoke and About curtain batch
 
 User direction: full-card billowing smoke on all six Show cards; replace About CSS arch with supplied purple/gold curtain, initially drawn, click/keyboard reveal and close/replay. Preserve locked hero, Original, older variants and accepted Experience lights. Implementation choice for review:16-frame proportional-cover smoke with shared hover/click timeline; fixed curtain rod/valance/rails and eight-frame reversible cloth; no full auto-hover opening. Source atlas limitations and actual QA in `KEITH_REVISION_04_QA_2026-11-15.md`; this is implementation for review, not final taste approval.
+
+
+## 2026-11-15 — User-approved smoke, in-place card backs; curtain choice
+
+User says smoke looks great. Change requested: hover or click smoke reveals detailed text on the back of the same card, without a modal. Implementation for review:180ms hover pause, text stays until Show illustration/Escape, click/Enter/Space fallback; preserve art/grid. User delegates selection among four new curtain sequences. Chosen option4 is the transparent symmetric scalloped purple/gold drapery, replacing hard corners/rails; options and rationale in Revision05 QA. This option is selected by assistant for review, not separately approved by user. Hero and accepted lights stay locked.
