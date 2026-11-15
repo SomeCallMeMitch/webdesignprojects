@@ -533,3 +533,12 @@
 - **Validation:** All four preview image payloads embedded, fragment 377,977 bytes; controls target present elements. No live-browser runtime test claimed.
 - **Decisions / limits:** No new artwork approval. Previously reported edge-alpha margin and background fine-detail drift limits still apply.
 - **Files / branch:** Only this repository progress entry changed on `concept/keith-tyran-magician-experience`; no site, comparison page, hero, source assets, deployment or contact changes. Next: user reviews existing candidates.
+
+
+### 2026-11-15 — Return Stage A components to the existing build chat
+
+- **Request:** Supply a prompt telling the existing builder where to retrieve all components and what each does.
+- **Completed:** Saved `docs/NEXT_CHAT_KEITH_STAGE_A_ASSETS_TO_BUILD_2026-11-15.md`, complete with exact output/input ZIP links/IDs/bytes/hashes, root asset roles, dimensions/modes/hashes, QA/reference paths, existing beam retrieval and independent anchoring instructions, alpha-margin/background-drift defects, preserved hero/baseline boundaries and continuation/testing guidance. Verified output Drive metadata remains correct. Prompt created in commit `9cd33f6f2d238450db2658e0812c00ee814eaac4`.
+- **Scope:** Documentation only. Continue only implementation/publication already authorized in the receiving build conversation; this handoff does not assert final image approval or new hosting authority. No source/image regeneration, website changes, deployments or contacts.
+- **Next:** User pastes the linked prompt into the existing build chat. Builder retrieves binaries itself when supported, resolves remaining image QA and continues its current authorized work while preserving the original and newer local/exported build.
+- **Branch/files:** `concept/keith-tyran-magician-experience`; new detailed prompt and this appended PROGRESS entry. Final documentation SHA reported in completion/Git history.
