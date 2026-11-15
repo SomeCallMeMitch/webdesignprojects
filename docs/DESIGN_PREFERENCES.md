@@ -268,3 +268,9 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **User authorized:** Continue through Section 10, the FAQ below How Booking Works.
 - **Choices for review:** Set the section title and inquiry link in the left column of a quiet plum theater program. Use fine gold rules and six native disclosures on the right. The first answer starts open. Readers can keep several answers open to compare details.
 - **Reuse:** Copy the section markup and `curtain-faq.css`. Edit the summaries and answers in HTML, and point the inquiry link to the intended local destination. Keep the source attribution for facts and confirm event-specific policies before any production use.
+
+## 2026-11-15 — New-chat handoff workflow and hero lock
+
+- **User-approved workflow:** Save a detailed continuation prompt in the original project repository, then give the user one copyable line containing its direct link. Prefer storing required ZIPs/images in the project Google Drive folder and include exact file links/IDs and retrieval instructions in the prompt. The next chat should retrieve/extract inputs itself when its connected tools permit; explain genuine access limits and request manual attachment only as needed.
+- **User-approved protection:** The main hero is untouchable unless the user directly requests a change, with needed navigation updates as the standing exception. Read-only reuse/copying of hero beam/smoke textures below it does not authorize altering hero assets or behavior.
+- **Scope distinction:** Stage A image briefs describe requested inputs for review, not completed motion or final visual approval. No new aesthetic decision, code integration or publication occurred in this documentation task.
