@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-15",
+  "deployed_source": {
+    "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+    "checkout_path": "/workspace/sites/keith-tyran-subtle-review",
+    "commit_sha": "2cc532308e4e4c72dce63732cb68bda52b390975",
+    "archive": "/workspace/scratch/99ddc4ac1f52/stage-a-review/keith-revision03-deploy.tar.gz"
+  },
+  "deployment": {
+    "id": "appgdep_6afa1a1f15fc8191a3cc823f8b934e80",
+    "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+    "title": "Keith Tyran — Private Desktop Review",
+    "version_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6~appgver_cb2a1b4d690c81919e264532ef83eb00",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://keith-tyran-subtle-review.chiccaper1.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "release---6af9d691dee08191aa5e3531c0e65e85",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-11-15T20:46:28.729614+00:00"
+  },
+  "drive_export": {
+    "url": "https://drive.google.com/file/d/1bp4JvWgbfg-PUCIL4P4P3kvwieJqSEm5/view?usp=drivesdk",
+    "id": "1bp4JvWgbfg-PUCIL4P4P3kvwieJqSEm5",
+    "bytes": 41988077,
+    "files": 476,
+    "sha256": "66640595839ab775a2b78b20141d2ac51057411ecb9be93a1d0d7015a5b003d3"
+  },
+  "original_github_branch": "concept/keith-tyran-magician-experience",
+  "originals_unchanged": true
+}

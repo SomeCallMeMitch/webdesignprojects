@@ -280,3 +280,10 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 
 - **User-authorized scope:** Three separate static Stage A assets only; existing hero and website remain untouched. No artwork approval or implementation approval inferred.
 - **Provisional outputs:** Cleaned Experience backdrop and two lavender/ivory smoke candidates, recorded in `image-handoffs/2026-11-15/STAGE_A_REVIEW_RESULTS.md`. Major background geometry visually close with fine generative drift. Both smoke files have true partial alpha but strict fully transparent margins remain unresolved. These are review candidates, not a new approved visual standard.
+
+## 2026-11-15 — Stage A assets evaluated and integrated for review
+
+- **User-authorized:** Evaluate supplied Stage A art, make practical small adjustments and continue existing copied-module build. Existing private Original & Latest page is the delivery route.
+- **Provisional implementation:** Experience v2 uses cleaned stage plus independent fixed-origin pointer beams; Show v3 uses a short hover/focus wisp and a smoke reveal into an accessible native dialog with six live concept descriptions. Preserve earlier approved polish, locked hero and original versions.
+- **Asset verdict:** No regeneration needed for this prototype. Masters preserved; faint 1/255 alpha residue concealed in new compositing masks. Background generative fine-detail drift remains. Runtime WebP compression preserves size/alpha; visuals/timing await user review.
+- **Verification distinction:** Three-size browser layout and interaction checks do not imply screen-reader, real-device/FPS or actual OS CSS preference certification. Full limits: `KEITH_STAGE_A_BUILD_QA_2026-11-15.md`.
