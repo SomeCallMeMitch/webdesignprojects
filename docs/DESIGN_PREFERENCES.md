@@ -215,6 +215,13 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **Choices for review:** Continue the theater palette with a shadow below the seats. Keep performance and audience art in independent, overlapping gold frames, with descriptive alt text and a visible concept illustration label. Keep the painted light fixed. Add one soft pointer glow over the artwork for mouse users who allow motion.
 - **Navigation and loading:** Scroll to explore links to the new section. Watch a performance opens an inline preview message. A viewport check defers the five WebPs until the visitor approaches the artwork. For this hero, section requests also wait for the hero image layers to finish. Native disclosure and lazy image fallbacks support a static view with JavaScript disabled.
 
+
+## 2026-11-14 — Verified development handoff boundaries
+
+- **User confirmed workflow:** Complete asset verification and a single authoritative Codex handoff before implementation; preserve working hero and already-integrated Section 02, and integrate only 03–12 in the next coding phase.
+- **User confirmed:** Desktop-only visual checks at 1440×900, 1672×941 and 1920×1080; mobile remains an independent future design. Keep components modular/reusable, real photographs only with confirmed rights, and later visual refinements expected. No new aesthetic selection was made in asset preparation.
+- **Verified source limitation, not a new preference:** Section 05 portrait is RGB rectangular art without alpha; 02/07 backdrops contain painted lights, without separate downstream moving-beam layers. Existing hero layers remain authoritative. Details in the authoritative 02–12 build handoff.
+
 ## 2026-11-14 — The Show desktop implementation
 
 - **User authorized:** Continue with the next section after the hero and Experience the Magic checkpoint is pushed.

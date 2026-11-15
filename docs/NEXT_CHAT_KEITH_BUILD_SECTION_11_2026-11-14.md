@@ -30,6 +30,8 @@ Continue my unofficial **Keith Tyran / The Gentleman Magician** desktop website 
 
 The integrated site uses plain HTML, scoped CSS, small scripts and local assets. Sections 03–05 and 07–09 use `deferred-section-art.js`. Sections 06 and 10 are HTML/CSS. The desktop checkpoints cover 1440 × 900, 1672 × 941 and 1920 × 1080. See the progress log for detailed QA.
 
+The [verified asset preparation record](KEITH_DESKTOP_SECTIONS_02_12_CODEX_BUILD_HANDOFF_2026-11-14.md) links the full-resolution source and asset audits. Its integration steps describe the earlier build state. Use the current branch for Sections 01–10 and the in-repo references below for Section 11.
+
 ## Build Section 11 next
 
 The ZIP’s editable reference modules are copied into [reference/sections-10-12/](reference/sections-10-12/). Use the Section 11 markup in [sections_10_12.html](reference/sections-10-12/sections_10_12.html), the invitation styles in [sections_10_12.css](reference/sections-10-12/sections_10_12.css), and the demo behavior in [sections_10_12_demo.js](reference/sections-10-12/sections_10_12_demo.js). The combined reference contains global rules for a separate offline preview. Adapt the Section 11 pieces into scoped files for the live page. The integrated FAQ is already in place.
