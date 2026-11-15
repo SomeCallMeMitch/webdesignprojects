@@ -1,0 +1,243 @@
+.wonder-gallery {
+  --gallery-edge: #13091b;
+  --gallery-ivory: #fcf1ea;
+  --gallery-muted: #f1dced;
+  --gallery-gold: #d7ad76;
+  position: relative;
+  isolation: isolate;
+  padding: clamp(4.5rem, 6vw, 6.8rem) clamp(1.5rem, 3.5vw, 5rem) clamp(4.2rem, 5.4vw, 6rem);
+  background: var(--gallery-edge);
+  color: var(--gallery-ivory);
+  text-align: center;
+}
+
+.wonder-gallery::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(var(--gallery-edge), transparent 14%, transparent 77%, var(--gallery-edge)),
+    radial-gradient(ellipse at 50% 16%, #15071983, transparent 43%);
+  content: "";
+  pointer-events: none;
+}
+
+.wonder-gallery__scene {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.wonder-gallery img[data-src]:not([src]) { visibility: hidden; }
+
+.wonder-gallery h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.wonder-gallery__intro {
+  margin: .9rem auto 0;
+  color: var(--gallery-muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.wonder-gallery__intro::after {
+  display: block;
+  width: 8rem;
+  height: 1px;
+  margin: 1.55rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--gallery-gold), transparent);
+  content: "";
+}
+
+.wonder-gallery__display {
+  position: relative;
+  max-width: 96rem;
+  margin: clamp(2.25rem, 3.5vw, 3.75rem) auto 0;
+  padding-inline: 3.5rem;
+}
+
+.wonder-gallery__strip {
+  display: flex;
+  gap: clamp(.1rem, .65vw, .7rem);
+}
+
+.wonder-gallery__piece {
+  --frame-ratio: 196 / 286;
+  --caption-inset: 9%;
+  --print-inset: 9% 12% 10%;
+  --print-aperture: polygon(10% 0, 90% 0, 100% 10%, 100% 89%, 91% 100%, 9% 100%, 0 89%, 0 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 196 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+.wonder-gallery__piece--landscape {
+  --frame-ratio: 246 / 207;
+  --print-inset: 14% 6.5% 13.5% 4.8%;
+  --print-aperture: polygon(9% 14%, 92% 0, 100% 6%, 96% 93%, 91% 100%, 3% 100%, 0 93%, 5% 27%);
+  flex-grow: 246;
+}
+
+.wonder-gallery__piece--featured {
+  --frame-ratio: 235 / 358;
+  --caption-inset: 3%;
+  --print-inset: 5% 14% 7%;
+  --print-aperture: polygon(50% 0, 58% 3%, 88% 3%, 100% 9%, 100% 91%, 88% 97%, 59% 97%, 50% 100%, 41% 97%, 12% 97%, 0 91%, 0 9%, 12% 3%, 42% 3%);
+  --print-position: 50% 20%;
+  flex-grow: 235;
+}
+
+.wonder-gallery__art {
+  position: relative;
+  aspect-ratio: var(--frame-ratio);
+  display: block;
+}
+
+.wonder-gallery__opening {
+  position: absolute;
+  inset: var(--print-inset);
+  background: #25102d;
+  clip-path: var(--print-aperture);
+}
+
+.wonder-gallery__opening img,
+.wonder-gallery__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wonder-gallery__opening img {
+  object-fit: cover;
+  object-position: var(--print-position, center);
+}
+
+.wonder-gallery__frame {
+  pointer-events: none;
+  filter: drop-shadow(0 .25rem .55rem #100619aa);
+}
+
+.wonder-gallery__opening::after {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(ellipse at 50% 0%, #ffe3aa54, transparent 68%);
+  content: "";
+  pointer-events: none;
+}
+
+.wonder-gallery__art:focus-visible .wonder-gallery__opening::after { opacity: 1; }
+
+@media (hover: hover) and (pointer: fine) {
+  .wonder-gallery__art:hover .wonder-gallery__opening::after { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .wonder-gallery__opening::after { transition: opacity .22s ease-out; }
+}
+
+.wonder-gallery__piece figcaption {
+  margin-top: calc(-1 * var(--caption-inset));
+  padding: .65rem .15rem 0;
+  font-size: clamp(.94rem, 1.1vw, 1.125rem);
+  line-height: 1.4;
+  text-shadow: 0 1px 6px var(--gallery-edge);
+}
+
+.wonder-gallery__arrow:not([hidden]) {
+  position: absolute;
+  z-index: 1;
+  top: 46%;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  transform: translateY(-50%);
+  border: 1px solid #d798e4;
+  border-radius: 50%;
+  background: #240e2e;
+  color: var(--gallery-ivory);
+  cursor: pointer;
+}
+
+.wonder-gallery__arrow:first-child { left: 0; }
+.wonder-gallery__arrow:last-child { right: 0; }
+.wonder-gallery__arrow:is(:hover, :focus-visible) { background: #492158; }
+
+.wonder-gallery__arrow span {
+  width: .6rem;
+  height: .6rem;
+  border-block-start: 2px solid;
+  border-inline-end: 2px solid;
+  rotate: 45deg;
+}
+
+.wonder-gallery__arrow:first-child span { rotate: -135deg; }
+
+.wonder-gallery__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.wonder-gallery__lightbox {
+  width: max-content;
+  max-width: min(90vw, 68rem);
+  max-height: 94vh;
+  padding: .85rem 1rem 1.2rem;
+  border: 1px solid var(--gallery-gold);
+  background: #211027;
+  color: var(--gallery-ivory);
+}
+
+.wonder-gallery__lightbox::backdrop { background: #100619e6; }
+
+.wonder-gallery__close {
+  display: block;
+  min-height: 2.75rem;
+  margin: 0 0 .75rem auto;
+  padding: .3rem .85rem;
+  border: 1px solid #d798e4;
+  background: #351943;
+  color: var(--gallery-ivory);
+  font: inherit;
+  cursor: pointer;
+}
+
+.wonder-gallery__close:hover { background: #492158; }
+.wonder-gallery__lightbox figure { margin: 0; }
+
+.wonder-gallery__lightbox img {
+  display: block;
+  max-width: 100%;
+  max-height: 72vh;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+.wonder-gallery__lightbox figcaption {
+  margin-top: .8rem;
+  font: 1.6rem/1.2 Baskervville, Georgia, serif;
+}
+
+.wonder-gallery__lightbox p {
+  margin: .25rem 0 0;
+  color: var(--gallery-muted);
+  font-size: .92rem;
+}
+
+html:has(.wonder-gallery__lightbox[open]) { overflow: hidden; }

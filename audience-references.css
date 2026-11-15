@@ -1,0 +1,91 @@
+.audience-references {
+  --audiences-surface: #190d23;
+  --audiences-text: #fcf1ea;
+  --audiences-muted: #e4d2e3;
+  --audiences-gold: #d7ad76;
+  --audiences-inlay: #997449;
+  --audiences-glow: #b165ce40;
+  padding: clamp(4.5rem, 6vw, 7rem) clamp(3rem, 10vw, 12rem);
+  background:
+    radial-gradient(ellipse at 50% 0%, #65316d53, transparent 70%),
+    linear-gradient(#13091b, transparent 25%, transparent 88%, #13091b),
+    repeating-linear-gradient(90deg, transparent 0, #cb79e00a 90px, #0f061647 180px),
+    var(--audiences-surface);
+  color: var(--audiences-text);
+  text-align: center;
+}
+
+.audience-references h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.audience-references__source {
+  margin: .9rem auto 0;
+  color: var(--audiences-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.audience-references__source a {
+  color: var(--audiences-text);
+  text-decoration: underline;
+  text-decoration-color: var(--audiences-gold);
+  text-underline-offset: .19em;
+}
+
+.audience-references__source a:is(:hover, :focus-visible) { color: var(--audiences-gold); }
+
+.audience-references__source::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 1px;
+  margin: 1.55rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--audiences-gold), transparent);
+}
+
+.audience-references__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(.9rem, 1.5vw, 1.5rem);
+  max-width: 73rem;
+  margin: clamp(2.25rem, 3.1vw, 3.5rem) auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.audience-references__grid li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(7rem, 8.7vw, 9rem);
+  padding: 1.45rem;
+  border: 1px solid var(--audiences-gold);
+  border-radius: .45rem;
+  background: radial-gradient(ellipse at 50% 0%, #6f417450, transparent 80%),
+    linear-gradient(155deg, #332139, #1a0e22 75%);
+  box-shadow: inset 0 0 0 5px #21132b, inset 0 0 0 6px var(--audiences-inlay),
+    0 .7rem 1.45rem #0c0415a0;
+  font: 400 clamp(1.25rem, 1.62vw, 1.7rem)/1.13 Baskervville, Georgia, serif;
+  text-wrap: balance;
+}
+
+.audience-references__note {
+  margin: 1.65rem auto 0;
+  color: var(--audiences-muted);
+  font-size: .86rem;
+  line-height: 1.5;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .audience-references__grid li:hover {
+    box-shadow: inset 0 0 0 5px #21132b, inset 0 0 0 6px var(--audiences-gold),
+      0 .7rem 1.45rem #0c0415a0, 0 0 1.25rem var(--audiences-glow);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .audience-references__grid li { transition: box-shadow .2s ease-out; }
+}

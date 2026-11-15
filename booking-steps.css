@@ -1,0 +1,155 @@
+.booking-steps {
+  --booking-edge: #100717;
+  --booking-ivory: #fcf1ea;
+  --booking-muted: #f0dced;
+  --booking-gold: #f1c483;
+  position: relative;
+  isolation: isolate;
+  padding: clamp(4.25rem, 5.25vw, 6rem) clamp(2rem, 8vw, 9rem) clamp(3.5rem, 4.4vw, 5.25rem);
+  background: var(--booking-edge);
+  color: var(--booking-ivory);
+  text-align: center;
+}
+
+.booking-steps::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(var(--booking-edge), #160a2180 22%, #160a214d 62%, var(--booking-edge));
+  content: "";
+}
+
+.booking-steps__scene {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+.booking-steps img[data-src]:not([src]) { visibility: hidden; }
+
+.booking-steps h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.booking-steps__intro {
+  margin: .9rem auto 0;
+  color: var(--booking-muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.booking-steps__intro::after {
+  display: block;
+  width: 8rem;
+  height: 1px;
+  margin: 1.55rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--booking-gold), transparent);
+  content: "";
+}
+
+.booking-steps__tickets {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.4rem, 2.8vw, 3rem);
+  max-width: 71rem;
+  margin: clamp(1.8rem, 3.2vw, 3.25rem) auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.booking-steps__tickets::before {
+  position: absolute;
+  inset: 47% 15% auto;
+  height: 2px;
+  background: linear-gradient(90deg, #c17ae1, var(--booking-gold), #c17ae1);
+  box-shadow: 0 0 .85rem #e27afb;
+  content: "";
+}
+
+.booking-steps__ticket {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 4 / 5;
+  padding: 48% 16% 12%;
+}
+
+.booking-steps__ticket::before {
+  position: absolute;
+  z-index: -2;
+  inset: 9% 15%;
+  background: #240f2d;
+  content: "";
+}
+
+.booking-steps__ticket img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.booking-steps__number {
+  position: absolute;
+  top: 12.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--booking-gold);
+  font: 400 clamp(1.35rem, 1.8vw, 1.85rem)/1 Baskervville, Georgia, serif;
+}
+
+.booking-steps__copy h3 {
+  margin: 0;
+  font: italic 400 clamp(1.65rem, 2vw, 2.05rem)/1.1 Baskervville, Georgia, serif;
+  text-wrap: balance;
+}
+
+.booking-steps__copy p {
+  margin: .9rem auto 0;
+  color: var(--booking-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.booking-steps__request {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  min-height: 3.1rem;
+  margin-top: clamp(1rem, 1.8vw, 1.75rem);
+  padding: .6rem 1.4rem;
+  border: 1px solid #e099f4;
+  border-radius: .3rem;
+  background: #371647;
+  color: var(--booking-ivory);
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.booking-steps__request:is(:hover, :focus-visible) { background: #542468; }
+
+.booking-steps__request::after {
+  width: .42rem;
+  height: .42rem;
+  transform: rotate(45deg);
+  border-block-start: 1.5px solid;
+  border-inline-end: 1.5px solid;
+  content: "";
+}
+
+.booking-steps__note {
+  margin: .65rem 0 0;
+  color: var(--booking-muted);
+  font-size: .9rem;
+  line-height: 1.5;
+}

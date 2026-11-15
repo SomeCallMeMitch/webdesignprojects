@@ -1,0 +1,97 @@
+.audience-reactions {
+  --reactions-edge: #13091b;
+  --reactions-ivory: #fcf1ea;
+  --reactions-muted: #e4d2e3;
+  --reactions-gold: #d7ad76;
+  --reactions-paper: #f4dfbe;
+  --reactions-ink: #321a30;
+  padding: clamp(4.25rem, 5.6vw, 6.5rem) clamp(3rem, 9vw, 11rem) clamp(4.5rem, 5.7vw, 6.5rem);
+  background:
+    linear-gradient(var(--reactions-edge), transparent 22%, transparent 82%, #100717),
+    radial-gradient(ellipse at 50% 22%, #51225c, transparent 68%),
+    #22102b;
+  color: var(--reactions-ivory);
+  text-align: center;
+}
+
+.audience-reactions h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.audience-reactions__intro {
+  margin: .9rem auto 0;
+  color: var(--reactions-muted);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.audience-reactions__intro::after {
+  display: block;
+  width: 8rem;
+  height: 1px;
+  margin: 1.55rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--reactions-gold), transparent);
+  content: "";
+}
+
+.audience-reactions__letters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 3.4rem);
+  max-width: 75rem;
+  margin: clamp(2rem, 3vw, 3.2rem) auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.audience-reactions__letter {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 4 / 5;
+  color: var(--reactions-ink);
+}
+
+.audience-reactions__letter img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.audience-reactions__letter img[data-src]:not([src]) { visibility: hidden; }
+
+/* Keep the letter copy legible while the decorative image loads. */
+.audience-reactions__letter::before {
+  position: absolute;
+  z-index: -2;
+  inset: 14% 14% 43%;
+  border-radius: .2rem;
+  background: var(--reactions-paper);
+  content: "";
+}
+
+.audience-reactions__copy {
+  position: absolute;
+  inset: 14% 13% 43%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: .55rem;
+}
+
+.audience-reactions__copy h3 {
+  margin: 0;
+  font: italic 400 clamp(1.55rem, 1.7vw, 1.75rem)/1.12 Baskervville, Georgia, serif;
+  text-wrap: balance;
+}
+
+.audience-reactions__copy p {
+  max-width: 25ch;
+  margin: 0;
+  font-size: clamp(.95rem, 1.05vw, 1.075rem);
+  line-height: 1.45;
+  text-wrap: pretty;
+}

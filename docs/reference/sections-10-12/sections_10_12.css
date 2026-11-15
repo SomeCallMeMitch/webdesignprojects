@@ -1,0 +1,98 @@
+
+/* ----------------------------------------------------------
+   Sections 10-12: independently maintainable demo modules
+   Source-of-truth: docs/KEITH_DESKTOP_SECTIONS_10_12_DESIGN_PLAN_2026-11-14.md
+   ---------------------------------------------------------- */
+:root{--faq-rule:rgba(226,172,100,.34)}
+html{scroll-padding-top:90px} .section{scroll-margin-top:76px}
+.navlinks{gap:clamp(11px,1.34vw,22px);font-size:10px;letter-spacing:.8px}
+.nav .brand-name{font-size:27px}
+.nav .btn-small{padding:12px 13px}
+:focus-visible{outline:2px solid #f5cc82;outline-offset:4px}
+/* 10 - theater-program FAQ */
+#faq{min-height:790px;padding-top:95px;padding-bottom:105px;background:
+ radial-gradient(ellipse at 18% 38%,rgba(147,58,174,.14),transparent 48%),
+ linear-gradient(160deg,#16081f 0%,#2a0c35 53%,#110619 100%)}
+#faq:before{background:repeating-linear-gradient(90deg,transparent 0,transparent 72px,rgba(200,128,219,.018) 76px,transparent 82px)}
+.faq-program{max-width:1230px;margin:auto;display:grid;grid-template-columns:minmax(325px,.78fr) minmax(515px,1.22fr);border:1px solid rgba(223,174,101,.42);background:linear-gradient(142deg,rgba(52,15,65,.8),rgba(21,6,31,.87));box-shadow:0 40px 90px #0e0318aa, inset 0 0 65px #7b31821a;position:relative}
+.faq-program:before{content:'';position:absolute;inset:9px;border:1px solid rgba(235,184,111,.19);pointer-events:none}
+.faq-program:after{content:'✦';position:absolute;top:-13px;left:calc(50% - 11px);width:22px;text-align:center;font-size:24px;color:#edcb87;background:#1c0826}
+.faq-intro{padding:68px 42px 54px 53px;position:relative;overflow:hidden;border-right:1px solid rgba(223,174,101,.28)}
+.faq-intro:before{content:'';width:380px;height:550px;position:absolute;top:-290px;left:-100px;transform:rotate(-16deg);background:linear-gradient(to bottom,#fff2d1aa,transparent 80%);clip-path:polygon(49% 0,54% 0,100% 100%,0 100%);opacity:.13;pointer-events:none}
+.faq-crest{font:38px Georgia,serif;color:var(--gold);margin-bottom:34px;letter-spacing:7px}
+.faq-intro .heading{font-size:47px;max-width:370px;line-height:1.17;margin:18px 0 22px}
+.faq-intro .heading em{font-style:italic;color:#e9baf6}
+.faq-copy{color:#dbccdd;font-size:15px;line-height:1.8;max-width:340px}
+.faq-rule{height:1px;width:92px;background:var(--gold);margin:28px 0}
+.faq-seal{display:flex;align-items:center;gap:17px;margin-top:68px;color:#dbbb89;letter-spacing:2px;font-size:10px;text-transform:uppercase;line-height:2}
+.faq-seal strong{font:italic 49px Georgia,serif;color:#efd092;letter-spacing:0}
+.faq-questions{padding:47px 51px 45px 44px;align-self:center}
+.faq-item{border-bottom:1px solid var(--faq-rule);margin:0}
+.faq-item:first-child{border-top:1px solid var(--faq-rule)}
+.faq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:24px;padding:20px 3px;color:#f5ecee;font:21px/1.3 Georgia,'Times New Roman',serif;transition:color .18s}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover,.faq-item[open] summary{color:#edc78b}
+.faq-item summary::after{content:'+';margin-left:auto;font:32px/1 Arial;color:var(--gold);transition:transform .22s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-index{color:var(--gold);font:11px Arial,sans-serif;letter-spacing:1px;align-self:center;min-width:26px}
+.faq-answer{color:#d8c6db;font-size:14px;line-height:1.85;margin:0 47px 19px 53px}
+.faq-contact{display:inline-flex;align-items:center;gap:9px;color:#f6d5a4;font-weight:700;letter-spacing:1.4px;font-size:11px;text-transform:uppercase;margin-top:30px;border-bottom:1px solid #cda47877;padding:0 0 8px}
+.faq-contact:hover{color:#fff}
+/* 11 - invitation and inquiry form; intentionally no outgoing network action */
+#contact{padding-top:90px;padding-bottom:104px;background:
+ radial-gradient(ellipse at 55% 8%,rgba(181,75,199,.20),transparent 45%),
+ linear-gradient(180deg,#1d0827 0%,#35123f 48%,#16071d 100%)}
+#contact .heading{font-size:51px}#contact .subtitle{letter-spacing:3px}
+.invitation-shell{max-width:1230px;margin:43px auto 0;display:grid;grid-template-columns:minmax(350px,.80fr) minmax(540px,1.2fr);box-shadow:0 35px 86px #0b0215bb;border:1px solid rgba(225,180,111,.5);position:relative;isolation:isolate}
+.invitation-shell:before,.invitation-shell:after{content:'';position:absolute;top:-2px;bottom:-2px;width:29px;z-index:2;background:repeating-linear-gradient(90deg,#21092b 0,#4f215c 6px,#220a2b 15px,#391143 23px);opacity:.75;pointer-events:none}
+.invitation-shell:before{left:-28px;clip-path:polygon(25% 0,100% 0,90% 100%,0 100%)}
+.invitation-shell:after{right:-28px;transform:scaleX(-1);clip-path:polygon(25% 0,100% 0,90% 100%,0 100%)}
+.invitation-copy{position:relative;background:
+ radial-gradient(ellipse at 50% 12%,rgba(255,230,182,.12),transparent 47%),
+ linear-gradient(155deg,#27112e,#180a21 85%);padding:61px 45px 40px;text-align:center;display:flex;flex-direction:column;justify-content:space-between;align-items:center;border-right:1px solid #d1a46a66;min-height:670px}
+.invitation-copy:before{content:'';position:absolute;inset:12px;border:1px solid rgba(231,188,126,.48);pointer-events:none}
+.invitation-copy:after{content:'';position:absolute;inset:19px;border:1px solid rgba(231,188,126,.13);pointer-events:none}
+.invitation-monogram{font:italic 76px Georgia,serif;color:#e4b96d;text-shadow:0 0 35px rgba(221,158,87,.17);line-height:1}
+.invitation-lead{font:italic 31px/1.32 Georgia,serif;color:#f8ecdc;max-width:330px;margin:17px 0 15px}
+.invitation-copy p{font:14px/1.9 Arial,sans-serif;color:#d8c7d9;max-width:300px}
+.invitation-starline{font:20px Georgia,serif;color:var(--gold);letter-spacing:16px;margin:15px 0}
+.invitation-hint{font:10px/1.8 Arial,sans-serif;letter-spacing:2.2px;text-transform:uppercase;color:#debe94}
+.invitation-formwrap{background:linear-gradient(120deg,#f8eddc,#e8d9c7);color:#34233a;padding:47px 55px 38px;position:relative}
+.invitation-formwrap:before{content:'';position:absolute;inset:12px;pointer-events:none;border:1px solid rgba(120,70,98,.25)}
+.form-kicker{color:#684877;letter-spacing:3px;font-weight:750;font-size:10px;text-transform:uppercase}
+.invitation-formwrap h3{font:38px/1.13 Georgia,serif;color:#2f1835;font-weight:400;margin:12px 0 9px}
+.form-intro{font-size:13px;line-height:1.7;color:#685666;margin:0 0 23px;max-width:515px}
+.request-form{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:13px 18px}
+.request-form label{display:flex;flex-direction:column;gap:7px;text-transform:uppercase;letter-spacing:1px;font-size:10px;font-weight:750;color:#55405a}
+.request-form .wide{grid-column:1/-1}
+.request-form input,.request-form select,.request-form textarea{width:100%;min-height:42px;border:1px solid #b49eac;background:#fffaf1;border-radius:3px;padding:10px 11px;color:#291a31;font:14px Arial,sans-serif;letter-spacing:0;text-transform:none;outline-offset:2px}
+.request-form textarea{resize:vertical;min-height:76px}
+.request-form input:focus-visible,.request-form textarea:focus-visible,.request-form select:focus-visible{outline:2px solid #8243a0;border-color:#854e9b}
+.request-form input:disabled{opacity:.48;cursor:not-allowed;background:#e0d1c8}
+.request-form .date-unknown{display:flex;flex-direction:row;align-items:center;gap:8px;font:12px Arial,sans-serif;text-transform:none;letter-spacing:0;font-weight:400;color:#594656}
+.request-form .date-unknown input{width:16px;min-height:16px;height:16px;accent-color:#6a287e}
+.request-form .field-note{font:11px Arial,sans-serif;text-transform:none;letter-spacing:0;font-weight:400;color:#7b6675}
+.form-action{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin:5px 0 0}
+.form-submit{background:#44234e;border:1px solid #905aa0;color:#fff;padding:14px 23px;border-radius:4px;letter-spacing:1.2px;font-size:11px;font-weight:800;cursor:pointer;box-shadow:0 3px 18px #2b0e3533}
+.form-submit:hover,.form-submit:focus-visible{background:#632f70}
+.form-demo{font-size:11px;color:#7c5164;font-weight:750;line-height:1.5;max-width:190px}
+.form-message{display:none;grid-column:1/-1;margin-top:7px;border-left:3px solid #743f86;background:#eee3ed;padding:11px 14px;font:13px/1.65 Arial,sans-serif;color:#3c2940}
+.form-message.visible{display:block}
+/* 12 - understated final curtain */
+#final-curtain{background:
+ linear-gradient(180deg,#1a0922 0%,#120617 75%,#100416 100%);border-top:1px solid #b17c4d66;position:relative;overflow:hidden}
+#final-curtain:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.2;background:repeating-linear-gradient(92deg,transparent 0,transparent 80px,#63336a 111px,transparent 146px);mask-image:linear-gradient(to bottom,#000,transparent 75%)}
+.curtain-top{height:5px;background:linear-gradient(90deg,transparent 10%,#cfa066 35%,#e4c18c 50%,#cfa066 65%,transparent 90%);opacity:.5}
+.curtain-inner{max-width:1230px;margin:0 auto;padding:70px 15px 42px;position:relative;display:grid;grid-template-columns:1.2fr 1fr .85fr;gap:65px}
+.curtain-brand .signature{font:italic 44px Georgia,serif;letter-spacing:-1px;color:#f5e9e5}
+.curtain-brand .tag{font:10px Arial,sans-serif;letter-spacing:3px;color:#cfad81;margin-top:9px}
+.curtain-brand p{color:#d0bacf;line-height:1.9;font-size:13px;max-width:270px;margin-top:20px}
+.curtain-heading{font:bold 10px Arial,sans-serif;color:#e7c18b;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:22px}
+.curtain-links{display:grid;grid-template-columns:1fr 1fr;gap:13px 26px}
+.curtain-links a,.curtain-connect a{font-size:13px;color:#d8c9d8;line-height:1.5}
+.curtain-links a:hover,.curtain-connect a:hover{color:#f6d398}
+.curtain-connect p{font-size:13px;line-height:1.8;color:#cbb7ca}
+.curtain-connect a{display:inline-block;margin-top:7px;padding-bottom:7px;border-bottom:1px solid #b9906a88}
+.curtain-bottom{max-width:1230px;margin:0 auto;position:relative;border-top:1px solid rgba(212,155,89,.22);display:flex;justify-content:space-between;gap:22px;padding:24px 15px 31px;color:#a891aa;font:11px/1.7 Arial,sans-serif}
+.curtain-bottom strong{color:#cfb6c6;font-weight:600}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.faq-item summary::after{transition:none}.nav .btn,.form-submit{transition:none}}

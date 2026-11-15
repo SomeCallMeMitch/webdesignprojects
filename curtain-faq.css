@@ -1,0 +1,122 @@
+.curtain-faq {
+  --faq-edge: #100717;
+  --faq-ivory: #fcf1ea;
+  --faq-muted: #ead5e9;
+  --faq-gold: #e4b77e;
+  --faq-rule: #b484575f;
+  padding: clamp(4rem, 6vw, 7rem) clamp(2rem, 8vw, 10rem);
+  background: linear-gradient(var(--faq-edge), transparent 30%, transparent 75%, var(--faq-edge)),
+    radial-gradient(ellipse at 32% 42%, #431d50, #1b0e24 70%);
+  color: var(--faq-ivory);
+}
+
+.curtain-faq__program {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  max-width: 75rem;
+  margin-inline: auto;
+  border: 1px solid var(--faq-rule);
+  background: linear-gradient(145deg, #341a40, #1c1025 76%);
+  box-shadow: inset 0 0 0 8px #160a224d, 0 1.5rem 4rem #10061777;
+}
+
+.curtain-faq__intro {
+  padding: clamp(2.65rem, 4vw, 4.75rem) clamp(2.25rem, 3.35vw, 4rem);
+  border-inline-end: 1px solid var(--faq-rule);
+  background: radial-gradient(ellipse at 22% 5%, #995c9e33, transparent 66%);
+}
+
+.curtain-faq__label {
+  margin: 0 0 1rem;
+  color: var(--faq-gold);
+  font-size: .83rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.curtain-faq h2 {
+  margin: 0;
+  font: 400 clamp(2.85rem, 3.65vw, 3.8rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.curtain-faq h2 em { display: block; }
+
+.curtain-faq h2::after {
+  display: block;
+  width: 5rem;
+  height: 1px;
+  margin: 1.65rem 0 0;
+  background: linear-gradient(90deg, var(--faq-gold), transparent);
+  content: "";
+}
+
+.curtain-faq__intro p:not(.curtain-faq__label) {
+  max-width: 30ch;
+  margin: 1.35rem 0 1rem;
+  color: var(--faq-muted);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.curtain-faq__intro a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  text-decoration: underline;
+  text-decoration-color: var(--faq-gold);
+  text-underline-offset: .24em;
+}
+
+.curtain-faq__intro a:is(:hover, :focus-visible) { color: var(--faq-gold); }
+
+.curtain-faq__questions {
+  padding: clamp(2rem, 3.45vw, 4rem) clamp(2rem, 3.25vw, 3.8rem);
+}
+
+.curtain-faq details { border-top: 1px solid var(--faq-rule); }
+.curtain-faq details:last-child { border-bottom: 1px solid var(--faq-rule); }
+
+.curtain-faq summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) .75rem;
+  align-items: center;
+  gap: 1rem;
+  min-height: 3.65rem;
+  padding: .8rem .3rem;
+  list-style: none;
+  cursor: pointer;
+  font: 400 clamp(1.2rem, 1.47vw, 1.7rem)/1.25 Baskervville, Georgia, serif;
+}
+
+.curtain-faq summary::-webkit-details-marker { display: none; }
+.curtain-faq summary:is(:hover, :focus-visible),
+.curtain-faq details[open] summary { color: var(--faq-gold); }
+
+.curtain-faq summary:focus-visible {
+  outline: 2px solid #f5bbff;
+  outline-offset: 2px;
+}
+
+.curtain-faq summary::after {
+  justify-self: center;
+  width: .5rem;
+  height: .5rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-.15rem) rotate(45deg);
+  content: "";
+}
+
+.curtain-faq details[open] summary::after {
+  transform: translateY(.15rem) rotate(225deg);
+}
+
+.curtain-faq details p {
+  max-width: 61ch;
+  margin: .35rem 1.75rem 1rem .3rem;
+  color: var(--faq-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}

@@ -8,9 +8,19 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="card-reveal-demo.css">
   <link rel="stylesheet" href="experience-section.css">
+  <link rel="stylesheet" href="show-section.css">
+  <link rel="stylesheet" href="event-playbills.css">
+  <link rel="stylesheet" href="behind-curtain.css">
+  <link rel="stylesheet" href="audience-references.css">
+  <link rel="stylesheet" href="wonder-gallery.css">
+  <link rel="stylesheet" href="audience-reactions.css">
+  <link rel="stylesheet" href="booking-steps.css">
+  <link rel="stylesheet" href="curtain-faq.css">
   <script src="hero.js" defer></script>
   <script src="card-reveal-demo.js" defer></script>
   <script src="experience-section.js" defer></script>
+  <script src="deferred-section-art.js" defer></script>
+  <script src="wonder-gallery.js" defer></script>
 </head>
 <body>
   <main>
@@ -70,9 +80,9 @@
         </a>
         <nav aria-label="Main navigation">
           <a href="#experience">The Experience</a>
-          <a href="#preview">Shows</a>
-          <a href="#preview">About Keith</a>
-          <a href="#preview">Gallery</a>
+          <a href="#show">Shows</a>
+          <a href="#about">About Keith</a>
+          <a href="#gallery">Gallery</a>
           <a href="#preview">Contact</a>
         </nav>
         <a class="cta header-cta" href="#availability"><span class="calendar" aria-hidden="true"></span>Request availability</a>
@@ -150,9 +160,357 @@
       </div>
     </section>
 
+    <section class="magic-show" id="show" aria-labelledby="show-title">
+      <h2 id="show-title">The <em>Show</em></h2>
+      <p class="magic-show__intro">Six ways to experience the magic</p>
+      <ul class="magic-show__grid" data-deferred-art>
+        <li class="magic-show__panel" style="--show-crop: 50% 46%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_01_illusions.webp" alt="A purple-lit illusion cabinet" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_01_illusions.webp" alt="A purple-lit illusion cabinet" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">✦</span>
+            <h3>Illusions</h3>
+            <p>The impossible takes shape onstage.</p>
+          </div>
+        </li>
+        <li class="magic-show__panel" style="--show-crop: 50% 30%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_02_cards_and_coins.webp" alt="A playing card and coin suspended in violet light" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_02_cards_and_coins.webp" alt="A playing card and coin suspended in violet light" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">♠</span>
+            <h3>Cards &amp; Coins</h3>
+            <p>Sleight of hand with familiar objects and surprising results.</p>
+          </div>
+        </li>
+        <li class="magic-show__panel" style="--show-crop: 50% 47%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_03_mentalism.webp" alt="A profile framed by concentric rings of light" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_03_mentalism.webp" alt="A profile framed by concentric rings of light" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">◉</span>
+            <h3>Mentalism</h3>
+            <p>Experiments in perception, influence and prediction.</p>
+          </div>
+        </li>
+        <li class="magic-show__panel" style="--show-crop: 50% 27%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_04_comedy.webp" alt="An illustrated magician joking with an audience" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_04_comedy.webp" alt="An illustrated magician joking with an audience" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">✧</span>
+            <h3>Comedy</h3>
+            <p>Playful exchanges and laughs woven through the magic.</p>
+          </div>
+        </li>
+        <li class="magic-show__panel" style="--show-crop: 50% 52%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_05_storytelling.webp" alt="An open book with glowing pages" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_05_storytelling.webp" alt="An open book with glowing pages" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">❖</span>
+            <h3>Storytelling</h3>
+            <p>Stories that build suspense and end with a magical turn.</p>
+          </div>
+        </li>
+        <li class="magic-show__panel" style="--show-crop: 50% 37%">
+          <div class="magic-show__art">
+            <img data-src="assets/section03_show/show_06_mind_reading.webp" alt="A glowing crystal ball on a theatrical pedestal" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section03_show/show_06_mind_reading.webp" alt="A glowing crystal ball on a theatrical pedestal" loading="lazy"></noscript>
+          </div>
+          <div class="magic-show__caption">
+            <span class="magic-show__symbol" aria-hidden="true">◎</span>
+            <h3>Mind Reading</h3>
+            <p>A thought kept to yourself becomes the center of the mystery.</p>
+          </div>
+        </li>
+      </ul>
+      <p class="magic-show__credit">Concept illustrations</p>
+    </section>
+
+    <section class="event-playbills" id="events" aria-labelledby="events-title">
+      <h2 id="events-title">Choose <em>Your Event</em></h2>
+      <div class="event-playbills__grid" data-deferred-art>
+        <article class="event-playbills__card event-playbills__card--birthday">
+          <div class="event-playbills__art">
+            <img data-src="assets/section04_events/birthday_event.webp" alt="Children react to a fan of playing cards at a birthday party" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section04_events/birthday_event.webp" alt="Children react to a fan of playing cards at a birthday party" loading="lazy"></noscript>
+          </div>
+          <img class="event-playbills__frame" data-src="assets/section04_events/playbill_frame_transparent.webp" alt="" decoding="async" fetchpriority="low">
+          <noscript><img class="event-playbills__frame" src="assets/section04_events/playbill_frame_transparent.webp" alt="" loading="lazy"></noscript>
+          <div class="event-playbills__body">
+            <h3>Birthday Parties</h3>
+            <p>A playful magic show for the guest of honor, with plenty of chances for friends and family to join in.</p>
+            <a href="#availability" aria-label="Request availability for birthday parties">Request availability</a>
+          </div>
+        </article>
+        <article class="event-playbills__card event-playbills__card--corporate">
+          <div class="event-playbills__art">
+            <img data-src="assets/section04_events/corporate_event.webp" alt="Guests at a reception laugh as a performer holds up a coin" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section04_events/corporate_event.webp" alt="Guests at a reception laugh as a performer holds up a coin" loading="lazy"></noscript>
+          </div>
+          <img class="event-playbills__frame" data-src="assets/section04_events/playbill_frame_transparent.webp" alt="" decoding="async" fetchpriority="low">
+          <noscript><img class="event-playbills__frame" src="assets/section04_events/playbill_frame_transparent.webp" alt="" loading="lazy"></noscript>
+          <div class="event-playbills__body">
+            <h3>Corporate Events</h3>
+            <p>A featured performance or roving magic to bring colleagues together between conversations.</p>
+            <a href="#availability" aria-label="Request availability for corporate events">Request availability</a>
+          </div>
+        </article>
+        <article class="event-playbills__card event-playbills__card--private">
+          <div class="event-playbills__art">
+            <img data-src="assets/section04_events/private_event.webp" alt="Guests watch close-up magic at a private celebration" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section04_events/private_event.webp" alt="Guests watch close-up magic at a private celebration" loading="lazy"></noscript>
+          </div>
+          <img class="event-playbills__frame" data-src="assets/section04_events/playbill_frame_transparent.webp" alt="" decoding="async" fetchpriority="low">
+          <noscript><img class="event-playbills__frame" src="assets/section04_events/playbill_frame_transparent.webp" alt="" loading="lazy"></noscript>
+          <div class="event-playbills__body">
+            <h3>Private Events</h3>
+            <p>Close-up magic for dinner parties and private celebrations, with surprises that happen right at the table.</p>
+            <a href="#availability" aria-label="Request availability for private events">Request availability</a>
+          </div>
+        </article>
+      </div>
+      <p class="event-playbills__credit">Concept illustrations</p>
+    </section>
+
+    <section class="behind-curtain" id="about" aria-labelledby="about-title" data-deferred-art>
+      <img class="behind-curtain__atmosphere" data-src="assets/section05_behind_curtain/behind_curtain_atmosphere.webp" alt="" decoding="async" fetchpriority="low">
+      <noscript><img class="behind-curtain__atmosphere" src="assets/section05_behind_curtain/behind_curtain_atmosphere.webp" alt="" loading="lazy"></noscript>
+      <div class="behind-curtain__layout">
+        <figure class="behind-curtain__portrait">
+          <div class="behind-curtain__arch">
+            <img data-src="assets/section05_behind_curtain/magician_portrait_concept.webp" alt="Concept portrait of Keith Tyran in purple stage attire" decoding="async" fetchpriority="low">
+            <noscript><img src="assets/section05_behind_curtain/magician_portrait_concept.webp" alt="Concept portrait of Keith Tyran in purple stage attire" loading="lazy"></noscript>
+          </div>
+          <figcaption>Concept portrait</figcaption>
+        </figure>
+        <div class="behind-curtain__copy">
+          <p class="behind-curtain__label">Meet Keith Tyran</p>
+          <h2 id="about-title">Behind <em>the Curtain</em></h2>
+          <p>Known as The Gentleman Magician, Keith brings sleight of hand, storytelling and humor to his performances. His show can unfold up close with cards and coins or play to the room with illusions and mentalism.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="audience-references" id="clients" aria-labelledby="clients-title">
+      <h2 id="clients-title">Trusted by <em>Audiences</em></h2>
+      <p class="audience-references__source">Performance references listed on <a href="https://www.keithtyran.com/">Keith Tyran’s website</a></p>
+      <ul class="audience-references__grid">
+        <li>Meta</li>
+        <li>Google</li>
+        <li>NASCAR</li>
+        <li>Wells Fargo</li>
+        <li>San Francisco Symphony</li>
+        <li>Prologis</li>
+        <li>The Japan Society</li>
+        <li>Habbis Law Firm</li>
+      </ul>
+      <p class="audience-references__note">Unofficial website concept</p>
+    </section>
+
+    <section class="wonder-gallery" id="gallery" aria-labelledby="gallery-title" data-deferred-art>
+      <img class="wonder-gallery__scene" data-src="assets/section07_gallery/gallery_stage.webp" alt="" decoding="async" fetchpriority="low">
+      <noscript><img class="wonder-gallery__scene" src="assets/section07_gallery/gallery_stage.webp" alt="" loading="lazy"></noscript>
+      <h2 id="gallery-title">Moments of <em>Wonder</em></h2>
+      <p class="wonder-gallery__intro">Concept illustrations of close-up magic and stage performance.</p>
+
+      <div class="wonder-gallery__display">
+        <button class="wonder-gallery__arrow" type="button" data-gallery-step="-1" aria-label="Previous gallery arrangement" hidden>
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="wonder-gallery__strip">
+          <figure class="wonder-gallery__piece">
+            <a class="wonder-gallery__art" href="assets/section07_gallery/gallery_cards_closeup.webp">
+              <span class="wonder-gallery__opening">
+                <img data-src="assets/section07_gallery/gallery_cards_closeup.webp" alt="Hands fan a deck of playing cards over a purple velvet table" decoding="async" fetchpriority="low">
+                <noscript><img src="assets/section07_gallery/gallery_cards_closeup.webp" alt="Hands fan a deck of playing cards over a purple velvet table" loading="lazy"></noscript>
+              </span>
+              <img class="wonder-gallery__frame" data-src="assets/section07_gallery/gallery_frame_portrait.webp" alt="" decoding="async" fetchpriority="low">
+              <noscript><img class="wonder-gallery__frame" src="assets/section07_gallery/gallery_frame_portrait.webp" alt="" loading="lazy"></noscript>
+            </a>
+            <figcaption>Sleight of hand</figcaption>
+          </figure>
+          <figure class="wonder-gallery__piece wonder-gallery__piece--landscape">
+            <a class="wonder-gallery__art" href="assets/section07_gallery/gallery_reaction_table.webp">
+              <span class="wonder-gallery__opening">
+                <img data-src="assets/section07_gallery/gallery_reaction_table.webp" alt="Three guests laugh as a hand holds up the ace of spades" decoding="async" fetchpriority="low">
+                <noscript><img src="assets/section07_gallery/gallery_reaction_table.webp" alt="Three guests laugh as a hand holds up the ace of spades" loading="lazy"></noscript>
+              </span>
+              <img class="wonder-gallery__frame" data-src="assets/section02_experience/experience_main_frame.webp" alt="" decoding="async" fetchpriority="low">
+              <noscript><img class="wonder-gallery__frame" src="assets/section02_experience/experience_main_frame.webp" alt="" loading="lazy"></noscript>
+            </a>
+            <figcaption>A table of surprises</figcaption>
+          </figure>
+          <figure class="wonder-gallery__piece wonder-gallery__piece--featured">
+            <a class="wonder-gallery__art" href="assets/section07_gallery/gallery_featured_magician.webp">
+              <span class="wonder-gallery__opening">
+                <img data-src="assets/section07_gallery/gallery_featured_magician.webp" alt="A magician in a red jacket presents a heart-suit playing card" decoding="async" fetchpriority="low">
+                <noscript><img src="assets/section07_gallery/gallery_featured_magician.webp" alt="A magician in a red jacket presents a heart-suit playing card" loading="lazy"></noscript>
+              </span>
+              <img class="wonder-gallery__frame" data-src="assets/section07_gallery/gallery_frame_featured.webp" alt="" decoding="async" fetchpriority="low">
+              <noscript><img class="wonder-gallery__frame" src="assets/section07_gallery/gallery_frame_featured.webp" alt="" loading="lazy"></noscript>
+            </a>
+            <figcaption>The card reveal</figcaption>
+          </figure>
+          <figure class="wonder-gallery__piece wonder-gallery__piece--landscape">
+            <a class="wonder-gallery__art" href="assets/section07_gallery/gallery_crystal.webp">
+              <span class="wonder-gallery__opening">
+                <img data-src="assets/section07_gallery/gallery_crystal.webp" alt="A crystal ball glows violet on a velvet-draped stage" decoding="async" fetchpriority="low">
+                <noscript><img src="assets/section07_gallery/gallery_crystal.webp" alt="A crystal ball glows violet on a velvet-draped stage" loading="lazy"></noscript>
+              </span>
+              <img class="wonder-gallery__frame" data-src="assets/section02_experience/experience_main_frame.webp" alt="" decoding="async" fetchpriority="low">
+              <noscript><img class="wonder-gallery__frame" src="assets/section02_experience/experience_main_frame.webp" alt="" loading="lazy"></noscript>
+            </a>
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure class="wonder-gallery__piece">
+            <a class="wonder-gallery__art" href="assets/section07_gallery/gallery_gala.webp">
+              <span class="wonder-gallery__opening">
+                <img data-src="assets/section07_gallery/gallery_gala.webp" alt="A guest smiles as a magician shows her a fan of cards" decoding="async" fetchpriority="low">
+                <noscript><img src="assets/section07_gallery/gallery_gala.webp" alt="A guest smiles as a magician shows her a fan of cards" loading="lazy"></noscript>
+              </span>
+              <img class="wonder-gallery__frame" data-src="assets/section07_gallery/gallery_frame_portrait.webp" alt="" decoding="async" fetchpriority="low">
+              <noscript><img class="wonder-gallery__frame" src="assets/section07_gallery/gallery_frame_portrait.webp" alt="" loading="lazy"></noscript>
+            </a>
+            <figcaption>Magic at the gala</figcaption>
+          </figure>
+        </div>
+        <button class="wonder-gallery__arrow" type="button" data-gallery-step="1" aria-label="Next gallery arrangement" hidden>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="wonder-gallery__status" role="status"></p>
+
+      <dialog class="wonder-gallery__lightbox" aria-labelledby="gallery-lightbox-title" aria-describedby="gallery-lightbox-note">
+        <button class="wonder-gallery__close" type="button" autofocus>Close</button>
+        <figure>
+          <img alt="" decoding="async">
+          <figcaption id="gallery-lightbox-title"></figcaption>
+        </figure>
+        <p id="gallery-lightbox-note">Concept illustration</p>
+      </dialog>
+    </section>
+
+    <section class="audience-reactions" id="reactions" aria-labelledby="reactions-title">
+      <h2 id="reactions-title">Audience <em>Reactions</em></h2>
+      <p class="audience-reactions__intro">Review placeholders for this website concept.</p>
+
+      <ul class="audience-reactions__letters" data-deferred-art>
+        <li class="audience-reactions__letter">
+          <img data-src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" loading="lazy"></noscript>
+          <div class="audience-reactions__copy">
+            <h3>Private celebrations</h3>
+            <p>Reserved for a private event host’s review.</p>
+          </div>
+        </li>
+        <li class="audience-reactions__letter">
+          <img data-src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" loading="lazy"></noscript>
+          <div class="audience-reactions__copy">
+            <h3>Corporate events</h3>
+            <p>Reserved for a corporate event organizer’s review.</p>
+          </div>
+        </li>
+        <li class="audience-reactions__letter">
+          <img data-src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section08_reactions/review_letter_blank.webp" width="700" height="875" alt="" loading="lazy"></noscript>
+          <div class="audience-reactions__copy">
+            <h3>Memorable moments</h3>
+            <p>Reserved for a guest’s account of the performance.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="booking-steps" id="booking" aria-labelledby="booking-title" data-deferred-art>
+      <img class="booking-steps__scene" data-src="assets/section07_gallery/gallery_stage.webp" alt="" decoding="async" fetchpriority="low">
+      <noscript><img class="booking-steps__scene" src="assets/section07_gallery/gallery_stage.webp" alt="" loading="lazy"></noscript>
+      <h2 id="booking-title">How Booking <em>Works</em></h2>
+      <p class="booking-steps__intro">A sample inquiry process for planning your event.</p>
+
+      <ol class="booking-steps__tickets" role="list">
+        <li class="booking-steps__ticket">
+          <img data-src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" loading="lazy"></noscript>
+          <span class="booking-steps__number" aria-hidden="true">1</span>
+          <div class="booking-steps__copy">
+            <h3>Share your event details</h3>
+            <p>Include the date, venue, occasion and estimated guest count.</p>
+          </div>
+        </li>
+        <li class="booking-steps__ticket">
+          <img data-src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" loading="lazy"></noscript>
+          <span class="booking-steps__number" aria-hidden="true">2</span>
+          <div class="booking-steps__copy">
+            <h3>Discuss the performance</h3>
+            <p>Talk through the show format that suits your guests and venue.</p>
+          </div>
+        </li>
+        <li class="booking-steps__ticket">
+          <img data-src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" decoding="async" fetchpriority="low">
+          <noscript><img src="assets/section09_booking/booking_ticket_frame.webp" width="780" height="975" alt="" loading="lazy"></noscript>
+          <span class="booking-steps__number" aria-hidden="true">3</span>
+          <div class="booking-steps__copy">
+            <h3>Confirm the arrangements</h3>
+            <p>Agree on timing, venue logistics and any special requests.</p>
+          </div>
+        </li>
+      </ol>
+
+      <a class="booking-steps__request" href="#availability" aria-describedby="booking-demo-note">Request availability</a>
+      <p class="booking-steps__note" id="booking-demo-note">Demo only. No request is sent.</p>
+    </section>
+
+    <section class="curtain-faq" id="faq" aria-labelledby="faq-title">
+      <div class="curtain-faq__program">
+        <div class="curtain-faq__intro">
+          <p class="curtain-faq__label">Frequently asked questions</p>
+          <h2 id="faq-title">Before the <em>Curtain Rises</em></h2>
+          <p>Planning a performance starts with the occasion, your guests and the space.</p>
+          <a href="#availability">View the inquiry demo</a>
+        </div>
+
+        <div class="curtain-faq__questions">
+          <details open>
+            <summary>What types of events can Keith perform at?</summary>
+            <p>Keith’s website lists birthday parties, corporate events and private gatherings.</p>
+          </details>
+          <details>
+            <summary>What kind of magic can guests experience?</summary>
+            <p>Keith describes close-up, walk-around and stage or parlour magic. His repertoire includes cards, coins, illusions and mentalism.</p>
+          </details>
+          <details>
+            <summary>How long does a performance last?</summary>
+            <p>Published packages vary by event. Some pair a short show with a separate close-up or walk-around set. Confirm the running time when discussing your event.</p>
+          </details>
+          <details>
+            <summary>Is the show suitable for children and adults?</summary>
+            <p>Keith describes performances for a range of ages. Share your guests’ ages when discussing the show so you can choose a suitable format.</p>
+          </details>
+          <details>
+            <summary>How much does a performance cost?</summary>
+            <p>Keith’s website describes custom pricing. The date, location, estimated guest count and preferred format are useful details to include when asking for a quote.</p>
+          </details>
+          <details>
+            <summary>What if our date or venue is still tentative?</summary>
+            <p>Start with the details you know. Confirm the date, venue requirements and availability when you discuss the arrangements.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="preview" id="preview" aria-labelledby="preview-title">
       <h2 id="preview-title">Desktop concept preview</h2>
-      <p>Shows, biography, gallery and contact are placeholders for this homepage review.</p>
+      <p>Contact is a placeholder for this homepage review.</p>
       <div id="availability">
         <h3>Request availability</h3>
         <p>This unofficial concept preview has no booking form.</p>

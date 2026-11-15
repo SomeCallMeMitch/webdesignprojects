@@ -28,4 +28,4 @@
 - Work may span multiple chats: repository documents, not chat memory, are the system of record.
 
 ## Current design authority / new-chat protocol (added 2026-11-13)
-At startup, after the mandatory core files, **also read `docs/CURRENT_DESIGN_DIRECTION.md`** for the current active Keith desktop concept and `docs/NEXT_CHAT_DESKTOP_HERO_PROMPT_2026-11-13.md` for the pending handoff. Those documents and the latest dated decisions in `docs/DESIGN_PREFERENCES.md` supersede older rejected visual explorations. Keep appending `docs/PROGRESS.md` for every prompt/session. Current scope: desktop ONLY, mobile will be separately designed later; planning ONLY, no code or outreach.
+At startup, after the mandatory core files, also read `docs/CURRENT_DESIGN_DIRECTION.md` for the design background and `docs/NEXT_CHAT_KEITH_BUILD_SECTION_11_2026-11-14.md` for the latest continuation handoff. Use the latest dated entries in `docs/PROGRESS.md` and `docs/DESIGN_PREFERENCES.md` for implementation state and design decisions. Keep appending progress each session. The active concept is desktop-only. Build each next section when requested and keep preview interactions local.

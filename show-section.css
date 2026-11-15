@@ -1,0 +1,130 @@
+.magic-show {
+  --show-gold: #e2b879;
+  --show-text: #fcf2ee;
+  --show-muted: #dfcfe0;
+  --show-panel: #1b0e25;
+  --show-gutter: clamp(3rem, 10vw, 12rem);
+  --show-frame: #c48b5e;
+  --show-glow: #c669ec4f;
+  padding: clamp(4.5rem, 6vw, 7rem) var(--show-gutter);
+  background: radial-gradient(ellipse at 50% 22%, #361345, transparent 64%),
+    linear-gradient(#110717, #1b0b24 35%, #13091b);
+  color: var(--show-text);
+  text-align: center;
+}
+
+.magic-show h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.magic-show__intro {
+  margin: .85rem 0 0;
+  color: var(--show-muted);
+  font-size: 1rem;
+}
+
+.magic-show__intro::after {
+  content: "";
+  display: block;
+  width: 7.5rem;
+  height: 1px;
+  margin: 1.55rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--show-gold), transparent);
+}
+
+.magic-show__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 1.8vw, 2rem);
+  max-width: 82.5rem;
+  margin: clamp(2.25rem, 3.4vw, 4rem) auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.magic-show__panel {
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+  border: 1px solid var(--show-frame);
+  border-radius: .65rem;
+  background: var(--show-panel);
+  box-shadow: 0 12px 27px #08030e80;
+}
+
+.magic-show__panel::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid color-mix(in srgb, var(--show-gold) 74%, transparent);
+  border-radius: .32rem;
+  pointer-events: none;
+}
+
+.magic-show__art {
+  aspect-ratio: 1.76;
+  overflow: hidden;
+  background: radial-gradient(ellipse, #442057, var(--show-panel));
+}
+
+.magic-show__art img[data-src]:not([src]) { display: none; }
+
+.magic-show__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--show-crop, center);
+}
+
+.magic-show__caption {
+  position: relative;
+  padding: 1.55rem .85rem 1.25rem;
+  background: linear-gradient(#32143c, var(--show-panel));
+}
+
+.magic-show__symbol {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--show-gold);
+  border-radius: 50%;
+  background: var(--show-panel);
+  color: var(--show-gold);
+}
+
+.magic-show__caption h3 {
+  margin: 0;
+  font: 400 clamp(1.25rem, 1.5vw, 1.6rem)/1.15 Baskervville, Georgia, serif;
+}
+
+.magic-show__caption p {
+  max-width: 31ch;
+  margin: .55rem auto 0;
+  color: var(--show-muted);
+  font-size: .94rem;
+  line-height: 1.5;
+}
+
+.magic-show__credit {
+  margin: 1.4rem 0 0;
+  color: var(--show-muted);
+  font-size: .76rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .magic-show__panel:hover { box-shadow: 0 12px 27px #08030e80, 0 0 22px var(--show-glow); }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .magic-show__panel { transition: box-shadow .22s ease-out; }
+  .magic-show__art img { transition: transform .38s cubic-bezier(.22, 1, .36, 1); }
+  .magic-show__panel:hover img { transform: scale(1.035); }
+}

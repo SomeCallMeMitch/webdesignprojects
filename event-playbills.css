@@ -1,0 +1,165 @@
+.event-playbills {
+  --events-ink: #170b21;
+  --events-text: #fcf1ea;
+  --events-muted: #e5d3e1;
+  --events-gold: #efc287;
+  --events-gutter: clamp(3rem, 10vw, 12rem);
+  --events-glow: #b967e65c;
+  padding: clamp(4.5rem, 6vw, 7rem) var(--events-gutter);
+  background: radial-gradient(ellipse at 52% 37%, #54215c8f, transparent 68%),
+    linear-gradient(#13091b, #210d2b 55%, #13091b);
+  color: var(--events-text);
+  text-align: center;
+}
+
+.event-playbills h2 {
+  margin: 0;
+  font: 400 clamp(3.2rem, 4.3vw, 5.2rem)/1.05 Baskervville, Georgia, serif;
+  letter-spacing: -.035em;
+}
+
+.event-playbills h2::after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 1px;
+  margin: 1.65rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--events-gold), transparent);
+}
+
+.event-playbills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.4rem, 2.4vw, 2.6rem);
+  max-width: 77rem;
+  margin: clamp(2.25rem, 3.4vw, 4rem) auto 0;
+}
+
+.event-playbills__card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 5% 5% 8%;
+  border-radius: 1rem;
+  background: var(--events-ink);
+  box-shadow: 0 16px 36px #0a0411b3;
+}
+
+.event-playbills img[data-src]:not([src]) { display: none; }
+
+.event-playbills__art {
+  position: relative;
+  aspect-ratio: 1.15;
+  overflow: hidden;
+  border-radius: .65rem .65rem 0 0;
+  background: radial-gradient(ellipse, #43204e, var(--events-ink));
+}
+
+.event-playbills__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--events-crop, 50% 44%);
+}
+
+.event-playbills__card--birthday { --events-crop: 50% 40%; }
+.event-playbills__card--corporate { --events-crop: 50% 32%; }
+.event-playbills__card--private { --events-crop: 50% 38%; }
+
+.event-playbills__card:is(.event-playbills__card--corporate, .event-playbills__card--private) .event-playbills__art img {
+  transform: scale(1.045);
+  transform-origin: center 30%;
+}
+
+.event-playbills__art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 66%, var(--events-ink));
+}
+
+.event-playbills__frame {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.event-playbills__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: .55rem 1.35rem .9rem;
+}
+
+.event-playbills__body h3 {
+  margin: 0;
+  font: 400 clamp(1.65rem, 2.15vw, 2.15rem)/1.1 Baskervville, Georgia, serif;
+}
+
+.event-playbills__body p {
+  max-width: 30ch;
+  margin: .85rem 0 1.45rem;
+  color: var(--events-muted);
+  font-size: clamp(.96rem, 1.06vw, 1.1rem);
+  line-height: 1.52;
+}
+
+.event-playbills__body a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  min-height: 44px;
+  margin-top: auto;
+  padding: .58rem .85rem;
+  border: 1px solid #cd8cec;
+  border-radius: .35rem;
+  background: #30173c;
+  color: var(--events-text);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.event-playbills__body a::after {
+  content: "";
+  width: .35rem;
+  height: .35rem;
+  border: solid currentColor;
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg);
+}
+
+.event-playbills__body a:focus-visible {
+  outline: 2px solid var(--events-gold);
+  outline-offset: 4px;
+}
+
+.event-playbills__body a:is(:hover, :focus-visible) { background: #4a2559; }
+.event-playbills__card:focus-within { box-shadow: 0 16px 36px #0a0411b3, 0 0 26px var(--events-glow); }
+
+.event-playbills__credit {
+  margin: 1.4rem 0 0;
+  color: var(--events-muted);
+  font-size: .76rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .event-playbills__card:hover { box-shadow: 0 16px 36px #0a0411b3, 0 0 26px var(--events-glow); }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .event-playbills__card { transition: transform .24s ease-out, box-shadow .24s ease-out; }
+  .event-playbills__card:hover { transform: translateY(-4px); }
+}

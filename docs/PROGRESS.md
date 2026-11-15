@@ -399,3 +399,78 @@
 - **Request:** Document and push the integrated hero and Experience the Magic before continuing with Section 03.
 - **Checkpoint:** The six-card hero, remixed opt-in audio, King of Hearts, lantern and seer, and the standalone Experience the Magic module are included. See the preceding build entry for three-size Edge QA and throttled transfers, and `docs/EXPERIENCE_SECTION.md` for reuse.
 - **Branch:** Integrate the newer documentation from the remote concept branch. Section 03 will be a separate change. No deployment or outreach.
+
+### 2026-11-14 — Pushed the hero checkpoint and built The Show
+
+- **Request:** Document and push the hero and Section 02, then continue with the next section.
+- **Git:** Preserved the newer GitHub notes at `006bbb5` and pushed the hero and Experience the Magic checkpoint as `935cc1f` on `concept/keith-tyran-magician-experience`.
+- **Section 03:** Added The Show below Experience the Magic in `card-reveal-demo.html`, scoped `show-section.css` and `show-section.js`, and the six supplied WebPs in `assets/section03_show/`. The existing Shows link now goes to the section. Each panel has live copy, one independent illustration, accessible alt text and an optional CSS hover effect.
+- **Verification:** Local Edge checked 1440 × 900, 1672 × 941 and 1920 × 1080. Confirmed the anchor, six images and three-column layout, no horizontal overflow, reduced motion and static no-JavaScript art. No Section 03 image requests on initial hero view or on arrival at Experience the Magic at the tested sizes. The six WebPs total 192,218 image bytes. Captures are in the Codex visualization folder.
+- **Next:** Review the local Section 03 build before proceeding to Section 04, Choose Your Event. Section 03 is in the working tree. No deployment or outreach.
+
+### 2026-11-14 — Built Choose Your Event
+
+- **Request:** Build Section 04 after The Show using the supplied desktop art.
+- **Files:** Added the three playbills in `card-reveal-demo.html`, scoped styles in `event-playbills.css`, and four supplied WebPs in `assets/section04_events/`. Renamed the existing Show image initializer to `deferred-section-art.js` and shared it with the event grid. Each Request availability link goes to the existing local demo target.
+- **Verification:** Edge checked 1440 × 900, 1672 × 941 and 1920 × 1080, equal card heights, keyboard focus, all three availability destinations, reduced motion and the static JavaScript-off fallback. No event images requested during the hero or on landing at The Show. The three images and the shared frame produced four requests near Section 04 and transferred 135,547 bytes with local HTTP headers.
+- **Status:** Local working tree on `concept/keith-tyran-magician-experience` at `935cc1f`. Section 05, Behind the Curtain, is next in the desktop handoff. No deployment or outreach.
+
+### 2026-11-14 — Built Behind the Curtain and checked remaining handoffs
+
+- **Request:** Check what comes after Choose Your Event and build the next section if ready. Prepare a new-chat prompt only if blocked.
+- **Files:** Added Section 05 in `card-reveal-demo.html`, scoped styles in `behind-curtain.css`, and the supplied portrait and backdrop WebPs under `assets/section05_behind_curtain/`. The About Keith nav link now reaches the section. The visible portrait label identifies it as concept artwork. Biography uses the performance categories from the documented site research.
+- **Verification:** Local Edge at 1440 × 900, 1672 × 941 and 1920 × 1080. Verified the About anchor, portrait and copy layout, reduced motion, artwork with JavaScript disabled, and two deferred requests totaling 62,905 transfer bytes. No Section 05 requests during the initial hero view or on arrival at Section 04. Captures are in the Codex visualization folder.
+- **Remaining handoffs:** Section 06, Trusted by Audiences, is next. The Sections 02–09 asset handoff covers the remaining below-fold artwork and patterns through How Booking Works. The separate Sections 10–12 build handoff covers FAQ, demo inquiry and footer. These handoffs are in the repo. No new-chat prompt needed for Section 05.
+- **Status:** Local working tree on `concept/keith-tyran-magician-experience` at `935cc1f`. No deployment or outreach.
+
+### 2026-11-14 — Built Trusted by Audiences
+
+- **Request:** Build the next section under Behind the Curtain.
+- **Files:** Added Section 06 in `card-reveal-demo.html` and reusable plaque styles in `audience-references.css`. Eight text plaques use live HTML. Hover illumination is CSS-only. The section adds no image assets or JavaScript.
+- **Source:** Checked https://www.keithtyran.com/ on 2026-11-14. Its homepage names all eight organizations as performance references and spells the law firm's name Habbis Law Firm. The section attributes the names to Keith's site. The homepage establishes what Keith reports and leaves the engagements and endorsement status unverified.
+- **Verification:** Local Edge passed at 1440 × 900, 1672 × 941 and 1920 × 1080. Checked all eight names, four columns, overflow, source URL, keyboard focus, reduced motion and readability without JavaScript. Captures are in the Codex visualization folder.
+- **Status:** Local working tree on `concept/keith-tyran-magician-experience` at `935cc1f`. Section 07, Moments of Wonder, is next in the asset handoff. No deployment or outreach.
+
+### 2026-11-14 — New-chat handoff for Section 07
+
+- **Request:** Prepare a copy-ready prompt to continue in a new chat with the current progress and the remaining specifications, assets and previews.
+- **Deliverable:** `docs/NEXT_CHAT_KEITH_BUILD_SECTION_07_2026-11-14.md`. It records the pushed 01–02 checkpoint, local 03–06 work, live preview, startup notes, QA sizes, the verified Drive package links and the Section 07–12 sequence.
+- **Next:** Start a Codex chat in the same workspace and use the handoff to integrate Section 07 from the website-ready ZIP. Preserve the current checkout because Sections 03–06 are local.
+- **Status:** `concept/keith-tyran-magician-experience` at `935cc1f`. Documentation only for this turn. No new commit, deployment or outreach.
+
+### 2026-11-14 — Built Moments of Wonder and Audience Reactions
+
+- **Request:** Build Section 07 beneath Trusted by Audiences in the live desktop preview, then continue to Section 08.
+- **Section 07:** Added [Moments of Wonder](http://127.0.0.1:8722/card-reveal-demo.html#gallery) in `card-reveal-demo.html`, with `wonder-gallery.css`, `wonder-gallery.js` and eight WebPs under `assets/section07_gallery/`. The Gallery navigation link jumps to the section. Manual arrows rotate the complete framed illustrations so crops and captions stay paired. Each print opens an uncropped native lightbox. The section labels the images as concept illustrations.
+- **Section 08:** Added [Audience Reactions](http://127.0.0.1:8722/card-reveal-demo.html#reactions), with `audience-reactions.css` and one shared envelope WebP under `assets/section08_reactions/`. Three static letters contain editable, clearly labeled review placeholders for private events, corporate events and guest reactions.
+- **Source:** Extracted the [Sections 02–12 website-ready ZIP](https://drive.google.com/file/d/1CHc4MDdxbwvH5C38Cj95D3kZ6VWzgD6G/view) separately and checked both sections against its reference HTML. All nine new WebPs and the existing Section 02 landscape frame match the ZIP manifest hashes and lengths.
+- **Verification:** Local Edge at 1440 × 900, 1672 × 941 and 1920 × 1080. Verified gallery crops and transitions, manual arrows, keyboard focus order, lightbox focus, Escape, focus return, the reduced-motion setting, and static artwork with JavaScript off. Checked the letter copy against the parchment area and with JavaScript disabled and artwork blocked. Rechecked the hero slider, King of Hearts, lantern, seer, opt-in audio and mute, and Sections 02–06 and the demo availability link. No page exceptions in the browser checks.
+- **Loading:** On a cold 5 Mbps connection with 80 ms latency, Edge requested zero Section 07–08 images during the initial hero load. On approach, Section 07 requested eight new WebPs (655,916 image bytes), and Section 08 requested one WebP (81,776 image bytes) for all three letters. Both sections use the existing `deferred-section-art.js` loader and static lazy image fallbacks.
+- **Evidence:** The [desktop captures](C:/Users/field/.codex/visualizations/2026/11/15/01a1dcd8-4896-7930-ad30-32237e659ded) include all three viewport sizes for both sections, the gallery lightbox, the static gallery and both section transitions.
+- **Status and next:** Local working tree on `concept/keith-tyran-magician-experience` at `935cc1fe9094819578532b3b0d1b74aef707f5e0`. Section 09, How Booking Works, is next in the ZIP and the desktop handoff. Authentic gallery photography and attributed testimonials require source and reuse approval. No commit, deployment or outreach.
+
+### 2026-11-14 — Built How Booking Works
+
+- **Request:** Continue to Section 09 beneath Audience Reactions in the live desktop preview.
+- **Files:** Added [How Booking Works](http://127.0.0.1:8722/card-reveal-demo.html#booking) to `card-reveal-demo.html`, scoped styles in `booking-steps.css`, and the shared frame in `assets/section09_booking/booking_ticket_frame.webp`. Used an ordered list for the three sample inquiry steps, with live numbers inside the ticket medallions and a static connector aligned to the side notches. Request availability goes to the existing local `#availability` target.
+- **Source:** Checked the booking reference HTML and verified the 90,266-byte WebP against the manifest in the [Sections 02–12 website-ready ZIP](https://drive.google.com/file/d/1CHc4MDdxbwvH5C38Cj95D3kZ6VWzgD6G/view). Reused the gallery stage backdrop.
+- **Verification:** Edge checked the layout, copy, anchor, visible keyboard focus and demo activation at 1440 × 900, 1672 × 941 and 1920 × 1080. Checked reduced motion, the static JavaScript-off and blocked-artwork fallbacks, and the transition from Audience Reactions. The CTA made zero network requests. A cold 5 Mbps run with 80 ms latency requested zero ticket images on the hero or gallery view and one ticket WebP on approach. The gallery and booking views shared one stage image request. Existing page markup matches the pre-task file after removing the new section and stylesheet link.
+- **Evidence:** [Desktop screenshots](C:/Users/field/.codex/visualizations/2026/11/15/01a1dcd8-4896-7930-ad30-32237e659ded) for all three sizes, plus the transition from Audience Reactions.
+- **Status and next:** Local on `concept/keith-tyran-magician-experience` at `935cc1fe9094819578532b3b0d1b74aef707f5e0`. Section 10, Before the Curtain Rises, is next in `section_modules/` of the ZIP. The displayed inquiry steps are concept copy. No commit, deployment or outreach.
+
+### 2026-11-14 — Built Before the Curtain Rises
+
+- **Request:** Continue one more section after How Booking Works.
+- **Files:** Added [Before the Curtain Rises](http://127.0.0.1:8722/card-reveal-demo.html#faq) to `card-reveal-demo.html`, with a two-column theater program in `curtain-faq.css`. The first of six native disclosures starts open, and readers can open multiple answers. The inquiry link reaches the existing local `#availability` demo. The section adds no JavaScript or image assets.
+- **Sources:** Adapted the FAQ from `section_modules/` in the [website-ready ZIP](https://drive.google.com/file/d/1CHc4MDdxbwvH5C38Cj95D3kZ6VWzgD6G/view). Checked [Keith’s public site](https://www.keithtyran.com/) on 2026-11-14 for the listed event types, show formats, audience ages, published package examples and custom quotes. Actual duration, pricing, venue requirements and availability depend on the event and remain subject to confirmation.
+- **Verification:** Edge at 1440 × 900, 1672 × 941 and 1920 × 1080. Checked the transition from booking, all six disclosures, keyboard Tab, Enter and Space, visible focus, multiple open answers, reduced motion, and the native JavaScript-off behavior. The inquiry link reached the demo and sent no submission. Preserved the existing preview markup outside the new section and stylesheet link.
+- **Evidence:** [Desktop captures](C:/Users/field/.codex/visualizations/2026/11/15/01a1dcd8-4896-7930-ad30-32237e659ded) at all three sizes, including the expanded FAQ and transition from Section 09.
+- **Status and next:** Local working tree on `concept/keith-tyran-magician-experience` at `935cc1fe9094819578532b3b0d1b74aef707f5e0`. Section 11, Your Invitation Awaits, is next in the handoff. No commit, deployment or outreach.
+
+### 2026-11-14 — Checkpoint Sections 01–10 for account handoff
+
+- **Request:** Save the complete integrated concept in the repo and prepare a copy-ready prompt for another Codex account.
+- **Checkpoint:** Include Sections 03–10 and their optimized assets with the previously pushed hero and Experience the Magic. All files needed for the current preview are in the concept branch. The previous pushed checkpoint was `935cc1f`.
+- **Handoff:** Added [the Section 11 continuation prompt](NEXT_CHAT_KEITH_BUILD_SECTION_11_2026-11-14.md), linked it from `README.md` and `AGENTS.md`, and copied the three editable Sections 10–12 reference modules from the [website-ready ZIP](https://drive.google.com/file/d/1CHc4MDdxbwvH5C38Cj95D3kZ6VWzgD6G/view) to `docs/reference/sections-10-12/`. The next build can start from the repo alone. Earlier capture paths point to local Codex artifacts.
+- **Verification:** Checked 58 local asset, stylesheet and script references, seven internal anchors, the handoff links and the three continuation modules. Edge smoke-tested the ten integrated sections, hero slider, gallery lightbox, demo availability and the FAQ.
+- **Next:** On `concept/keith-tyran-magician-experience`, use the new prompt to build Section 11, Your Invitation Awaits, and verify all inquiry entry points. Section 12 follows in the same reference pack. This is a repo checkpoint. No deployment or outreach.

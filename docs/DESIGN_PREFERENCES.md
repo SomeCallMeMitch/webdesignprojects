@@ -214,3 +214,50 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **User authorized:** Build Section 02 locally beneath the existing six-card hero with the supplied mockup and five WebP layers.
 - **Choices for review:** Continue the theater palette with a shadow below the seats. Keep performance and audience art in independent, overlapping gold frames, with descriptive alt text and a visible concept illustration label. Keep the painted light fixed. Add one soft pointer glow over the artwork for mouse users who allow motion.
 - **Navigation and loading:** Scroll to explore links to the new section. Watch a performance opens an inline preview message. A viewport check defers the five WebPs until the visitor approaches the artwork. For this hero, section requests also wait for the hero image layers to finish. Native disclosure and lazy image fallbacks support a static view with JavaScript disabled.
+
+## 2026-11-14 — The Show desktop implementation
+
+- **User authorized:** Continue with the next section after the hero and Experience the Magic checkpoint is pushed.
+- **Choices for review:** Use the supplied six category illustrations in a three-column, two-row exhibit. Use one reusable double gold frame, per-illustration crops and a restrained hover glow. All descriptions are visible by default. Keep panels informational and the Shows navigation link keyboard accessible. Preserve the static composition with reduced motion or JavaScript disabled.
+
+## 2026-11-14 — Choose Your Event desktop implementation
+
+- **User authorized:** Build the next section after The Show for the desktop concept.
+- **Choices for review:** Present Birthday Parties, Corporate Events and Private Events as three tall playbills. Use a shared transparent gold frame and independent concept art for each event. Keep copy and calls to action in HTML, with visible keyboard focus and restrained hover lift when motion is allowed.
+- **Reuse:** Copy the event section markup and `event-playbills.css`. Set the color and spacing properties on `.event-playbills`, and update each illustration, crop, alt text, event description and CTA. The `data-deferred-art` grid uses the shared `deferred-section-art.js` loader. Keep both image URLs in sync for the JavaScript-off fallback.
+
+## 2026-11-14 — Behind the Curtain desktop implementation
+
+- **User authorized:** Build the next section when the repo and asset handoff provide enough to proceed.
+- **Choices for review:** Use an arched concept portrait derived from the hero and a separate softened backstage atmosphere, with a restrained portrait light on mouse hover. Label the portrait as concept art. Keep the biography to the performance categories already documented in project research. About Keith links to the section.
+- **Reuse:** Copy the `.behind-curtain` markup and `behind-curtain.css`. Swap the two WebPs in both image paths, then update the portrait alt text, caption, copy and `--curtain-*` properties. Shared `deferred-section-art.js` handles asset deferral.
+
+## 2026-11-14 — Trusted by Audiences desktop implementation
+
+- **User authorized:** Build Section 06 beneath Behind the Curtain.
+- **Choices for review:** Use a four-column wall of eight text plaques with gold inlays and a restrained hover highlight. The plaques are informational. Keep the source as a normal keyboard-accessible link and label the preview as an unofficial concept.
+- **Reuse:** Copy the section markup and `audience-references.css`. Replace the names and source with the next performer's documented references, and adjust the `--audiences-*` properties for that site's palette.
+
+## 2026-11-14 — Moments of Wonder desktop implementation
+
+- **User authorized:** Build the supplied gallery below Trusted by Audiences and use the live header’s Gallery link.
+- **Choices for review:** Start with the featured portrait centered between the landscape pieces and outer portraits. Keep the stage lighting fixed and add a soft picture light on hover or keyboard focus. Captions sit beneath their frames. The arrows rotate the framed prints as units. Arrow keys move focus between prints and operate the rotation controls when focused.
+- **Reuse:** Each figure holds a print URL, image alt text, transparent frame and HTML caption. To replace a print, update the full-image link, deferred image path and static fallback. Adjust the frame aperture and crop in `wonder-gallery.css` when the frame geometry changes. The lightbox uses the figure’s image and caption, returns focus on close, and supports Escape. The static gallery links directly to the full illustrations.
+
+## 2026-11-14 — Audience Reactions desktop implementation
+
+- **User authorized:** Continue to Section 08 after integrating the gallery.
+- **Choices for review:** Use three static paper letters with one shared envelope asset. Label the review placeholders once above the letters. Keep each heading and description editable as HTML over the parchment, with a paper-colored fallback if the artwork is unavailable.
+- **Reuse:** Copy the section markup and `audience-reactions.css`. Keep future testimonials verbatim and attributed to a confirmed source once reuse is approved. The shared image loader defers the decorative envelope until readers approach the section.
+
+## 2026-11-14 — How Booking Works desktop implementation
+
+- **User authorized:** Continue to the next section after Audience Reactions.
+- **Choices for review:** Use a three-step ordered list with one ornate ticket frame, numbers in the frame’s existing medallions and a static connector between the notches. Keep the copy editable and the CTA visibly demo-only. Reuse the gallery backdrop with a darker wash.
+- **Reuse:** Copy the booking markup and `booking-steps.css`. The frame and backdrop load through `deferred-section-art.js` and have native lazy image fallbacks. Adjust the copy and align the medallion numbers and connector if frame geometry changes.
+
+## 2026-11-14 — Before the Curtain Rises desktop implementation
+
+- **User authorized:** Continue through Section 10, the FAQ below How Booking Works.
+- **Choices for review:** Set the section title and inquiry link in the left column of a quiet plum theater program. Use fine gold rules and six native disclosures on the right. The first answer starts open. Readers can keep several answers open to compare details.
+- **Reuse:** Copy the section markup and `curtain-faq.css`. Edit the summaries and answers in HTML, and point the inquiry link to the intended local destination. Keep the source attribution for facts and confirm event-specific policies before any production use.
