@@ -287,3 +287,10 @@ The user-confirmed requirements DP-129–DP-140 remain the design authority. The
 - **Provisional implementation:** Experience v2 uses cleaned stage plus independent fixed-origin pointer beams; Show v3 uses a short hover/focus wisp and a smoke reveal into an accessible native dialog with six live concept descriptions. Preserve earlier approved polish, locked hero and original versions.
 - **Asset verdict:** No regeneration needed for this prototype. Masters preserved; faint 1/255 alpha residue concealed in new compositing masks. Background generative fine-detail drift remains. Runtime WebP compression preserves size/alpha; visuals/timing await user review.
 - **Verification distinction:** Three-size browser layout and interaction checks do not imply screen-reader, real-device/FPS or actual OS CSS preference certification. Full limits: `KEITH_STAGE_A_BUILD_QA_2026-11-15.md`.
+
+## 2026-11-15 — User feedback on lights/smoke and lower-page discoveries
+
+- **User-approved visual feedback:** Moving lights worked great; top sections are successful. Preserve them, with the existing explicit hero lock.
+- **User-rejected current effect:** Smoke dissolve is too small for the box and reads as a puff appearing/disappearing. Technical asset readiness is not visual approval. No removal/replacement performed in this ideas-only task.
+- **User-requested exploration:** Discoverable magical hover changes lower on the page, such as a light or another feature. New list: `KEITH_LOWER_PAGE_EASTER_EGG_IDEAS_2026-11-15.md`.
+- **Proposals only:** Enchanted seal, footer ghostlight/hat shadow, prediction in gallery crystal, invisible ink, runaway frame shadow, escaping ace, ticket corner, unfolding letter, reversing pocket watch, miniature final bow. Assistant recommends testing at most two; no individual concept or asset commission approved yet.
