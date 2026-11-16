@@ -317,3 +317,8 @@ User says smoke looks great. Change requested: hover or click smoke reveals deta
 ## 2026-11-15 — Larger curtain and Pull me cord; ten-second card backs
 
 User-approved: slightly enlarge curtain, replace bottom button with a gold tasselled pull cord and Pull me sign; automatically cloud back to each card illustration after10seconds. Implementation choice:496px cap (~15% larger), code-native gold cord beside stage with click/keyboard/downward-pull activation;10-second reading interval after reveal clears, queued return clouds, manual return retained. No hero or accepted-art changes.
+
+
+## 2026-11-15 — Audience section visual exploration (not selected)
+
+User approves the current site overall but finds Trusted by Audiences uninspired and requests four alternatives, static or animated. Four separate visual proposals: Royal Circle theater seats, Magician’s Guestbook, Cabinet of Wonder, Constellation of Wonder. Optional motion remains proposed only. Recommend1 for theater/audience fit or2 for a quieter elegant contrast. No user selection or implementation approval inferred; current live build unchanged. Full prompt set and next step in `KEITH_AUDIENCE_FOUR_VISUAL_DIRECTIONS_2026-11-15.md`.
