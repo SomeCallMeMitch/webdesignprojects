@@ -326,3 +326,7 @@ User approves the current site overall but finds Trusted by Audiences uninspired
 
 ## 2026-11-16 — User selects Royal Circle chairs
 User-approved direction: one row of theater chairs moving across the screen like a rotating testimonial slider; optional logos on hover. Implementation for review:26px/sec procession, hover/focus pause and illuminated brass nameplates, arrows and Pause/Play. Original names/source qualifier retained; no invented quotes. Logos pending approved assets, no corporate logo artwork reproduced. Separate Clients v2; all other approved effects retained.
+
+
+## 2026-11-15 — Replace hero identity using supplied Keith cutouts
+User-authorized exception to hero lock:replace2main hero placeholders with supplied Keith-based AI portraits. Gentleman uses plain purple suit; Playful smiling/hat-tipping purple/gold. Preserve their original transparent canvases and register head positions. Existing hero behavior/environment and all other sections retained. This is not approval for new hero design or unrelated portrait replacements. Prior Original remains fixed.

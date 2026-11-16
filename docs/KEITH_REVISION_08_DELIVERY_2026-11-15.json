@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15 America/Los_Angeles",
+  "id": "appgdep_6afa99eedb888191aeb6506ab580faae",
+  "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+  "title": "Keith Tyran — Private Desktop Review",
+  "version_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6~appgver_6fda32c7d6048191a3712e715cdf7bed",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://keith-tyran-subtle-review.chiccaper1.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "release---6af9d691dee08191aa5e3531c0e65e85",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-16T05:51:49.281958+00:00",
+  "deployed_commit": "1fb4cd8464f1af33508dca7403c13e4d08fda078",
+  "recipe": "compositions/keith-portrait-pair-review.json",
+  "audience": "owner-only unchanged",
+  "source_pack": "module-library/asset-packs/keith-hero-v1",
+  "scope": "Supplied portraits in hero v2 and scoped image registration only; hero JS unchanged; R07 lower modules and Original preserved",
+  "source_export": "Tracked source and self-contained exports/keith-portrait-pair-review-v1 in Sites source repository; no new full Drive ZIP requested or uploaded."
+}

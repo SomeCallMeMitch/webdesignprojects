@@ -78,3 +78,7 @@ Current separate Sites recipe: `compositions/keith-cord-timed-cards-review.json`
 
 ## Revision07 — 2026-11-16
 Current private Latest uses compositions/keith-chair-carousel-review.json: Clients v2 Royal Circle single-row carousel plus all R06 selections. Separate Sites main is runtime authority. Read Revision07 QA/delivery and latest PROGRESS; original GitHub concept branch receives durable notes, not overwritten runtime. Hover nameplate lighting now; logos pending approved files.
+
+
+## Revision08 — 2026-11-15 Pacific client date
+Latest recipe:compositions/keith-portrait-pair-review.json. Hero v2 uses user-supplied Keith cutouts and aligned image frames, all R07 lower sections retained. Older hero/Original/recipes preserved. See Revision08 QA and delivery receipt; runtime authority remains separate Sites main.
