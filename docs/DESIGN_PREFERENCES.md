@@ -322,3 +322,7 @@ User-approved: slightly enlarge curtain, replace bottom button with a gold tasse
 ## 2026-11-15 — Audience section visual exploration (not selected)
 
 User approves the current site overall but finds Trusted by Audiences uninspired and requests four alternatives, static or animated. Four separate visual proposals: Royal Circle theater seats, Magician’s Guestbook, Cabinet of Wonder, Constellation of Wonder. Optional motion remains proposed only. Recommend1 for theater/audience fit or2 for a quieter elegant contrast. No user selection or implementation approval inferred; current live build unchanged. Full prompt set and next step in `KEITH_AUDIENCE_FOUR_VISUAL_DIRECTIONS_2026-11-15.md`.
+
+
+## 2026-11-16 — User selects Royal Circle chairs
+User-approved direction: one row of theater chairs moving across the screen like a rotating testimonial slider; optional logos on hover. Implementation for review:26px/sec procession, hover/focus pause and illuminated brass nameplates, arrows and Pause/Play. Original names/source qualifier retained; no invented quotes. Logos pending approved assets, no corporate logo artwork reproduced. Separate Clients v2; all other approved effects retained.

@@ -74,3 +74,7 @@ Latest recipe in separate Sites main is `compositions/keith-card-backs-curtain-r
 ## 2026-11-15 — Revision06 current selection
 
 Current separate Sites recipe: `compositions/keith-cord-timed-cards-review.json` (Show v6/About v4). Larger curtain with gold tasselled Pull me cord, no bottom button; cards cloud back after ten seconds. Original/hero/earlier variants preserved. Read Revision06 QA/delivery; original GitHub runtime remains older.
+
+
+## Revision07 — 2026-11-16
+Current private Latest uses compositions/keith-chair-carousel-review.json: Clients v2 Royal Circle single-row carousel plus all R06 selections. Separate Sites main is runtime authority. Read Revision07 QA/delivery and latest PROGRESS; original GitHub concept branch receives durable notes, not overwritten runtime. Hover nameplate lighting now; logos pending approved files.
