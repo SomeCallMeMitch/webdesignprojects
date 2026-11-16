@@ -312,3 +312,8 @@ User direction: full-card billowing smoke on all six Show cards; replace About C
 ## 2026-11-15 — User-approved smoke, in-place card backs; curtain choice
 
 User says smoke looks great. Change requested: hover or click smoke reveals detailed text on the back of the same card, without a modal. Implementation for review:180ms hover pause, text stays until Show illustration/Escape, click/Enter/Space fallback; preserve art/grid. User delegates selection among four new curtain sequences. Chosen option4 is the transparent symmetric scalloped purple/gold drapery, replacing hard corners/rails; options and rationale in Revision05 QA. This option is selected by assistant for review, not separately approved by user. Hero and accepted lights stay locked.
+
+
+## 2026-11-15 — Larger curtain and Pull me cord; ten-second card backs
+
+User-approved: slightly enlarge curtain, replace bottom button with a gold tasselled pull cord and Pull me sign; automatically cloud back to each card illustration after10seconds. Implementation choice:496px cap (~15% larger), code-native gold cord beside stage with click/keyboard/downward-pull activation;10-second reading interval after reveal clears, queued return clouds, manual return retained. No hero or accepted-art changes.

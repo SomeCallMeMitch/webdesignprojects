@@ -69,3 +69,8 @@ The current copied-module runtime is `compositions/keith-smoke-curtain-review.js
 ## 2026-11-15 — Revision05 current runtime pointer
 
 Latest recipe in separate Sites main is `compositions/keith-card-backs-curtain-review.json`: Show v5 hover/click smoke reveals detailed HTML on the same card, no modal; About v3 uses selected new transparent curtain option4. Previous recipe and all original/hero sources remain. Read Revision05 QA and delivery receipt for exact current source/export. Original GitHub tracked application remains older.
+
+
+## 2026-11-15 — Revision06 current selection
+
+Current separate Sites recipe: `compositions/keith-cord-timed-cards-review.json` (Show v6/About v4). Larger curtain with gold tasselled Pull me cord, no bottom button; cards cloud back after ten seconds. Original/hero/earlier variants preserved. Read Revision06 QA/delivery; original GitHub runtime remains older.
