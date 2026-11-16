@@ -634,3 +634,11 @@
 - Complete source/export without Git history: `keith-cord-timed-cards-review-v1-2026-11-15.zip`,84,597,979 bytes,930 entries,CRC pass,SHA256 `9a8727ae5ac5e5d56b7a044d68e4dc80e5e7b6200bd79253912734efef39fe29`. Drive ID `1HsHcUcVQPQ4KaGIXgMDUj-fV0PH78B4p`; project-folder/name/size verified. Exact URL and source identity in Revision06 delivery JSON.
 - This following write is source-only documentation. Original GitHub concept branch receives report/pointers/receipt; its runtime and user's Windows/download remain separate. Hero, Original and earlier variants/accepted lights unchanged. No sharing or outreach.
 - Exact next step: user reviews larger curtain, Pull me cord and ten-second return clouds in Revision06. Requested changes complete. QA limits (OS media/tab-hide, cross-browser, slow network, screen reader/performance) remain documented; no unrelated work started.
+
+
+### 2026-11-15 — Four Trusted by Audiences visual alternatives
+- Request: preserve the currently liked site and show four more theme-inspired options for the attached audience-reference section; animation optional.
+- Created and visually inspected four individual static mockups: Royal Circle, Magician’s Guestbook, Cabinet of Wonder, Constellation of Wonder. Retained eight reference names, source qualifier and unofficial-concept label. Suggested optional restrained motion; no motion implemented.
+- Saved direction descriptions, full generation prompts, recommendation and next step in `docs/KEITH_AUDIENCE_FOUR_VISUAL_DIRECTIONS_2026-11-15.md`; preferences appended. Images delivered in conversation, not installed as runtime assets.
+- Current Revision06, hero, originals and accepted effects unchanged. Documentation only on original GitHub branch `concept/keith-tyran-magician-experience`; no Sites runtime change, deployment, sharing or outreach.
+- Next action: user selects a version/hybrid before asset preparation or copied-module implementation. No selected direction yet.
