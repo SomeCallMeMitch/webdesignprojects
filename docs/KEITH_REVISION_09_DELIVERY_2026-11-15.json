@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-15 America/Los_Angeles",
+  "id": "appgdep_6afaa0758350819183eca06ffc5781a1",
+  "project_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6",
+  "title": "Keith Tyran — Private Desktop Review",
+  "version_id": "appgprj_6af9d5dc93448191a81742b0d8c08dd6~appgver_59eeb7256b288191882cab8eb01961f8",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://keith-tyran-subtle-review.chiccaper1.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "release---6af9d691dee08191aa5e3531c0e65e85",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-11-16T06:19:39.084386+00:00",
+  "deployed_commit": "ae693f41e05ffd42ad7576425c5809c99aeb2a52",
+  "recipe": "compositions/keith-about-photo-review.json",
+  "scope": "About supplied photo only; About CSS/JS and all R08 other modules unchanged",
+  "audience": "owner-only unchanged",
+  "asset_pack": "module-library/asset-packs/keith-about-photo-v1",
+  "portable_export": "exports/keith-about-photo-review-v1"
+}

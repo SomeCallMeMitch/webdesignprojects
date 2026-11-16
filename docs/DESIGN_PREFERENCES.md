@@ -330,3 +330,7 @@ User-approved direction: one row of theater chairs moving across the screen like
 
 ## 2026-11-15 — Replace hero identity using supplied Keith cutouts
 User-authorized exception to hero lock:replace2main hero placeholders with supplied Keith-based AI portraits. Gentleman uses plain purple suit; Playful smiling/hat-tipping purple/gold. Preserve their original transparent canvases and register head positions. Existing hero behavior/environment and all other sections retained. This is not approval for new hero design or unrelated portrait replacements. Prior Original remains fixed.
+
+
+## 2026-11-15 — Supplied About photograph
+User-approved replacement: supplied Keith in black tuxedo before pink curtain goes behind existing About reveal. Retain current size, plum curtain art, gold pull cord and animation; change photo/alt/caption only in copied About v5. All other imagery retained.

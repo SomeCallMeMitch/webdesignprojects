@@ -1,0 +1,7 @@
+# Revision09 — About photo replacement
+
+2026-11-15 Pacific client date. User requests supplied black-tuxedo/pink-curtain photo behind About curtain. Fork05-about v4→v5. Replace lazy and no-JS image paths, descriptive alt and caption. New keith-about-photo-v1 pack contains exact uploaded WebP bytes (1051×1051,38,700bytes); SHA256 in manifest. No pixel edits or recompression. Existing curtain CSS/JS byte-identical. Hero v2 and all other R08 modules retained; new keith-about-photo-review recipe, hubRevision09. Original/older modules preserved.
+
+Validation:117 protected hashes pass;266 prior tracked module/shared/baseline/asset/recipe/Original files compared unchanged. Compiler and self-contained export pass. Managed Chromium preview shows new photo decoded1051×1051 and visually fitting existing opening. Cord click opens (aria-expandedtrue), Space closes(false), Enter reopens(true). Screenshot docs/qa/revision09/about-photo.jpg. Existing no-JS source updated; no separate no-JS or three-size/cross-browser audit repeated for this image-only substitution. Native deployed status verifies publication, no authenticated post-deploy browser claim.
+
+Separate Sites main opened e54174ddd974747242b37290cdc661020da11ef7. Owner-private audience unchanged. No hero/other portrait or effect changes, outreach, real inquiry, sharing or mobile work. Original GitHub concept branch receives durable notes/receipt, runtime remains separate.

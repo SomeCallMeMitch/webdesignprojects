@@ -82,3 +82,7 @@ Current private Latest uses compositions/keith-chair-carousel-review.json: Clien
 
 ## Revision08 — 2026-11-15 Pacific client date
 Latest recipe:compositions/keith-portrait-pair-review.json. Hero v2 uses user-supplied Keith cutouts and aligned image frames, all R07 lower sections retained. Older hero/Original/recipes preserved. See Revision08 QA and delivery receipt; runtime authority remains separate Sites main.
+
+
+## Revision09 — 2026-11-15 Pacific
+Current Latest:compositions/keith-about-photo-review.json. About v5 uses supplied tuxedo photograph; existing curtains/cord and all other R08 module choices retained. See Revision09 QA/delivery. Runtime remains separate Sites main.
