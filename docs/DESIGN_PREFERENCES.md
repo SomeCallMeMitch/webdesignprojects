@@ -339,3 +339,9 @@ User-approved replacement: supplied Keith in black tuxedo before pink curtain go
 - **User confirmed:** play the supplied magical/theatrical MP3 when the gold Pull me cord is activated to **open** the curtain revealing Keith in #about; this is the specific sound selected by the user, not a request to redesign the curtain or main hero.
 - **Implementation proposed/prepared, not yet approved in a browser:** launch on direct user gesture (click, drag, Enter/Space), never on page load; closing stops/resets, hidden/offscreen stops. Proposed initial volume 72%, original 10.032-second sound unchanged. Distinguish from hero's separate Enable sound control; no global sound-preference decision established.
 - **Status:** packaged tested patch, NOT installed/published; consult `docs/KEITH_CURTAIN_AUDIO_INTEGRATION_HANDOFF_2026-11-17.md` before current-source application.
+
+
+### 2026-11-17 — Hosting migration direction (not a redesign)
+- **User-directed goal:** move current Keith desktop concept from owner-private ChatGPT hosting to Cloudflare so it can be reviewed by others and maintained there. Cloudflare account and GitHub app connection have been configured; first attempt against `webdesignprojects/main` failed because it has no deployable site.
+- **Implementation plan, not yet published:** migrate the *exact newest* static HTML/CSS/JS site into its own GitHub repository and use Cloudflare Pages Git deployments. Keep the existing hero, motion, curtain, smoke, audio behavior and assets; do not convert to Astro in this initial migration. A framework refactor remains a separate future decision.
+- Sharing/access and publication rights still to be resolved prior to exposing the unofficial concept. Preserve existing private comparison and no mobile redesign in this migration. Full next-step handoff: `docs/NEXT_CHAT_KEITH_CLOUDFLARE_PAGES_MIGRATION_2026-11-17.md`.
