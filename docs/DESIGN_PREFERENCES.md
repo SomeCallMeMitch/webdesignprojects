@@ -334,3 +334,8 @@ User-authorized exception to hero lock:replace2main hero placeholders with suppl
 
 ## 2026-11-15 — Supplied About photograph
 User-approved replacement: supplied Keith in black tuxedo before pink curtain goes behind existing About reveal. Retain current size, plum curtain art, gold pull cord and animation; change photo/alt/caption only in copied About v5. All other imagery retained.
+
+### 2026-11-17 — User-supplied About curtain opening audio
+- **User confirmed:** play the supplied magical/theatrical MP3 when the gold Pull me cord is activated to **open** the curtain revealing Keith in #about; this is the specific sound selected by the user, not a request to redesign the curtain or main hero.
+- **Implementation proposed/prepared, not yet approved in a browser:** launch on direct user gesture (click, drag, Enter/Space), never on page load; closing stops/resets, hidden/offscreen stops. Proposed initial volume 72%, original 10.032-second sound unchanged. Distinguish from hero's separate Enable sound control; no global sound-preference decision established.
+- **Status:** packaged tested patch, NOT installed/published; consult `docs/KEITH_CURTAIN_AUDIO_INTEGRATION_HANDOFF_2026-11-17.md` before current-source application.
