@@ -719,3 +719,9 @@
 - Deployed on the existing public Cloudflare Pages site. Runtime commit `21f561f99bc263ce1a511d647acc702ca56a1fd9`; Pages check succeeded for deployment `a9adf60d-cef9-4ef2-bc24-c9e39219a38e`. Production HTML readback matched the local output SHA-256 `287755449b0eee512582f9cb119a67ecc2e37274db05a752420f6a7785f68c76`. Public address https://keith-magician-website.pages.dev/
 - Confirmed production still serves GA4 `G-WYQT0PCNWN`. Existing custom events cover curtain, slider and smoke; the tag serves on the Cloudflare hostname. Realtime reflects recent activity but cannot identify a named viewer. Suggested a brief late-morning Pacific call or screenshot-first email and one follow-up on December 1. No outreach was sent, and no sharing, domain, or analytics settings changed.
 - This original concept branch `concept/keith-tyran-magician-experience` receives this progress entry and the approved preference entry only.
+
+### 2026-11-23 — Cloudflare demo URL options
+
+- Confirmed the share URL is https://keith-magician-website.pages.dev/. User asked whether a new domain purchase is needed and whether future magician demos can live at individual paths.
+- Cloudflare Pages serves directory index files at clean paths. Proposed a shared Pages project with one route per demo, using an available `pages.dev` project name, or an unused subdomain on a domain already owned. An alternate path on the current project can use `_redirects` or serve the demo directly. Current Pages hostname cannot be renamed in place.
+- If moving the demos to a different hostname, account for the current GA4 hostname guard. Example addresses remain proposals. Hosting research and documentation only. References: https://developers.cloudflare.com/pages/configuration/serving-pages/ and https://developers.cloudflare.com/pages/configuration/custom-domains/.
