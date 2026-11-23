@@ -725,3 +725,8 @@
 - Confirmed the share URL is https://keith-magician-website.pages.dev/. User asked whether a new domain purchase is needed and whether future magician demos can live at individual paths.
 - Cloudflare Pages serves directory index files at clean paths. Proposed a shared Pages project with one route per demo, using an available `pages.dev` project name, or an unused subdomain on a domain already owned. An alternate path on the current project can use `_redirects` or serve the demo directly. Current Pages hostname cannot be renamed in place.
 - If moving the demos to a different hostname, account for the current GA4 hostname guard. Example addresses remain proposals. Hosting research and documentation only. References: https://developers.cloudflare.com/pages/configuration/serving-pages/ and https://developers.cloudflare.com/pages/configuration/custom-domains/.
+
+### 2026-11-23 — Audience Reactions and booking entrance discussion
+
+- User asked whether adding slide or bounce entrances to Audience Reactions and How Booking Works would feel excessive. Confirmed the demo source has three letter cards in Audience Reactions and a one-time 12 px staggered rise already installed in How Booking Works.
+- Proposed a short one-time side glide for the letters, with each outer letter traveling slightly toward center and the middle letter fading in. Recommended retaining the existing ticket rise or turning it up slightly if needed. No design selection, runtime edit, or deployment for this discussion.
