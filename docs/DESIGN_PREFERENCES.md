@@ -363,3 +363,7 @@ User-approved replacement: supplied Keith in black tuxedo before pink curtain go
 
 - Audience Reactions letters converge slightly as the middle letter fades in. Booking tickets rise 20 px in sequence. Entrances play once and respect reduced motion.
 - New short curtain opening sound plays on cord activation and uses the existing curtain mute control. The Show has a separate, initially off card sound toggle. The smoke whoosh plays through the reveal and a short chime marks completion. Automatic returns stay silent.
+
+### 2026-11-23 — Page-wide sound preference
+
+Use one small speaker icon near the desktop header. It mutes and unmutes the whole page. Default to sound enabled on interaction. The hero retains Magic Chimes and the curtain and cards retain their existing cues.
