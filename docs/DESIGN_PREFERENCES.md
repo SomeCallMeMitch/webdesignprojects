@@ -352,3 +352,9 @@ User-approved replacement: supplied Keith in black tuxedo before pink curtain go
 - **Proposed defaults:** Play each scroll entrance once. For How Booking Works, lift the three tickets by roughly 12 pixels with a brief stagger. For Before the Curtain Rises, reveal just the gold heading rule. For Your Invitation Awaits, fade the decorative artwork while keeping form fields and calls to action fully available. Keep the footer still as the closing beat.
 - **Proposed gallery treatment:** Grow the chosen photo from its on-screen thumbnail into the existing lightbox over roughly 350 milliseconds. Ease back to the thumbnail when it is visible and use a quick fade if it is unavailable. Preserve image framing at the start, the full image at the destination, Escape, and focus return. Provide immediate transitions for reduced motion.
 - **Recommended demo mix:** Gallery zoom and booking tickets. Invitation artwork fade is optional. The main hero lock and existing interaction scope continue to apply.
+
+### 2026-11-23 — Four approved demo effects installed
+
+- **User approved:** All four November 22 motion options for the existing desktop demo. Gallery starts at the clicked thumbnail and expands for 350 ms; return takes 300 ms when the thumbnail is visible, with a short fade otherwise. Existing dialog and focus behavior are preserved.
+- **Implemented:** One-time 12 px booking ticket rise at 75 ms intervals, one-time gold FAQ rule reveal, and one-time fade of decorative invitation ornaments. The existing booking light sweep is available as a separate hover or focus replay. The FAQ and form stay readable and interactive during the cues. Reduced motion bypasses the gallery and scroll effects.
+- **Active runtime:** Cloudflare demo commit `21f561f99bc263ce1a511d647acc702ca56a1fd9` on `SomeCallMeMitch/keith-magician-website`, branch `codex/cloudflare-preparation`. Main hero lock continues to apply.
