@@ -358,3 +358,8 @@ User-approved replacement: supplied Keith in black tuxedo before pink curtain go
 - **User approved:** All four November 22 motion options for the existing desktop demo. Gallery starts at the clicked thumbnail and expands for 350 ms; return takes 300 ms when the thumbnail is visible, with a short fade otherwise. Existing dialog and focus behavior are preserved.
 - **Implemented:** One-time 12 px booking ticket rise at 75 ms intervals, one-time gold FAQ rule reveal, and one-time fade of decorative invitation ornaments. The existing booking light sweep is available as a separate hover or focus replay. The FAQ and form stay readable and interactive during the cues. Reduced motion bypasses the gallery and scroll effects.
 - **Active runtime:** Cloudflare demo commit `21f561f99bc263ce1a511d647acc702ca56a1fd9` on `SomeCallMeMitch/keith-magician-website`, branch `codex/cloudflare-preparation`. Main hero lock continues to apply.
+
+### 2026-11-23 — Approved audience motion and theatrical sound cues
+
+- Audience Reactions letters converge slightly as the middle letter fades in. Booking tickets rise 20 px in sequence. Entrances play once and respect reduced motion.
+- New short curtain opening sound plays on cord activation and uses the existing curtain mute control. The Show has a separate, initially off card sound toggle. The smoke whoosh plays through the reveal and a short chime marks completion. Automatic returns stay silent.

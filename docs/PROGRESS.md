@@ -730,3 +730,10 @@
 
 - User asked whether adding slide or bounce entrances to Audience Reactions and How Booking Works would feel excessive. Confirmed the demo source has three letter cards in Audience Reactions and a one-time 12 px staggered rise already installed in How Booking Works.
 - Proposed a short one-time side glide for the letters, with each outer letter traveling slightly toward center and the middle letter fading in. Recommended retaining the existing ticket rise or turning it up slightly if needed. No design selection, runtime edit, or deployment for this discussion.
+
+### 2026-11-23 — Letter and ticket entrances, original curtain and card sounds
+
+- User approved the Audience Reactions entrance and more visible booking rise, requested replacing the supplied curtain cue, and requested a smoke whoosh and brief tinkle.
+- New Cloudflare recipe `keith-theater-cues` selects Show v8, About v7, Reactions v2, Booking v5. Audience letters glide ±22 px with a center fade, once, in 500 ms. Tickets rise 20 px with the same stagger. Both honor reduced motion.
+- Original synthesized MP3s replace the curtain opening cue with a sub-second rustle and glint. Card audio is off by default and enabled in The Show. The 1.34-second whoosh begins with the animated reveal; a 0.43-second chime plays only after completed smoke. Interruptions stop audio, and automatic returns are silent. Prior curtain MP3 and module versions remain in source.
+- Build generated 12 sections and 96 files. All 117 protected hashes passed and MP3 metadata decoded. Chrome checked the opt-in state, actual Web Audio buffer start and stop during keyboard activation, chime after completed reveal, curtain playback and letter entrance. Hover shares the same reveal path; speaker loudness and cross-browser playback were not evaluated. Cloudflare Pages deployment `26bca79f-b250-4522-8751-87629dba8d7f` succeeded for runtime commit `750cd09bd9e720edc942181336c501ae1ae18bc4`. The live demo URL is https://keith-magician-website.pages.dev/.
