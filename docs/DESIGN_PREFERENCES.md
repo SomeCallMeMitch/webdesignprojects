@@ -405,3 +405,9 @@ Use one small speaker icon near the desktop header. It mutes and unmutes the who
 - **User-approved direction.** Use the main Keith site link for phones and add sounds to the phone theater.
 - **Implementation decisions.** Route phone homepage requests to the existing `/m/` page with a temporary redirect. Desktop and tablet devices use the desktop homepage. Keep the direct mobile URL and preserve shared query strings and deep links.
 - **Implementation decisions.** Place a single speaker button next to Menu and start silent. Use the existing slider, curtain and show-card cues after opt-in. The short chime is the reduced-motion card cue. Muting stops active and pending audio.
+
+### 2026-11-24 — Mobile theatrical refinements
+
+- **User-approved direction.** Layer more hero cards from small at Keith’s hand to a prominent card in front of the seats. Use one-way card sound, a smoke popup for Show cards, a full-curtain tap, readable chair nameplates and show-ticket booking steps.
+- **Implementation details.** Use the existing playing-card art and smoke texture. The forecard extends beyond the frame as the slider moves toward Showman. Show cards use a short smoke reveal with native dialog controls. The curtain’s visible Tap label stays in one position during both states.
+- **Implementation details.** The Royal Circle uses native horizontal scrolling with side arrows and dark serif names inside the brass plates. Booking cards use perforated numbered Admit One stubs, warm paper and Keith’s name.
