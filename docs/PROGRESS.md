@@ -771,3 +771,9 @@
 - User requested persistent Check availability and Contact actions and a slide-in menu. Updated all 12 mobile section images with one shared bottom bar and added a 13th image showing the open menu.
 - Design choice for review: gold primary availability, outlined Contact, right-side plum velvet drawer with a visible Close button, large section links, and the bottom bar still available. Repeated standalone availability buttons in the mockups moved to the shared bar. Inquiry submit is a separate local preview action.
 - Updated the existing mockup archive `keith-mobile-section-mockups.zip` with the revised overview and all 13 PNGs. Reviewed the drawer render and validated ZIP integrity. Graphics-only work. Implementation, device behavior, availability and contact routing, and deployment remain future decisions.
+
+### 2026-11-24 — Eight mobile section heading studies
+
+- User asked for more theatrical and magical mobile section headings and eight visual options using Experience the Magic and Trusted by Audiences. Created four side-by-side review boards, with two matched heading pairs per board, based on the latest plum, cream and gold mobile mockups.
+- Studies: 1 The Marquee, with warm bulbs; 2 The Spotlight, with stage beams; 3 The Illusion, with fine gold orbits; 4 The Velvet Reveal, with draped fabric; 5 The Secret Deck, with card backs and a plaque; 6 The Playbill, with vintage print lettering; 7 The Prestige, with gold italics and smoke; 8 The Mirror, with an Art Deco frame. Both requested headings are visible in every pair, and uppercase styling appears on 6 and 8.
+- Review images delivered with the design conversation. No site changes, deployment, outreach, or direction approval. Next: select a matched style or identify separate treatments for chosen sections. Branch `concept/keith-tyran-magician-experience`.
