@@ -373,3 +373,7 @@ Use one small speaker icon near the desktop header. It mutes and unmutes the who
 - **User confirmed:** Mobile requires a dedicated design. The existing phone experience breaks, tablet behavior is unknown, and this task is planning and mockups only. The desktop hero and live desktop build remain protected.
 - **Proposed:** Portrait-first page with one deliberate touch reveal, early inquiry access, stacked event types, compact proofs and FAQ, optional audio off by default, and an independently scoped mobile preview route after approval. Test portrait and landscape tablets with touch before assigning a presentation.
 - **Options for review:** Pocket Stage, Pick a Card, Curtain Call, Booking First. Recommendation is Pocket Stage plus Booking First's fast event path. Images use stand-in portraits and show the first screen and start of the next. No direction or final imagery has been selected.
+
+### 2026-11-24 — Selected hybrid for phone interaction review
+
+- User prefers the existing site artwork, a compact theater with Keith centered and a drag slider, Concept C's curtain reveal lower down, and Concept D's Check availability and event buttons. The interactive artifact tests that selection. This does not select final tablet behavior or approve mobile deployment.
