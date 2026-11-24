@@ -367,3 +367,9 @@ User-approved replacement: supplied Keith in black tuxedo before pink curtain go
 ### 2026-11-23 — Page-wide sound preference
 
 Use one small speaker icon near the desktop header. It mutes and unmutes the whole page. Default to sound enabled on interaction. The hero retains Magic Chimes and the curtain and cards retain their existing cues.
+
+### 2026-11-24 — Separate phone experience design study
+
+- **User confirmed:** Mobile requires a dedicated design. The existing phone experience breaks, tablet behavior is unknown, and this task is planning and mockups only. The desktop hero and live desktop build remain protected.
+- **Proposed:** Portrait-first page with one deliberate touch reveal, early inquiry access, stacked event types, compact proofs and FAQ, optional audio off by default, and an independently scoped mobile preview route after approval. Test portrait and landscape tablets with touch before assigning a presentation.
+- **Options for review:** Pocket Stage, Pick a Card, Curtain Call, Booking First. Recommendation is Pocket Stage plus Booking First's fast event path. Images use stand-in portraits and show the first screen and start of the next. No direction or final imagery has been selected.

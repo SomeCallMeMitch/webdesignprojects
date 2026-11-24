@@ -744,3 +744,10 @@
 - Active recipe `keith-page-sound` selects Hero v3, Show v9, and About v8. Existing motion, navigation layout, cues and other modules were retained. Sticky navigation remains deferred.
 - Clean static build and 117 protected hashes passed. Chrome confirmed there is one sound control, muted actions produce no playback, and unmuted actions play hero chimes, curtain audio, and the card whoosh and tinkle.
 - Production source commit `15e30cfd686ae78681c4532f70e5e40eb734549d` on `codex/cloudflare-preparation`. Cloudflare deployment `5842e554-fc02-4f6a-832b-c728cb45dd6d`. Public URL https://keith-magician-website.pages.dev/.
+
+### 2026-11-24 — Separate mobile design study and four phone mockups
+
+- User reported that the desktop page breaks on phones and asked for a mobile-specific plan and three or four still mockups. Tablet behavior remains unverified. Implementation and desktop changes are out of scope for this phase.
+- Confirmed the deployed desktop composition remains `keith-page-sound`, source commit `15e30cfd686ae78681c4532f70e5e40eb734549d` in the separate runtime repository. Added `docs/KEITH_MOBILE_DESIGN_PLAN_2026-11-24.md` for the proposed phone information architecture, interaction patterns, tablet orientation and input checks, and future isolated preview route.
+- Generated and reviewed four portrait mockups in this conversation: A Pocket Stage, B Pick a Card, C Curtain Call, and D Booking First. They use stand-in portraits. Recommended A's touch-switch portrait hero and D's event and inquiry flow. This is a design recommendation awaiting selection.
+- No production, preview deployment, outreach or runtime changes. Branch `concept/keith-tyran-magician-experience`; plan commit `e44c99da1d5aacc1f03945a2b16fa6c1de5f4707`. Next after selection: design the full mobile scroll and alternative reveal, menu, photo and inquiry states, then test touch behavior on tablets before deciding any routing.
