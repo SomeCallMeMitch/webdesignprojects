@@ -765,3 +765,9 @@
 - Created 12 separate PNG artboards in current desktop section order, plus a contact sheet. The artboards place the existing site portraits, stage, cards, photos, chairs, curtain frames, and ticket artwork directly. The phone layouts interpret the content as touch-first cards, a small gallery grid, accordions and a single-column inquiry. Testimonial and inquiry content remain explicitly provisional or demo-only.
 - Delivered `keith-mobile-section-mockups.zip` with all 12 full-resolution images and an overview. Reviewed the rendered overview and verified the archive integrity. Design review phase. No website implementation, deployment, outreach, or tablet verification.
 - Next after feedback: revise or approve the individual sections before any mobile implementation. Branch `concept/keith-tyran-magician-experience`; production desktop source remains `15e30cfd686ae78681c4532f70e5e40eb734549d`.
+
+### 2026-11-24 — Mobile sticky actions and menu mockups
+
+- User requested persistent Check availability and Contact actions and a slide-in menu. Updated all 12 mobile section images with one shared bottom bar and added a 13th image showing the open menu.
+- Design choice for review: gold primary availability, outlined Contact, right-side plum velvet drawer with a visible Close button, large section links, and the bottom bar still available. Repeated standalone availability buttons in the mockups moved to the shared bar. Inquiry submit is a separate local preview action.
+- Updated the existing mockup archive `keith-mobile-section-mockups.zip` with the revised overview and all 13 PNGs. Reviewed the drawer render and validated ZIP integrity. Graphics-only work. Implementation, device behavior, availability and contact routing, and deployment remain future decisions.
