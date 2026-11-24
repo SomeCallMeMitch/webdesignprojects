@@ -777,3 +777,8 @@
 - User asked for more theatrical and magical mobile section headings and eight visual options using Experience the Magic and Trusted by Audiences. Created four side-by-side review boards, with two matched heading pairs per board, based on the latest plum, cream and gold mobile mockups.
 - Studies: 1 The Marquee, with warm bulbs; 2 The Spotlight, with stage beams; 3 The Illusion, with fine gold orbits; 4 The Velvet Reveal, with draped fabric; 5 The Secret Deck, with card backs and a plaque; 6 The Playbill, with vintage print lettering; 7 The Prestige, with gold italics and smoke; 8 The Mirror, with an Art Deco frame. Both requested headings are visible in every pair, and uppercase styling appears on 6 and 8.
 - Review images delivered with the design conversation. No site changes, deployment, outreach, or direction approval. Next: select a matched style or identify separate treatments for chosen sections. Branch `concept/keith-tyran-magician-experience`.
+
+### 2026-11-24 — Compact Velvet Reveal heading pair
+
+- User preferred option 4 and asked for less vertical space. Produced and inspected a shorter pair of still mobile headings for Experience the Magic and Trusted by Audiences, retaining plum curtains, gold tassels, and cream serif lettering. At equal widths the revised panels are roughly one quarter shorter than the original study.
+- The compact pair is ready for visual review. No runtime changes or deployment. Design notes on `concept/keith-tyran-magician-experience`.

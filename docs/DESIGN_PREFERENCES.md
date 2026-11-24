@@ -382,3 +382,7 @@ Use one small speaker icon near the desktop header. It mutes and unmutes the who
 
 - **User requested:** Keep Check availability and Contact sticky at the bottom of the phone layout and add a well-designed slide-in menu.
 - **Proposed in the updated mockups:** One gold primary button and one outlined secondary button. Dark plum right-side drawer with a dimmed view of the current section, clear Close control and spacious navigation. Future implementation should reserve space for the bottom bar, honor device safe areas and reduced motion, and keep both actions keyboard-accessible when the drawer is open.
+
+### 2026-11-24 — Mobile heading preference
+
+- User prefers option 4, The Velvet Reveal, with less vertical space. Keep the tied-back plum velvet curtains, gold tassels, and generous lettering. The compact paired mockup is a refinement for review.
