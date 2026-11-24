@@ -758,3 +758,10 @@
 - Created `keith-mobile-theater.html` as a self-contained review artifact, embedding 16 existing production image files. The portrait blend, light intensity and moving cards respond to the slider. The reveal reuses the five theater curtain frames and existing Keith photo. An event button opens the check-availability preview with the event preselected. The form uses local demo feedback.
 - Standalone phone interaction prototype only. Chromium verified slider keyboard changes, the Showman endpoint, original hero image decoding, event preselection, preview response and curtain open/close. Real phones and tablets have not been tested. No desktop runtime edits, hosting, sharing or outreach.
 - Review hero framing and the three-section flow before adding the rest of the phone page. Branch `concept/keith-tyran-magician-experience`; documentation-only update.
+
+### 2026-11-24 — Twelve mobile section mockups
+
+- User liked the interactive phone prototype and requested static images for each section of the existing site. Reviewed the full `keith-page-sound` section inventory and the phone artifact. Kept the phone theater and slider, curtain reveal, event choices, and availability presentation as anchors for the full set.
+- Created 12 separate PNG artboards in current desktop section order, plus a contact sheet. The artboards place the existing site portraits, stage, cards, photos, chairs, curtain frames, and ticket artwork directly. The phone layouts interpret the content as touch-first cards, a small gallery grid, accordions and a single-column inquiry. Testimonial and inquiry content remain explicitly provisional or demo-only.
+- Delivered `keith-mobile-section-mockups.zip` with all 12 full-resolution images and an overview. Reviewed the rendered overview and verified the archive integrity. Design review phase. No website implementation, deployment, outreach, or tablet verification.
+- Next after feedback: revise or approve the individual sections before any mobile implementation. Branch `concept/keith-tyran-magician-experience`; production desktop source remains `15e30cfd686ae78681c4532f70e5e40eb734549d`.
