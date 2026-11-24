@@ -386,3 +386,9 @@ Use one small speaker icon near the desktop header. It mutes and unmutes the who
 ### 2026-11-24 — Mobile heading preference
 
 - User prefers option 4, The Velvet Reveal, with less vertical space. Keep the tied-back plum velvet curtains, gold tassels, and generous lettering. The compact paired mockup is a refinement for review.
+
+### 2026-11-24 — Approved mobile V1 build
+
+- **User confirmed:** Implement the independent phone-first layout at /m/ on the same Pages site, starting from the existing interactive phone theater HTML, continuing through the latest section and menu mockups, and using the compact Option 4 Velvet Reveal heading style. The current desktop site is locked.
+- **User confirmed:** Keep Check availability and Contact as persistent footer actions. Use the side drawer with a theatrical flourish. The current mockup depicts a right-side drawer, dimmed stage view, and gold-accented plum treatment.
+- **Implementation direction:** Use real selectable text, reusable decoration and touch-friendly controls. Keep motion short with a reduced-motion state, honor safe areas and keep forms and actions reachable. See [the build and release prompt](NEXT_CHAT_KEITH_BUILD_MOBILE_2026-11-24.md).

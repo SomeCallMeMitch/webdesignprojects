@@ -782,3 +782,10 @@
 
 - User preferred option 4 and asked for less vertical space. Produced and inspected a shorter pair of still mobile headings for Experience the Magic and Trusted by Audiences, retaining plum curtains, gold tassels, and cream serif lettering. At equal widths the revised panels are roughly one quarter shorter than the original study.
 - The compact pair is ready for visual review. No runtime changes or deployment. Design notes on `concept/keith-tyran-magician-experience`.
+
+### 2026-11-24 — Mobile implementation and deployment handoff
+
+- Mitch approved implementing the independent mobile version at /m/ in a fresh Codex session. Inputs are the existing phone theater HTML, the twelve-section mockup ZIP with the drawer, and the compact Velvet Reveal heading art.
+- Wrote [the implementation and release prompt](NEXT_CHAT_KEITH_BUILD_MOBILE_2026-11-24.md), including attachment fingerprints, interaction details, responsive-phone QA, and a byte-for-byte desktop build gate. The design repo is public, so the exact account-scoped attachment links accompany the launch message.
+- Runtime is SomeCallMeMitch/keith-magician-website on its existing Cloudflare Pages project. Verified runtime branch codex/cloudflare-preparation and source checkpoint 15e30cfd686ae78681c4532f70e5e40eb734549d. The new session will recheck the baseline before building, open a focused PR and complete installation after the checks pass. The inquiry remains a demo as in the active build unless separately authorized later.
+- Documentation only on concept/keith-tyran-magician-experience. No runtime edits, deployment, Cloudflare settings changes or outreach.
