@@ -411,3 +411,8 @@ Use one small speaker icon near the desktop header. It mutes and unmutes the who
 - **User-approved direction.** Layer more hero cards from small at Keith’s hand to a prominent card in front of the seats. Use one-way card sound, a smoke popup for Show cards, a full-curtain tap, readable chair nameplates and show-ticket booking steps.
 - **Implementation details.** Use the existing playing-card art and smoke texture. The forecard extends beyond the frame as the slider moves toward Showman. Show cards use a short smoke reveal with native dialog controls. The curtain’s visible Tap label stays in one position during both states.
 - **Implementation details.** The Royal Circle uses native horizontal scrolling with side arrows and dark serif names inside the brass plates. Booking cards use perforated numbered Admit One stubs, warm paper and Keith’s name.
+
+### 2026-11-24 — Mobile audio, smoke and heading polish
+
+- **User-approved direction.** Use the King of Hearts in front, remove the smallest card, enlarge the slider thumb, improve first-use audio responsiveness, bring desktop smoke to the popup illustration, animate the chair row slowly, shorten the SF Symphony nameplate and apply the approved curtain graphic to every mobile headline.
+- **Implementation details.** Prefetch sound without playing it. Run the original 16-frame smoke inside the popup artwork, with a reduced-motion fallback. Set a slow chair drift with an explicit pause/resume control and pause on browsing. Use a separate WebP velvet plate for each of the twelve major mobile headings, with live text over the artwork.
